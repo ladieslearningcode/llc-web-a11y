@@ -1,96 +1,153 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  height: 100%;
+  margin: 0px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
+header,
+section,
+footer {
+    margin: 0;
+    padding: 1px; /* tweaked from 0 to 1px */
+}
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
-  background: url(../images/buildings.jpg) no-repeat fixed;
-  background-size: cover;
+  text-align: center;
 }
 h1, h2 {
-  font-family: 'Bad Script', cursive;
   margin: 0; /* removes default space */
   font-weight: normal; /* removes default bold style */
-  text-transform: lowercase;
 }
 h1 {
   font-size: 75px;  
 }
-p {
-  font-size: 18px;
+h2{
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+h3{
+  color: black;
+}
+p{
+  font-size: 22px;
   line-height: 1.5; /* adjusts space between the lines */
+  margin:0;
 }
 a {
-  color: #9D6381; 
+  color: #0e6c5c;
+  text-decoration: underline;
 }
 a:hover {
-  color: #CECCCC;
+  text-decoration: none;
 }
-header, 
-section, 
-footer {
-  padding: 100px 150px;
+.button{
+  background: white;
+  border: 2px solid #0e6c5c;
+  color: #0e6c5c;
+  font-size: 22px;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition-duration: 0.3s;
 }
-.loves, 
-footer {
-  text-align: center;
+.button:hover{
+  background: #0e6c5c;
+  color: white;
 }
-strong {
-  color: #9D6381;
+.overlay{
+  background: rgba(255, 255, 255, 0.6);
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
-img {
-  border-radius: 50%;
+.text{
+  position: relative;
+  z-index: 2;
 }
-
+section, header {
+  padding: 140px 60px;
+}
 
 /* PAGE HEADER
 -----------------------------------------*/
 header {
-  background: #CECCCC;
+  background: url(../../images/background1.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 80vh;
+  margin: 0;
 }
 header h1 {
   font-size: 100px;
-  text-transform: inherit;
+  font-family: 'Playfair Display', serif;
 }
 header h2 {
   font-size: 32px;
-  text-transform: inherit;
+  font-family: 'Work Sans', sans-serif;
 }
 
-
-/* ABOUT
+/* Mission
 -----------------------------------------*/
-.about {
-  background: rgba(97, 41, 64, 0.95);
+.mission{
+  background: #d3e6dd;
+}
+.mission p{
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+/* Events
+-----------------------------------------*/
+.events {
+  background: #f5eeeb;
   color: white;
 }
-.profile-img {
-  float: right;
-  margin-left: 20px;
+.box{
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  font-family: 'Work Sans', sans-serif;
+  margin: 60px 1% 80px;
+  padding: 0;
+  width: 22%;
+}
+.box img{
+  margin: 0;
+  width: 100%;
 }
 
-
-/* LOVES - things I love 
+/* Contact
 -----------------------------------------*/
-.loves {
-  background: #9D6381;
+.contact {
+  background: url(../../images/background2.jpg) center bottom no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
-.loves img {
-  width: 250px;
-  margin: 15px;
+address{
+  font-size: 28px;
+  font-style: normal;
 }
 
-
-/* FOOTER - contact info
+/* Footer
 -----------------------------------------*/
 footer {
-  background: #0F110C;
-  color: #CECCCC;
+  background: #0e6c5c;
+  color: #fff;
+  padding: 20px 0;
+}
+footer a{
+  color: #fff;
+  font-size: 16px;
 }
