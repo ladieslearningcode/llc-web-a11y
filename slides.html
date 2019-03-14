@@ -405,7 +405,7 @@
       <script type="text/template">
         #Base HTML Tags
 
-        The tags below should be included in ** *all* ** HTML documents.
+        The tags below must be included in ** *all* ** HTML documents.
 
         ```
         <!DOCTYPE html>
@@ -421,7 +421,7 @@
         ```
         (We'll be going through what these tags mean very soon.)<!-- .element: class="note" -->
 
-        To create an HTML page, just save it with the file extension `.html`.
+        To create an HTML page, save it with the file extension `.html`.
       </script>
     </section>
 
@@ -464,9 +464,9 @@
           |-- reference
         ```
 
-        The **images** folder contains a selection of images to use in your project (or add your own to this folder during the exercises).
+        The **images** folder contains a selection of images you can use in your project, or add your own images to this folder during the exercises.
 
-        The `index.html` file is out HTML page - we have some content there already to get you started
+        The `index.html` file is our HTML page - we have some content there already to get you started
 
         The **reference** folder contains the solutions for each exercise. Try not to peek unless you're *really* stuck.
       </script>
@@ -597,7 +597,7 @@
       <script type="text/template">
         # Attributes
 
-        * provide additional information or instruction for an element
+        * provide additional information or instructions for an element
         * included *inside the opening HTML tag*
         * follows the syntax of `attribute="value"` (note the quotes)
         * many different attributes, including some that are specifically used for accessibility.
@@ -680,15 +680,26 @@
 
         HTML5 introduced new tags to better describe blocks of content such as `<header>`, `<footer>` and `<section>`. (There are many more.)
 
-        These are essential for accessibility, and for [Search Engine Optimization (SEO)](). Optimizing sites for SEO & a11y is essential to find and serve your potential users, and thankfully there is a lot of overlap when it comes to best practices in both!
-
-        **Good for SEO** — search engines give more importance to keywords inside headings, links, etc., than keywords included in non-semantic tags like `<div>`s, etc., so your documents will be more indexable by customers.
-        **Good for screenreader users** - screenreaders read those tags out as the user progresses through the content, notifying them what is a header, what is a paragraph, footer, etc.
+        **Good for SEO** — search engines give more importance to keywords inside headings, links, etc., than keywords included in non-semantic tags like `<div>`s, etc., so your documents will be more indexable.
+        **Good for screenreader users** - screenreaders read those tags out as the user progresses through the content, notifying them what is a header, footer, etc.
 
         ---
         ###Resources
         * [HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
 
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise #2: Structure
+
+        1. Open up your `index.html` file and add a `header` tag to wrap your `h1` and `h2`
+        1. Create a `main` tag and add a couple paragraphs within it. Add an `id` attribute inside the `main` tag with the value of 'content'. We will discuss why we did this a little bit later.
+        1. Inside of the `main` tag, add two `section` tags and give each of them a unique `class` attribute. We will use these later to give each section their own styles with CSS
+        1. Create a `footer` tag and add at least 1 paragraph inside of it.
+
+        Your project should now [look like this](reference/exercise-2.html)
       </script>
     </section>
 
@@ -716,37 +727,13 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #The debate about Headings & HTML5 Sectioning tags
-
-        This article, [The Truth About Multiple H1 Tags in the HTML5 Era](https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824), was written in 2013, when HTML5 was still in its early days. Search Engine Optimization (SEO) experts and web developers are still debating to this day over whether a page can have more than one `h1` tag.<br />
-
-        ![Mathiaus tweets, regarding the use of heading tags - how many h1-tags should be used on a single web page? Only one? #seo. John responds, As many as you want.](framework/img/workshop/john-mueller.png)<br />
-        *[John Mueller](https://twitter.com/JohnMu), Senior Webmaster Trends Analyst at Google*
-
-        You can also [watch this very quick video](https://www.youtube.com/watch?v=WsgrSxCmMbM) (1:16) from the Google Webmaster channel on this topic.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #The debate about Headings & HTML5 Sectioning Tags
-
-        On the other side of the debate, Bing clearly states in their [Webmaster Guidelines](https://www.bing.com/webmaster/help/webmaster-guidelines-30fba23a):<br />
-        *"Only one `<h1>` tag per page"*<br /><br />
-        In this Mozilla article, [Using HTML Sections and Outlines](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines), they had this to say on the HTML5 semantic markup solution:<br />
-        *"The description of problems solved by HTML5 is theoretical only."*<br /><br />
-        Using only one `<h1>` tag per page is a simple and clear solution around these complex discussions. Depending on the complexity of your site though, only one `<h1>` tag might not make sense in context of a more complex layout.<br />
-        **We want to present both sides of this argument and let you make your own decisions based on what you think is best for your site.**
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
         #Class Exercise #2: Heading order test
 
         Let's split up into 2 groups. We can split the room in half, or you can partner with the person beside you and each test one of these sites:
         - site1.com
         - site2.com
+
+        [gif of ice skaters]
 
         1. Go to [Web Accessibility Evaluation Tool](http://wave.webaim.org/)
         1. Enter the URL into the address bar:
@@ -757,7 +744,6 @@
         Compare the results between the heading outline of these two pages. Which one is better?
       </script>
     </section>
-    
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -775,16 +761,42 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
+        #Paragraphs
+
+        If you need to start text on a new line, you can use the self-closing `br` tag. That means no closing `</br>` tag is necessary:
+
+        ```xml
+        <p>129 Spadina ave<br>
+        Toronto, ON<br>
+        M5V 2L3</p>
+        ```
+
+        Visually, the two examples below will look the same to a sighted user, but the first example doesn't clearly contextualize each paragraph. This is particularly important for users using screen readers:
+
+        ```xml
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        ```
+
+        ```xml
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+        <br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         #Tips for writing content on the web
 
-        * Should be short and clear. Less is always better! Take into consideration non-native English or French speaking users
+        * Text should be as simple and clear as possible. Less is more. Take into consideration non-native English/French speaking users and avoid using too much industry jargon (depending on your audience)
         * Start each page and sub-section with the most important information. *“Don’t bury the lede”*
         * Break up large paragraphs with bulleted or numbered lists where appropriate (HTML for this on the next slide). Lists are easier to skim then paragraphs.
-        * Avoid typing in all caps - some screen readers will read text in all caps letter by letter.
-          * When abbreviations are used in text, use the HTML `<abbr>` tag to provide the long form, like this:
+        * Avoid typing in all caps - some screen readers will uppercase rest letter by letter. If you like all caps stylistically, we can do that using CSS, but in the HTML they should be written in regular case.
+        * When abbreviations are used in text, use the HTML `<abbr>` tag to provide the long form, like this:
           * *The `<abbr title="World Health Organization">WHO</abbr>` was founded in 1948.*
-          * Alternatively, you can use the long form the first time an abbreviation or acronym is introduced on any given web page, and then use that abbreviation moving forward. This must be done on **each web page** - you cannot assume a user will have seen the long form on the home page before arriving at another page.
-
       </script>
     </section>
 
@@ -850,17 +862,20 @@
       <script type="text/template">
         #Tips for accessible hyperlinks
 
-        * If a link is going to open in a new tab, make sure the user is aware of this. You can write this out in the link, or use icons. Check out this site for an example:
-          [icon new tab]
-        * When you create a text link, be sure the link text describes its purpose and destination. If you read the link on its own, without the paragraph surrounding it, it should be clear where the user will go. For instance, rather than writing:
+        * Be sure the link text describes its purpose and destination. If you read the link on its own, without the paragraph surrounding it, it should be clear where the user will go. For instance, rather than writing:
           `<a href="annual-report.pdf">Click here</a> to link to read our annual report`
 
           consider something like:
           `<a href="annual-report.pdf">Read our annual report</a>.`
 
-        >If you are linking to a PDF on a page, this text must be included on that page:
+        * If a link is going to open in a new tab, the user needs to be aware of this behaviour. You can write this out in the link, or do something like this:
+          [Opens in new window example](https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html)
+    
+        >If you are linking to a PDF on a page, this text must be included somewhere on that page:
         “You need a PDF viewer such as Adobe Acrobat Reader to read and access the information contained within PDF files. If you do not have a PDF reader, [download the free Acrobat reader](https://get.adobe.com/reader/).”
 
+        Resources:
+        * [Tutorial for opening link in new window example](https://www.w3.org/TR/WCAG20-TECHS/G201.html)
       </script>
     </section>
 
@@ -869,7 +884,7 @@
       <script type="text/template">
         #Paths
 
-        Even though today's project only has one page, it includes lots of different content.
+        Even though today's project only has one page, it can include  different types of content.
 
         Some of that content lives directly within the page itself (ie. the text), and some of it may live elsewhere (eg. in the images folder, on other websites, etc.).
 
@@ -896,15 +911,13 @@
       <script type="text/template">
         #Relative Paths
 
-        **We use relative paths when we're trying to make a connection between two resources within our own website.**
+        **We use relative paths when we're trying to make a connection between two resources on the same website.**
 
         Relative paths start from the location of the current page, and tell the browser which folders should be looked in to find the external resource.
 
         ```xml
         images/backgrounds/dark/dark-background-1.jpg
         ```
-
-        We can think of relative paths like directions.
 
         We'll be using relative paths to add images shortly!
       </script>
@@ -924,7 +937,7 @@
         https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css
         ```
 
-        Absolute paths start with a protocol (ie. `http` or `https`), followed by the location of the resource.
+        Absolute paths start with a protocol (ie. `http` or `https`), followed by the location of the resource. It's usually not necessary to include the `www` before the domain.
       </script>
     </section>
 
@@ -934,21 +947,21 @@
 
         Self-closing tags don't format content or require a closing tag. They are used to embed objects onto the page; they *are* the content!
 
-        Images use a self-closing tag. It also requires a `src` *attribute* to tell the browser the location of the image file.
+        Images use a self-closing tag. It also requires the `src` *attribute* to tell the browser the location of the image file.
 
         ```
-        <img src="path/to/image/file-name">
+       <img src="images/image-file.jpg">
 
         ```
 
         `alt` is another attribute that is added to images to provide *alternative text* to visually impaired web visitors using screen readers.
 
         ```
-        <img src="http://placekitten.com/200/300" alt="kitten">
+        <img src="images/image-file.jpg" alt="kitten">
 
         ```
 
-        ##Example of `alt` when image does not load:
+        The `alt` attribute is also helpful when image does not load:
         <img src="" alt="kitten">
 
 
@@ -968,7 +981,7 @@
 
         ##More tips for Accessible images
 
-        * Large images can cause your site to slow down sigificantly. Performance is a major consideration when creating a website - if your site is too slow, users are much more likely to leave your site.
+        * Large images can cause your site to slow down sigificantly. Performance is a major consideration when creating a website - if your site is too slow, users are much more likely to leave
           * Try a free service like [tinyjpg](https://tinyjpg.com/) to compress your images before you upload them to a website to decrease the file size
 
         >Resources:
@@ -980,29 +993,10 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Image file organization
+        #Exercise: Add an image
 
-        It's best practice (but not required) to put image files into its own folder to keep the project files organized.  Today's **project** directory already includes an **images** folder.
-
-        Since the images are not in the same folder as **index.html**, use a *relative* path to link to the file.
-
-        ```
-        <img src="images/image-file.jpg" alt="description of image">
-        ```
-        The starting point (**index.html**), is outside of the **images** folder. The above example directs the browser to a folder named **images**, then the filename, *including the file extension*.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Image file organization
-        If you have a folder in a folder, then add the subfolder into the path.
-
-        ```
-        <img src="folder/sub-folder/filename" alt="description of image">
-        ```
-
-        If your file extensions do not show by default, here are instructions for [Mac](https://support.apple.com/kb/PH19072?locale=en_US) and for [Windows](https://support.microsoft.com/en-ca/help/14201/windows-show-hidden-files).
+        1. You can use the existing images within the `project` folder, or images of your own. If you have images on your own site that you want to use, copy them from their location on your computer and paste them into the `images` folder
+        1. Add at least two images anywhere within your `index.html` page. Be sure to include `alt` attributes!
       </script>
     </section>
 
