@@ -141,7 +141,7 @@
 
         Situational disabilities (eg. sprained wrist, pupils dialated for an eye exam), slow/spotty internet/data connection, people in a hurry, people with large fingers...
         
-        When we focus conscientiously on the needs of certain kinds of people, we are in fact learning how to design better websites for everyone!
+        When we focus conscientiously on these needs, you're begin to realize we are in fact designing better websites for everybody!
       </script>
     </section>
 
@@ -149,13 +149,13 @@
       <script type="text/template">
         #Barriers
 
-        A barrier is anything that keeps someone with a disability from fully participating in all aspects of society because of their disability.
+        A barrier is anything that keeps someone with a disability from fully participating in all aspects of society.
 
-        **Attitude** is perhaps the most difficult barrier to overcome because it’s hard to change the way people think or behave. Ideas formed about the person because of stereotypes or a lack of understanding. Some people may feel that they could offend the individual with a disability by offering help, or they ignore or avoid people with disabilities altogether. Remember, attitude is a major barrier that’s within our power to change.
+        **Attitude** is perhaps the most difficult barrier. Ideas form about people because of stereotypes or a lack of information. Attitude is a major barrier that's completely within our power to change!
 
         **Architectural** or structural barriers may result from design elements of a building such as stairs or doorways. Information and communication barriers can make it difficult for people to receive or convey information. Things like small print size, low colour contrast, confusing design and use of unclear language can create barriers.
 
-        **Technology**, or lack of it, can prevent people from accessing information. Everyday tools like computers, telephones and other aids can present barriers if they are not designed with accessibility in mind.
+        **Technology**, or lack of it, can prevent people from accessing information. Everyday tech tools can present barriers if they are not designed with accessibility in mind.
 
         **Systemic** an organization's policies, practices and procedures that restrict people with disabilities, often unintentionally
       </script>
@@ -165,17 +165,18 @@
       <script type="text/template">
         #Canadian laws
 
-        AODA stands for **Accessibility for Ontarians with Disabilities Act**. It was enacted in 2005 by the government of Ontario to improve accessibility standards for Ontarians with physical and mental disabilities to all public establishments by 2025. Ontario is the first province in Canada to pass such a law, and it covers all areas of life travel, law, safety, employment, education, recreation and of course, technology!
+        AODA stands for **Accessibility for Ontarians with Disabilities Act**. It was enacted in 2005 by the government of Ontario to improve accessibility standards for Ontarians with physical and mental disabilities to all public sector establishments by 2025. Ontario is the first province in Canada to pass such a law.
 
-        Manitoba (2013), Nova Scotia (2017), British Columbia (2018) followed suit and enacted similar legislation in their respective provinces.
+        Manitoba (2013), Nova Scotia (2017) and British Columbia (2018) followed suit and enacted similar legislation in their respective provinces with varrying timelines to acheive their goals.
 
-        The federal government introduced Bill C-81, the Accessible Canada Act, in 2018  to "identify, remove and prevent" accessibility barriers in federally regulated private sector (transportation, broadcasting, telecommunications and finance)
+        The federal government introduced Bill C-81, the Accessible Canada Act, in 2018 to "identify, remove and prevent" accessibility barriers in federally regulated private sector (transportation, broadcasting, telecommunications and finance)
 
         ---
         ###Resources:
         * [Accessibility Ontario](https://accessontario.com/)
         * [The Accessibility for Manitobans Act](http://www.accessibilitymb.ca/)
         * [Nova Scotia Accessibility Act](https://novascotia.ca/accessibility/)
+        * [Barrier-Free BC](http://barrierfreebc.org/)
         * [Making an accessible Canada for persons with disabilities](https://www.canada.ca/en/employment-social-development/programs/accessible-people-disabilities.html)
 
       </script>
@@ -185,7 +186,7 @@
       <script type="text/template">
         #How it applies to the web - WCAG
 
-        WCAG stands for **Web Content Accessibility Guidelines** and provides standards to keep the internet accessible to *everyone*, no matter what modifications they may require. These guidelines were developed by the [W3C](https://www.w3.org/WAI/standards-guidelines/w3c-process/).
+        WCAG stands for **Web Content Accessibility Guidelines** and provides a set of international standards to keep the internet accessible to *everyone*, no matter what modifications they may require. These guidelines were developed by the [W3C](https://www.w3.org/WAI/standards-guidelines/w3c-process/). At this time, AODA is the only provincial act that requires compliance with WCAG.
 
         The goal isn't "all or nothing", however — every improvement you are able to make will help the cause of accessibility!
 
@@ -356,7 +357,11 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        [steven hawking-like device, or video]
+        Potential videos:
+
+        https://www.youtube.com/watch?v=Y7_f-pR8SBY
+        https://www.youtube.com/watch?v=3q3U45zjkZE
+        https://www.youtube.com/watch?v=TSIABD6dU1U
       </script>
     </section>
 
@@ -442,7 +447,7 @@
       <script type="text/template">
         #Base HTML Tags
 
-        The tags below must be included in ** *all* ** HTML documents.
+        The tags below must be included in ** *every* ** HTML document.
 
         ```
         <!DOCTYPE html>
@@ -458,7 +463,7 @@
         ```
         (We'll be going through what these tags mean very soon.)<!-- .element: class="note" -->
 
-        To create an HTML page, save it with the file extension `.html`.
+        To create an HTML file, save it with the file extension `.html`.
       </script>
     </section>
 
@@ -503,9 +508,9 @@
 
         The **images** folder contains a selection of images you can use in your project, or add your own images to this folder during the exercises.
 
-        The `index.html` file is our HTML page - we have some content there already to get you started
+        The `index.html` file is our HTML page.
 
-        The **reference** folder contains the solutions for each exercise. Try not to peek unless you're *really* stuck.
+        The **reference** folder contains the solutions for each exercise. Try not to peek unless you're really stuck.
       </script>
     </section>
 
@@ -588,8 +593,7 @@
         #The HEAD ELEMENT
 
         * includes information about the page but *does not display content*
-        * the `<title></title>` element is the only required element
-          * defines the title of the web page/document
+        * the `<title></title>` defines the title of the web page/document
           * displayed in the browser tab, bookmarks and search engine results
         * CSS, JavaScript & [metadata](https://searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags) can also be included here
         * page content *never* goes here
@@ -612,9 +616,7 @@
       <script type="text/template">
         #THE BODY ELEMENT
 
-        All content to be displayed in the browser window goes between the `<body></body>` tags.
-
-        Also known as the *viewport*.
+        All content to be displayed in the browser window (aka. the viewport) goes between the `<body></body>` tags:
 
         <pre><code>&lt;!DOCTYPE html&gt;
         &lt;html lang=&quot;en&quot;&gt;
@@ -635,7 +637,7 @@
         # Attributes
 
         * provide additional information or instructions for an element
-        * included *inside the opening HTML tag*
+        * included *inside the opening tag*
         * follows the syntax of `attribute="value"` (note the quotes)
         * many different attributes, including some that are specifically used for accessibility.
 
@@ -647,7 +649,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Attributes
+        # Attributes: examples
 
         We just saw two attributes in our basic HTML page example.
 
