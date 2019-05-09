@@ -121,9 +121,9 @@
 
         A web**site** is made up of one or more web **pages**, and files (like images and HTML documents) organized in folders.
 
-        The HTML & CSS code that we will be writing today will be read by a web browser and presented to the user.
+        The HTML & CSS code that we will be writing today will be interpreted by a web browser and presented to the user.
 
-        It's important to remember that many of us operate and experience the web in very different ways, but everyone should be able to access the same information. That's what accessibility is all about!
+        Some users operate and experience the web in very different ways than what we may be accustomed to, but everyone should be able to access the same information. That's what accessibility is all about!
       </script>
     </section>
 
@@ -136,11 +136,9 @@
 
         ## Who are we taking into consideration?
 
-        Users who are visually impaired or blind, hard of hearing or deaf, the elderly, non-Native English speakers and/or of varying literacy levels, users who are mobility impaired.
-
-        Situational disabilities (eg. sprained wrist, pupils dialated for an eye exam), slow/spotty internet/data connection, people in a hurry, people with large fingers...
+        Users who are visually impaired or blind, hard of hearing or deaf, the elderly, non-Native English speakers, users who are mobility impaired.
         
-        When we focus conscientiously on these needs, you're begin to realize we are in fact designing better websites for everybody!
+        When we focus conscientiously on these needs, you'll start to notice we are actually designing better websites for everybody!
       </script>
     </section>
 
@@ -150,9 +148,15 @@
 
         A barrier is anything that keeps someone with a disability from fully participating in all aspects of society.
 
-        **Attitude** is perhaps the most difficult barrier. Ideas form about people because of stereotypes or a lack of information. Attitude is a major barrier that's completely within our power to change!
+        **Attitude** is perhaps the most difficult barrier, but one that's completely within our power to change! Stereotypes form about people because of a lack of information.
 
-        **Architectural** or structural barriers may result from design elements of a building such as stairs or doorways. Information and communication barriers can make it difficult for people to receive or convey information. Things like small print size, low colour contrast, confusing design and use of unclear language can create barriers.
+        **Architectural** - communication barriers making it difficult to receive or convey information. Small print size, low colour contrast, confusing design and use of unclear language
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Barriers
 
         **Technology**, or lack of it, can prevent people from accessing information. Everyday tech tools can present barriers if they are not designed with accessibility in mind.
 
@@ -164,11 +168,17 @@
       <script type="text/template">
         #Canadian laws
 
-        AODA stands for **Accessibility for Ontarians with Disabilities Act**. It was enacted in 2005 by the government of Ontario to improve accessibility standards for Ontarians with physical and mental disabilities to all public sector establishments by 2025. Ontario is the first province in Canada to pass such a law.
+        AODA - **Accessibility for Ontarians with Disabilities Act**, 2005
+        Enacted by government of Ontario
 
-        Manitoba (2013), Nova Scotia (2017) and British Columbia (2018) followed suit and enacted similar legislation in their respective provinces with varrying timelines to acheive their goals.
+        * To improve accessibility standards for Ontarians with physical and mental disabilities to all public sector establishments by 2025.
 
-        The federal government introduced Bill C-81, the Accessible Canada Act, in 2018 to "identify, remove and prevent" accessibility barriers in federally regulated private sector (transportation, broadcasting, telecommunications and finance)
+        Manitoba (2013), Nova Scotia (2017) and British Columbia (2018) followed suit and enacted similar legislation in their respective provinces with varying timelines to acheive their goals.
+
+        Bill C-81: **the Accessible Canada Act**, 2018
+        Federal government
+
+        * "identify, remove and prevent" accessibility barriers in federally regulated private sector (transportation, broadcasting, telecommunications and finance)
 
         ---
         ###Resources:
@@ -185,11 +195,15 @@
       <script type="text/template">
         #How it applies to the web - WCAG
 
-        WCAG stands for **Web Content Accessibility Guidelines** and provides a set of international standards to keep the internet accessible to *everyone*, no matter what modifications they may require. These guidelines were developed by the [W3C](https://www.w3.org/WAI/standards-guidelines/w3c-process/). At this time, AODA is the only provincial act that requires compliance with WCAG.
+        WCAG - **Web Content Accessibility Guidelines**
+        * Provides a set of international standards to keep the internet accessible to *everyone*
+          * may require modification
+        * Guidelines were developed by the [W3C](https://www.w3.org/WAI/standards-guidelines/w3c-process/).
+        * AODA is the only provincial act that requires compliance with WCAG
 
-        The goal isn't "all or nothing", however — every improvement you are able to make will help the cause of accessibility!
+        The goal isn't "all or nothing" — every improvement you are able to make will help the cause
 
-        WCAG guidelines are based upon four basic principles: **perceivable, operable, understandable**, and **robust**. Let's examine each of these principles...
+        WCAG is based upon 4 principles: **perceivable, operable, understandable**, and **robust**. Let's examine each of these principles...
       </script>
     </section>
 
@@ -199,10 +213,9 @@
 
         >"Information and user interface components must be presentable to users **in ways they can perceive**"
 
-        * Any non-text content, like images, audio or video, have a text alternative
-        * Information, structure, and relationships are "programmatically determined" (using HTML)
-        * Understanding and operating content do not *rely solely* on sensory characteristics like colour, shape, size, location or sound
-          * Understanding and operating content does not rely on states such as hover or mouseover
+        * Any non-text content (images, audio or video) needs a text alternative
+        * Understanding and operating doesn't *rely solely* on sensory characteristics (colour, shape, size, location or sound)
+          * don't rely on hover or mouseover (touchscreens)
       </script>
     </section>
 
@@ -214,11 +227,9 @@
 
         Components = [tabs](https://jqueryui.com/tabs/), [accordions](https://jqueryui.com/accordion/), pop-up windows, chat windows
 
-        * Make all functionality available from a keyboard
-        * Provide users enough time to read content
-        * Any moving, blinking or scrolling information that triggers automatically includes a mechanism for the user to pause, stop, or hide it
-        * Users have the ability to pause, stop, or control functionality and auto-updating feeds
-        * Do not design content in a way that is known to cause seizures ([flash and redflash thresholds](https://www.w3.org/TR/WCAG20/#general-thresholddef))
+        * Accessible through use of a keyboard
+        * Have enough time to read before content changes
+        * The ability to pause, stop, or dismiss easily
       </script>
     </section>
 
@@ -228,12 +239,11 @@
 
         > "Make text content readable and understandable."
 
-        * The default human language of each Web page is programmatically determined (using HTML)
-        * Meaning of abbreviations/acronyms is available (also using HTML)
-        * Careful consideration when using idioms and jargon, more advanced than the lower secondary education level reading ability
-        * Labels or instructions are provided when content requires user input
-        * Error messages are described to the user in text when filling out a form
-          * They should be specific to the input, like "please provide a valid email address" as opposed to something generic like "required field"
+        * Meaning of abbreviations/acronyms is available
+        * Careful consideration when using idioms and insider jargon
+        * Labels or instructions are present and clear
+        * Error messages are descriptive and useful
+          * "please provide a valid email address" is better than "required field"
       </script>
     </section>
 
@@ -241,16 +251,16 @@
       <script type="text/template">
         #Robust
 
-        > "Maximize compatibility with **current and future** user agents, including assistive technologies."
+        > "Maximize compatibility with **current and future** *user agents*, including *assistive technologies*."
 
-        "User agents" = devices (tablets, laptops, mobile phones, smart TVs, watched)
-                      = browsers (Chrome, Internet Explorer, Firefox, Safari, mobile browsers)
-        "Assistive technologies" = screenreaders, eye or head trackers, joysticks, trackballs, on-screen keyboards, etc.
+        ## User agents
+        * devices (tablets, laptops, mobile phones, smart TVs, watched)
+        * browsers (Chrome, Internet Explorer, Firefox, Safari, mobile browsers)
 
-        This area is really concerned with valid, error-free HTML:
-        * Elements have complete start and end tags
-        * Form elements, links, components and states are programmatically determined (eg. These are tabs, and this tab is currently active)
-        [graphic of tabs]
+        ## Assistive technologies
+        * screenreaders, eye or head trackers, joysticks, trackballs, on-screen keyboards, etc.
+
+        This area is really concerned with validated, error-free HTML
       </script>
     </section>
 
@@ -258,13 +268,17 @@
       <script type="text/template">
         #Accessing websites and web pages
 
-        When we want to view a specific page on a website, we provide a *URL* to the browser.
+        When we want to view a specific page on a website, we provide a URL to the browser to determine *how* and *where* to find the files:
 
         ```xml
         https://www.canadalearningcode.ca/about/
         ```
 
-        The browser uses the URL to determine *how* and *where* to find the files that we're interested in. For example, the URL above would take us to the `about` page of the Canada Learning Code website.
+        We're going to be working on a file stored on our computer, which will look something like this:
+
+        ```xml
+        file:///C:/Users/YourName/Desktop/llc-a11y-master/project/index.html
+        ```
       </script>
     </section>
 
@@ -297,8 +311,6 @@
         #Software: Text Editor
 
         * used to write and edit code
-        * preinstalled editors (Notepad / TextEdit) don't include many features
-        * paid and free options include features such as colour highlighting and plugins for improving workflow
         * some great options: [Notepad++](http://notepad-plus-plus.org/), [Sublime Text](http://www.sublimetext.com/) (untimed free trial), [Brackets](http://brackets.io) and [TextWrangler](http://www.barebones.com/products/textwrangler/).
 
         **[Atom](https://atom.io/)** is totally free and is the editor we'll be using today.
@@ -330,13 +342,17 @@
       <script type="text/template">
         #Software: Screen Readers
 
-        Screen readers are software programs that allow blind or visually impaired users to read the text of a web page using text-to-speech or braille display. The user can sends commands using their keyboard to instruct the synthesizer to read or spell a word, read a line or full screen of text, find a string of text on the screen, announce the location of the computer's cursor or focused item, and so on. Prices range from free to $1,200.
+        Software programs that allow blind or visually impaired users to read the text of a web page
 
-        ##Should I learn how to use a screen reader?
-        
-        Most experts do not recommend that a site owner or developer try to learn how to use a screen reader - here's why!
+        * can use text-to-speech or braille display
+        * can search for a word
+        * announce the location of the computer's cursor or focused item
 
-        A sighted person will not truly be able to emulate what it is like for a visually impaired person to use a website. If you can see the screen, you will be reacting to spatial cues that are not available to visually impaired visitors. It's always best, if possible, to conduct user testing with users who actually have the disabilities you're developing for.
+        > **Should I learn how to use a screen reader?**
+        >
+        > Most experts do not recommend that a site owner or developer try to learn how to use a screen reader - here's why!
+        >
+        > We can never accurately emulate what it is like to be someone else. Where possible, conduct user testing with users who actually have the disabilities you're developing for.
       </script>
     </section>
 
@@ -344,13 +360,12 @@
       <script type="text/template">
         #Hardware: Pointer devices and keyboards
 
-        For persons with disabilities, your typical keyboard and mouse/trackpad may not be suitable. Special hardware exists to provide alternatives to a mouse or trackpad:
+        Your typical keyboard and mouse/trackpad is not suitable for everyone. Special hardware exists to provide alternatives:
 
-        * Alternative keyboards - keyboards that are designed to be used with one hand
-        * Wands and sticks - worn on the head, held in the mouth or strapped to the chin and used to press keys on the keyboard
-        * Joysticks - manipulated by hand, feet, chin, etc.
+        * keyboards that are designed to be used with one hand
+        * Wands, sticks - worn on the head, held in the mouth or strapped to the chin, manipulated by feet
         * Sip-and-puff systems - activated by inhaling or exhaling
-        * Electronic pointing devices - used to control the cursor on the screen without use of hands. They can use ultrasound, infrared beams, eye movements, nerve signals, or brain waves
+        * Electronic pointing devices - can use ultrasound, infrared beams, eye movements, nerve signals, or brain waves
       </script>
     </section>
 
@@ -358,7 +373,6 @@
       <script type="text/template">
         Potential videos:
 
-        https://www.youtube.com/watch?v=Y7_f-pR8SBY
         https://www.youtube.com/watch?v=3q3U45zjkZE
         https://www.youtube.com/watch?v=TSIABD6dU1U
       </script>
@@ -534,12 +548,11 @@
 
         ---
         ###Resources
-
-        *   [Atom documentation](https://atom.io/docs)
-        *   [Atom Shortcuts cheat sheet](https://bugsnag.com/blog/atom-editor-cheat-sheet)
-        *   [Customizing Atom](https://atom.io/docs/v0.61.0/customizing-atom)
-        *   [Themes](https://atom.io/themes) for Atom
-        *   [Snippets](https://github.com/atom/snippets) - create your own code snippet shortcuts
+        * [Atom documentation](https://atom.io/docs)
+        * [Atom Shortcuts cheat sheet](https://bugsnag.com/blog/atom-editor-cheat-sheet)
+        * [Customizing Atom](https://atom.io/docs/v0.61.0/customizing-atom)
+        * [Themes](https://atom.io/themes) for Atom
+        * [Snippets](https://github.com/atom/snippets) - create your own code snippet shortcuts
       </script>
     </section>
 
@@ -595,7 +608,7 @@
         * the `<title></title>` defines the title of the web page/document
           * displayed in the browser tab, bookmarks and search engine results
         * CSS, JavaScript & [metadata](https://searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags) can also be included here
-        * page content *never* goes here
+        * *page content doesn't goes here*
 
         <pre><code>&lt;!DOCTYPE html&gt;
         &lt;html lang=&quot;en&quot;&gt;
@@ -615,7 +628,7 @@
       <script type="text/template">
         #THE BODY ELEMENT
 
-        All content to be displayed in the browser window (aka. the viewport) goes between the `<body></body>` tags:
+        Content displayed in the browser window (aka. the viewport) goes between the `<body></body>` tags:
 
         <pre><code>&lt;!DOCTYPE html&gt;
         &lt;html lang=&quot;en&quot;&gt;
@@ -681,12 +694,7 @@
           * navigate to the **llc-a11y-master > project** folder
           * double click on **index.html** to open it in your default browser
           <br><span class="note">(If Chrome is not your default, right-click/two-finger tap on **index.html** and choose **Open With > Chrome**)</span>
-
-        Can you see where the `title` tag content is displaying?
-
-        1. Edit the content between any of the other HTML tags to customize the content on the page. Remember to save your changes in the text editor, and then refresh the page in your web browser to see the changes.
-
-        ![exercise 1 example](framework/img/workshop/exercise-1.jpg)
+        1. Edit the content between any of the other HTML tags to customize the content on the page. Remember to save your changes in the text editor, and then refresh the web browser.
       </script>
     </section>
 
@@ -702,9 +710,9 @@
 
         header <!-- .element: class="header" -->
 
-        mission <!-- .element: class="mission" -->
+        mission <!-- .element: class="about" -->
 
-        events <!-- .element: class="events" -->
+        contact <!-- .element: class="loves" -->
 
         footer <!-- .element: class="footer" -->
         </div>
@@ -716,9 +724,10 @@
       <script type="text/template">
         #HTML5 Structural Elements
 
-        HTML5 introduced new tags to better describe blocks of content such as `<header>`, `<footer>` and `<section>`. (There are many more.)
+        HTML5 introduced new tags to better describe blocks of content such as `<header>`, `<footer>` and `<section>`. There are many more.
 
-        **Good for SEO** — search engines give more importance to keywords inside headings, links, etc., than keywords included in non-semantic tags like `<div>`s, etc., so your documents will be more indexable.
+        **Good for SEO** — search engines prioritize keywords used in headings and links, than keywords included in non-semantic tags like a `<div>`, so your site is more *indexable*
+        
         **Good for screenreader users** - screenreaders read those tags out as the user progresses through the content, notifying them what is a header, footer, etc.
 
         ---
@@ -737,7 +746,8 @@
         1. Inside of the `main` tag, add two `section` tags and give each of them a unique `class` attribute. We will use these later to give each section their own styles with CSS
         1. Create a `footer` tag and add at least 1 paragraph inside of it.
 
-        Your project should now [look like this](reference/exercise-2.html)
+        <!-- .element: class="delayed" -->
+        Your page should now look similar to [exercise-2.html](project/reference/exercise-2.html).
       </script>
     </section>
 
@@ -751,35 +761,48 @@
       <script type="text/template">
         #Headings
 
-        HTML heading tags define the main subjects throughout the page. They are similar to the headlines and taglines of articles in a newspaper.
+        HTML heading tags define the main subjects throughout the page.
 
-        There are six headings tags ranging from `<h1>` to `<h6>` used to describe the *hierarchy* of the page structure. To decide which heading to use, think about how you would arrange an essay outline.
+        Heading tags range from `<h1>` to `<h6>` used to describe the *hierarchy* of the page structure. To decide which heading to use, think about how you would arrange an essay outline.
 
-        Most screenreaders allow you to skip through all headings on the page, like a table of contents, to find specific content.
+        ```xml
+        <h1>Types of Apples</h1>
+        <h2>Red varieties</h2>
+        <h3>Fuji apple</h3>
+        ```
 
-        The order of headings is important as it allows non-visual users (and search engine bots) to understand the importance and hierarchy of content on the page. Heading levels should not be skipped!
-
-        >Avoid typing in all caps! Some screen readers will read text in all caps letter by letter. If you want a heading to appear in all uppercase letters, this can be done with CSS!
+        
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #2: Heading order test
+        #Headings
 
-        Let's split up into 2 groups. We can split the room in half, or you can partner with the person beside you and each test one of these sites:
-        - site1.com
-        - site2.com
+        Most screen readers allow you to skip through all headings on the page - like a table of contents - to find specific content.
 
-        [gif of ice skaters]
+        The order of headings is important as it allows non-visual users (and search engine bots) to understand the importance and hierarchy of content on the page. Heading levels should not be skipped!
 
-        1. Go to [Web Accessibility Evaluation Tool](http://wave.webaim.org/)
-        1. Enter the URL into the address bar:
-        [screenshot]
+        >Pro-tip: Avoid typing in uppercase letters! Some screen readers will read text in all caps letter by letter. If you want a heading to *appear* in all-caps, type it as you normally would in the HTML. We can change the *style* later with CSS!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Group Exercise: Heading order test
+
+        Pair up with the person beside you. Each of you will choose 1 of these websites below:
+
+          * [ca.endy.com](https://ca.endy.com/)
+          * [goodfootdelivery.com](https://www.goodfootdelivery.com/)
+
+        1. Copy the website URL from your browser
+        1. Go to [Web Accessibility Evaluation Tool](http://wave.webaim.org/) and paste in the URL
         1. Click on the page icon to view the Heading outline:
-        [screenshot]
 
-        Compare the results between the heading outline of these two pages. Which one is better?
+        <img src="framework/img/workshop/heading-outline.jpg" style="width: 260px;">
+
+        Compare the results with your partner. Which site has a better heading hierarchy? How would you have done this differently?
       </script>
     </section>
 
@@ -787,7 +810,7 @@
       <script type="text/template">
         #Paragraphs
 
-        **Paragraphs**: whether it&#39;s one sentence or more, each paragraph needs its own pair of `<p></p>` tags.
+        **Paragraphs**: whether it&#39;s one sentence or more, each paragraph needs its own pair of `<p></p>` tags:
 
         ```xml
         <p>This is a paragraph.</p>
@@ -801,7 +824,7 @@
       <script type="text/template">
         #Paragraphs
 
-        If you need to start text on a new line, you can use the self-closing `br` tag. That means no closing `</br>` tag is necessary:
+        If you need to start text on a new line, you can use the self-closing `<br>` tag. That means no closing `</br>` tag is necessary:
 
         ```xml
         <p>129 Spadina ave<br>
@@ -809,19 +832,30 @@
         M5V 2L3</p>
         ```
 
-        Visually, the two examples below will look the same to a sighted user, but the first example doesn't clearly contextualize each paragraph. This is particularly important for users using screen readers:
+        However, we could use a different tag in this example! There is an HTML tag for `address`:
+
 
         ```xml
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <address>129 Spadina ave<br>
+        Toronto, ON<br>
+        M5V 2L3</address>
         ```
 
-        ```xml
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Paragraphs
+
+        Visually, the two examples below will look the same to a sighted user, but the first example doesn't clearly contextualize each paragraph. This is particularly important for visually impaired users:
+
+        <pre><code style="background: #b9efc5;" class="xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre>
+
+        <pre><code style="background: #f3b4b4;" class="xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre>
       </script>
     </section>
 
@@ -829,12 +863,12 @@
       <script type="text/template">
         #Tips for writing content on the web
 
-        * Text should be as simple and clear as possible. Less is more. Take into consideration non-native English/French speaking users and avoid using too much industry jargon (depending on your audience)
-        * Start each page and sub-section with the most important information. *“Don’t bury the lede”*
-        * Break up large paragraphs with bulleted or numbered lists where appropriate (HTML for this on the next slide). Lists are easier to skim then paragraphs.
-        * Avoid typing in all caps - some screen readers will uppercase rest letter by letter. If you like all caps stylistically, we can do that using CSS, but in the HTML they should be written in regular case.
+        * Text should be as simple and clear as possible. Less is more!
+        * Avoid using too much industry jargon
+        * *“Don’t bury the lede”*: Start each page and section with the most important information
+        * Lists are easier to skim then paragraphs (HTML for this on the next slide) 
         * When abbreviations are used in text, use the HTML `<abbr>` tag to provide the long form, like this:
-          * *The `<abbr title="World Health Organization">WHO</abbr>` was founded in 1948.*
+          * The `<abbr title="World Health Organization">WHO</abbr>` was founded in 1948.
       </script>
     </section>
 
@@ -842,7 +876,7 @@
       <script type="text/template">
         #Lists
 
-        **Ordered lists** are used to list items in a specific order. Two elements are required, an ordered list tag, `ol` and a list item tag, `li`:
+        **Ordered lists** are used to list items in a specific order. Two elements are required, an ordered list tag, `<ol>` and a list item tag, `<li>`:
 
         ```xml
         <p>Getting self-serve yogurt</p>
@@ -853,9 +887,14 @@
           <li>Weigh and pay</il>
         </ol>
         ```
-        With CSS, we can change this from appearing as a numbered list. We could use letters a-z, roman numerals, and more.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Lists
         
-        Use **unordered lists** for list items that do not need to be ordered sequentially. The syntax is the same as the ordered list, but use the unordered list tag `<ul>` instead:
+        Use **unordered lists** for lists that do not need to be ordered sequentially. The syntax is almost the same as the ordered list, but wrap the `<li>` tags with a `<ul>` instead:
 
         ```xml
         <ul>
@@ -864,9 +903,9 @@
           <li>bananas</li>
         </ul>
         ```
-
-        > Resources:
-        >* [CSS List styles](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)
+        ---
+        ###Resources
+        * [CSS List styles](https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type)
       </script>
     </section>
 
@@ -883,12 +922,6 @@
         ```xml
         <a href="http://ladieslearningcode.com">Ladies Learning Code</a>
         ```
-
-        To set the link to open in a new window, add a second attribute, `target`.
-        ```xml
-        <a href="http://ladieslearningcode.com" target="_blank">Ladies Learning Code</a>
-        ```
-
         Here's the syntax for an email link:
         ```xml
         <a href="mailto:hello@myemail.com">hello@myemail.com</a>
@@ -900,31 +933,54 @@
       <script type="text/template">
         #Tips for accessible hyperlinks
 
-        * Be sure the link text describes its purpose and destination. If you read the link on its own, without the paragraph surrounding it, it should be clear where the user will go. For instance, rather than writing:
-          `<a href="annual-report.pdf">Click here</a> to link to read our annual report`
+        Link text should describe its purpose and destination. If you read the link on its own, without the paragraph surrounding it, it should be clear where you will go. 
 
-          consider something like:
-          `<a href="annual-report.pdf">Read our annual report</a>.`
+        Rather than this:
+        
+        ```xml
+        <a href="files/annual-report.pdf">Click here</a> to read our annual report.
+        ```
 
-        * If a link is going to open in a new tab, the user needs to be aware of this behaviour. You can write this out in the link, or do something like this:
-          [Opens in new window example](https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html)
-    
-        >If you are linking to a PDF on a page, this text must be included somewhere on that page:
-        “You need a PDF viewer such as Adobe Acrobat Reader to read and access the information contained within PDF files. If you do not have a PDF reader, [download the free Acrobat reader](https://get.adobe.com/reader/).”
+        do this:
 
-        Resources:
-        * [Tutorial for opening link in new window example](https://www.w3.org/TR/WCAG20-TECHS/G201.html)
+        ```xml
+        <a href="files/annual-report.pdf">Read our annual report</a>.
+        ```
+        ---
+        <small>If a link is going to open in a new tab, the user needs to be aware of this behaviour
+        [Techniques: New window working examples](https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html)</small>
       </script>
     </section>
 
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Links to PDFs
+    
+        If you are linking to a PDF on a page, this text should be included somewhere on that page:
+
+        “You need a PDF viewer such as Adobe Acrobat Reader to read and access the information contained within PDF files. If you do not have a PDF reader, [download the free Acrobat reader](https://get.adobe.com/reader/).”
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise #3 Content
+
+        1. Add 2-3 paragraphs within the sections you created in the last exercise
+        1. Add the HTML list tags if applicable
+        1. Add 2-3 hyperlinks using the `<a>` tags. You can link to social media properties or an email address
+
+        ---
+        Reference [this list of HTML tags](https://www.w3schools.com/html/html5_new_elements.asp)
+
+      </script>
+    </section>
 
     <section class="slide project" data-markdown>
       <script type="text/template">
         #Paths
 
-        Even though today's project only has one page, it can include  different types of content.
-
-        Some of that content lives directly within the page itself (ie. the text), and some of it may live elsewhere (eg. in the images folder, on other websites, etc.).
+        Some of the content we see on a webpage lives directly within the page itself (ie. the text), but some of it may live elsewhere (eg. in the images folder, on another website, etc.).
 
         When we want to display some content that lives *outside* of the current page, we have to tell the browser where to find it. This information is called a `path`.
       </script>
@@ -934,7 +990,7 @@
       <script type="text/template">
         #Types of Paths
 
-        Paths allow the browser to find, retrieve, and display external resources such as images, CSS/JS files, and even other pages.
+        Paths allow the browser to find, retrieve, and display external resources such as images, CSS files, and even other web pages.
 
         There are two different types of paths:
 
@@ -1013,16 +1069,22 @@
         ##Criteria for Alt Text
 
         * Should be short and succinct 
-        * Should not include the words “image of” or “photo of” - the screenreader will indicate that this element is an image when it comes across the `img` tag. 
-          * Words like “illustration of” or “diagram of” may be helpful to some users if it provides context
+        * Should not include the words “image of” or “photo of” - the screen reader will indicate that this element is an image when it comes across the `img` tag. 
+          * Words like “illustration of” or “diagram of” can help provide context
         * If the image itself has text in it, like a logo, the `alt` text *must* include that text!
+      </script>
+    </section>
 
-        ##More tips for Accessible images
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #More tips for Accessible images
 
-        * Large images can cause your site to slow down sigificantly. Performance is a major consideration when creating a website - if your site is too slow, users are much more likely to leave
-          * Try a free service like [tinyjpg](https://tinyjpg.com/) to compress your images before you upload them to a website to decrease the file size
+        Large images can cause your site to slow down sigificantly. Performance is a major consideration when creating a website - if your site is too slow, users are much more likely to leave
+        
+        Try a free service like [tinyjpg](https://tinyjpg.com/) to compress your images before you upload them to a website to decrease the file size
 
-        >Resources:
+        ---
+        ###Resources
         * [Image Alt Text: What It Is, How to Write It, and Why It Matters](https://blog.hubspot.com/marketing/image-alt-text)
         * [Writing effective ALT text](https://www2.le.ac.uk/webcentre/plone/build/basics/add-images/alt-text)
         * [Optimize photos for web in Photoshop](https://helpx.adobe.com/photoshop-elements/using/optimizing-images-jpeg-format.html)
@@ -1031,23 +1093,29 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Exercise: Add an image
+        #Class Exercise #4: Add an image
 
-        1. You can use the existing images within the `project` folder, or images of your own. If you have images on your own site that you want to use, copy them from their location on your computer and paste them into the `images` folder
-        1. Add at least two images anywhere within your `index.html` page. Be sure to include `alt` attributes!
+        1. You can use the existing images within the `project` folder, or use images of your own. If you have images on your own site that you want to use, copy them from their current location into the `images` folder in your project. Ask a mentor if you need help!
+        1. Add at least two images anywhere within your `index.html` page. Don't forget the `alt` attribute!
+
+        ---
+        ###Resources
+        * You can crop and resize images using this free tool: [Pixlr](http://apps.pixlr.com/editor/)<br>
+        * Image Compression: [tinyjpg](https://tinyjpg.com/)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #In-class Exercise: Embed a YouTube Video
+        #Class Exercise #5 Embed a YouTube Video
 
-        1. Go to youtube.com and choose any video that you want to insert into your webpage
-        1. Click on the share icon
+        1. Go to [youtube.com](https://www.youtube.com/) and choose a video that you want to insert into your webpage
+        1. Click on the share button below the video
         1. Choose the embed option
         1. Copy the HTML code provided
-        1. In your Text editor, paste the code in your `index.html` document where you want the video to display.
+        1. In Atom, paste the code in your `index.html` file where you want the video to display.
         1. Save your changes and refresh the browser to see your video in action!
+
       </script>
     </section>
 
@@ -1058,66 +1126,32 @@
         ##Captions - nice to have
         Captions are text versions of audio content synchronized with video. They’re crucial for people who are deaf or hard of hearing, and can also be helpful for non-native English speakers. When captions are added to YouTube videos, they can be indexed by search engines, allowing more potential viewers to find your content.
 
-        Read more on [YouTube’s guide to adding your own subtitles & closed captions](https://support.google.com/youtube/answer/2734796?hl=en&ref_topic=7296214) to videos. You can also use YouTube’s automatic captioning function and make edits to them as needed.
+        >Read more on [YouTube’s guide to adding your own subtitles & closed captions](https://support.google.com/youtube/answer/2734796?hl=en&ref_topic=7296214) to videos. You can also use YouTube’s automatic captioning function and make edits to them as needed.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Is this video accessible?
 
         ##Transcript - essential
-        Text transcripts allow anyone that cannot access audio or video content to read text instead. This is required for accessibility, and helpful for users who have a slow internet connection, or are otherwise unable to watch a video at that given time. Additionally, it lets users search the text for specific words to find a quote from your video.
+        * allows anyone that cannot access audio or video content to read text instead
+        * helpful for users who have a slow internet connection, or are otherwise unable to watch a video at that time. 
+        * lets users search the text for specific words or copy a quote
 
-        The transcript should be a plain .txt file, so it is not dependent on software like Adobe Acrobat or Microsoft Word. Read more on [YouTube’s Tips for creating a transcript](https://support.google.com/youtube/answer/2734799?hl=en) to see examples of how to format dialogue and incorporate background sounds.
+        The transcript should be a plain `.txt` file, so it is not dependent on software like Adobe Acrobat or Microsoft Word.
+
+        >Read more on [YouTube’s Tips for creating a transcript](https://support.google.com/youtube/answer/2734799?hl=en) to see examples of how to format dialogue and incorporate background sounds.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Exercise #4: Video transcript (15mins)
+        #Class Exercise #6: Video transcript (15mins)
 
-        1. Create a plain text file named `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected.
-        1. Add a hyperlink in your `index.html` directly below the `iframe` code from Youtube that will open your transcript file.
-        1. Add any additional images as needed - don't forget the `alt` attributes!
-        1. Personalize more of the content if you have not done so already.
-
-        Your page should look something like this: <!-- .element: class="note" -->[exercise-4.html](project/reference/exercise-4.html)
-
-        <!-- .element: class="note" -->**Bonus exercise**
-        Square images are better for the Part 2 exercises. You can crop and resize them using this free tool, [Pixlr](http://apps.pixlr.com/editor/). Between 200px - 400px is best.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Tips for making Accessible PDFs
-
-        We've talked about accessible *web content* so far, but often we will have files that will be linked to in your site. Those files need to be accessible as well!
-
-        If a PDFs is simply scanned images of paper documents, versus PDFs generated from source files such as Microsoft Word (meaning you cannot select the text in the document), these are **wholly inaccessibile** and should be converted to a web format (HTML or text).
-
-        Please note that all of the settings on the next slide should be set when the PDF is being authored in Adobe Acrobat Pro. Some of these tools may not be available in the free Acrobat Reader.
-      </script>
-    </section>
-
-    <section class="slide title" data-markdown data-toc>
-      <script type="text/template">
-        #Making Accessible PDFs
-
-        1. **Set the document title:** Choose File > Properties > Description. Enter a title in the ‘Title’ text box. Click ‘Initial View’, and then choose ‘Document Title’ from the ‘Show’ drop-down list. Click OK to close the Description dialog box.
-        1. **Set the document language:**  Go to File > Properties > Advanced, and in the ‘Reading Options’ section select the language from the drop-down list.
-        1. Prevent **security settings** from interfering with screen readers by allowing text to be copied, printed or extracted: Go to File > Properties > Security. Choose ‘No Security’ from the ‘Security Method’ drop-down list. Click OK and close the ‘Document Properties’ dialog box.
-        1. If your document has more than 21 pages, **bookmarks** are required. Follow [Adobe’s guide to creating Bookmarks](https://helpx.adobe.com/acrobat/using/page-thumbnails-bookmarks-pdfs.html#about_bookmarks)
-        1. Ensure the document has a **high enough contrast** for users with colour blindness. Go to the Edit > Preferences, select ‘Accessibility’ in the left menu, and select the ‘Use High-Contrast colors’ option:
-        [screenshot]
-        1. Just like we do for images on the web, Alt Text must be applied to images used in PDFs. Follow the instructions in this guide depending on the software you are using to author the PDF.
-      </script>
-    </section>
-
-    <section class="slide title" data-markdown data-toc>
-      <script type="text/template">
-        #Testing PDFs
-
-        1. Once you've completed the steps on the previous slide, run an accessibility check. In the Tools tab, look for the Accessibility icon:
-        [screenshot]
-        1. Click on the dropdown arrow and ‘Add Shortcut’. You will now see an Accessibility item appear in the right menu. Click on that heading, and then select ‘Full Check’:
-        [screenshot]
-        1. In the dialogue box that appears, keep all options selected and click the ‘Start Checking’ button. A list of any issues will appear in a column on the left of the PDF. Right click on any remaining issue and select ‘Fix’ from the dropdown to resolve that issue.
+        1. Create a plain text file named `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected
+        1. Add a hyperlink in your `index.html` directly below the `iframe` code from Youtube that will open your transcript file
+        1. Personalize more of the content if you have not done so already
       </script>
     </section>
 
@@ -1231,7 +1265,7 @@ selector { /* select the link */
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise: Create your project's CSS File
+        #Class Exercise #7: Create your project's CSS File
 
         1. In the text editor, create a new CSS file by selecting **File > New File**.
         1. Name it **styles.css** and save it to the **css** folder (already included in your **project** folder).
@@ -1242,7 +1276,7 @@ selector { /* select the link */
               <link rel="stylesheet" href="css/styles.css">
           </head>
           ```
-        1. Run a test by chaning the background colour of the `body`:
+        1. Run a test by changing the background colour of the `body`:
           ```
           body {
             background: lightblue;
@@ -1279,35 +1313,54 @@ selector { /* select the link */
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Excercise 5: Contrast and color blindness
+        #Excercise: Contrast and color blindness
 
-        As pretty as a site like this is, it can be difficult to impossible for some visitors to read the content.
+        As pretty as [a site like this](https://www.findjoy.com/2019/01/30/how-much-money-can-you-actually-earn-from-a-side-hustle/) is, it can be difficult or impossible for some visitors to read the content.
 
-        We want to ensure there is enough contrast between foreground and background colours to provide sufficient legibility of text. This also applies to text over a background image, not just a solid coloured background.
+        We want to ensure there is enough contrast between foreground and background colours to provide sufficient legibility of text. This also applies to text over a background image.
 
-        It's also important to consider different types of colour blindness! Let's [try this simulator](https://www.toptal.com/designers/colorfilter) and test the Canada Learning Code website. Note that this site can be a little slow when rendering the preview.
+        Let's start with [this colour blindness simulator](https://www.toptal.com/designers/colorfilter) and test the Canada Learning Code website. (This site may be a little slow when loading the preview)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Excercise 5: Contrast
+        #In-Class Excercise: Contrast and color blindness
 
-        You can use a site like this to test if the colours you've chosen pass the necessary constrast ratio:
-        
-        [Webaim Contrast Checker](https://webaim.org/resources/contrastchecker/)
-
+        <img src="framework/img/workshop/colorblind-checker.png">
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Tips for choosing accessible color schemes
+        #In-Class Excercise: Contrast and color blindness
 
-        * Try not to use solid black or solid white - this can be hard on the eyes. Instead, opt for dark on light shades of grey, or vice-a-versa
-        * Make use of pastel colours in contrast with dark tones
+        You can use [this contrast checking tool](https://webaim.org/resources/contrastchecker/) to confirm if the colours you want to use pass the necessary constrast ratio.
 
-        > Resources
+        Let's start by testing the contrast of the colours on the website we were just looking at.
+
+        Here, the foreground (text) colour code is: `#ff483c`<br>
+        And the background colour code is: `#fed1cf`
+
+        <img src="framework/img/workshop/colour-example.png"> 
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Excercise 8: Choosing a colour palette
+
+        Choose 2 colours you want to use on your site and test them using the contrast checker.
+
+        ##Tips for choosing accessible color schemes
+
+        * Try not to use solid black or solid white - this can be hard on the eyes. Instead, opt for a dark on light shade of grey, or vice-a-versa
+        * Make use of pastel colours in contrast with darker tones
+
+        Jot down the hex codes of the colours you choose so we can use them in our CSS
+
+        ---
+        ###Resources
         * [Accessible colour palette generator](https://cloudflare.design/color/)
 
       </script>
@@ -1330,21 +1383,43 @@ text-transform: lowercase;</textarea>
           <p>Just some text to test out the above styles. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellat sunt quae fugit illum in aut sed, quis nesciunt totam veritatis, dolores alias modi fuga commodi dicta facilis, consequatur temporibus.</p>
         </div>
 
+        ---
         ###Resource
-        [Sitepoint Typographical Properties](http://reference.sitepoint.com/css/typography)
-
-        <div class="presenter-notes">
-          <p>Explain what each property does while updating each example in the code editor. Talk about the difference between using line-height with and without a measurement unit.</p>
-        </div>
+        [CSS Reference - Typography](https://cssreference.io/typography/)
       </script>
     </section>
 
-    <section class="slide nested-list" data-markdown>
+    <section class="slide" data-markdown>
       <script type="text/template">
         #Tips for accessible text styles
 
-        * Use at least a 12-point font on all Web pages [reference](https://guidelines.usability.gov/guidelines/113)
-        * Never use color alone to show emphasis - for example, hyperlinks should have some additional style (underlined) instead of just being in a different colour
+        * Use at least a 12-point font on all Web pages
+          * Adjust the `line-height` to ensure there is a good amount of spacing between lines of text. A line-height that is too small will cause text to overlap, but a line-height that is too high can also be difficult to read.
+        * Never rely on colour alone to indicate behaviour - for example, hyperlinks should be underlined
+        
+
+        ---
+        ##Resources
+        * [Font usability Guidelines](https://guidelines.usability.gov/guidelines/113)
+        * ???
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Excercise 9: Applying colours and typography
+
+        Now that you've chosen colours that satisfy our contrast requirements, let's put them to use!
+
+        1. Using the CSS `background` property, change the colour of your `body`, `section` or `footer` tags. Refer back to slide 72 for the syntax!
+        2. Using the `color` property, change the text colour. You can select all tags of a type, like `p`, `a` or `li`. Ask a mentor to select more specific text, like only paragraphs in the footer!
+        3. Change other font styles like `font-size`, `font-weight`, `text-transform` or `text-align`.
+
+        ---
+        ###Resource
+        * [CSS Reference - Typography](https://cssreference.io/typography/)
+        * [W3C Schools - CSS Fonts](https://www.w3schools.com/css/css_font.asp)
 
       </script>
     </section>
@@ -1360,7 +1435,7 @@ text-transform: lowercase;</textarea>
       <script type="text/template">
         # Class attributes
 
-        Remember adding a class attribute to the About & Loves section?
+        Remember adding a class attribute to the Mission & Contact section?
         They were added to give each section *different* styles.
 
         ```xml
@@ -1958,153 +2033,6 @@ border: 15px solid green;</textarea>
       </script>
     </section>
 
-    <section class="slide">
-      <h1>CSS Float</h1>
-
-      <p>To get block level elements to line up side by side, the stacking flow has to be <em>broken</em> first.</p>
-      <p> Use the <code>float</code> property with a value of <code>left</code> or <code>right</code> to align the element to either side. Any element after the floated element will move up beside it. Let's try it out in the example below.</p>
-
-      <textarea class="snippet" data-subject="#float">img {
-  float: ;
-}</textarea>
-      <div id="float">
-        <img src="http://placehold.it/150x150" alt="placeholder image">
-        <p style="margin-top:0;">Paragraph tag - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea id quasi iusto, ex cumque omnis iste eveniet mollitia corporis enim,</p>
-      </div>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise: Float
-
-        Add a class to the profile image so to apply the float only to this image.
-
-        ```html
-        <img class="profile-img" src="images/profile.jpg" alt="Laura Ipsum">
-        ```
-
-        Then float the image (right or left).  Also, add space between the image and text using `margin`.
-
-        ```css
-        /* ABOUT
-        -----------------------------------------*/
-        .profile-img {
-          float: right;
-          margin-left: 20px;
-        }
-        ```
-        Floating elements may have unexpected results.  See examples on the next slide.
-      </script>
-    </section>
-
-    <section class="slide side-by-side" data-markdown>
-      <script type="text/template">
-        #Floats & breaking the stacking flow
-
-        ![](framework/img/workshop/float-long-text.png)
-        ![](framework/img/workshop/float-short-text.png)
-
-        If your content is the same size or longer than the floated element (the profile image) as shown on the left,  you won't notice this problem.
-
-        Adding more content won't fix this issue though.  First, we had to break the stacking order, now we have to put it back together.
-      </script>
-    </section>
-
-    <section class="slide centered css-gif" data-markdown>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise: Reset the float
-
-        To restore the regular stacking flow *after* the floated element, it needs to be *reset*. There's a couple ways to do it. Today, let's use `overflow`.
-
-        Adding `overflow: hidden;` to the *parent* of the floated element forces it to 'contain' any floated child elements.
-
-        ```
-        <section class="about">
-          <img class="profile-img" src="images/profile.jpg" alt="Laura Ipsum">
-          ...
-        </section>
-        ```
-        ```
-        .about {
-          overflow: hidden;
-        }
-        ```
-      </script>
-    </section>
-
-    <section class="slide side-by-side" data-markdown>
-      <script type="text/template">
-        # Resetting floats
-
-        This is a concept that requires much more discussion outside of the scope for today.  For more information, check out these extra resources:
-
-        * [CSS Fundamentals: Containing Children](http://code.tutsplus.com/tutorials/css-fudamentals-containing-children--net-5664)
-        * [Clearing Floats: An Overview of Different clearfix Methods](http://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/)
-        * [Force Element To Self-Clear its Children](http://css-tricks.com/snippets/css/clear-fix/)
-      </script>
-    </section>
-
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-        #border-radius
-
-        CSS3 introduced some new properties such as `border-radius`, used to make rounded corners or perfect circles, removing the need to manipulate image files.
-
-        The value can be set using various measurement units.
-        Let's look at how we can use `px` and `%` in the examples below.
-
-        <div class="group">
-          <div class="col-2">
-            <textarea class="snippet" data-subject="#rounded">border-radius: 15px;</textarea>
-
-            <img id="rounded" src="project/reference/images/robots.jpg" alt="doughnuts" width="150">
-          </div>
-
-          <div class="col-2">
-            <textarea class="snippet" data-subject="#circle">border-radius: 50%;</textarea>
-
-            <img id="circle" src="project/reference/images/robots.jpg" alt="doughnuts" width="150">
-          </div>
-        </div>
-
-      </script>
-    </section>
-
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-        # Pseudo class & hover effects
-
-        It's common to apply a hover style to links. Use CSS *pseudo-class*, `:hover` to accomplish this.  This keyword is *attached* to a selector and specifies a *state* of the element, using a colon and **no** space.
-
-        <textarea class="snippet" data-subject="#hover">a {
-          padding: 10px;
-        }
-        a:hover {
-          border: 1px solid black;
-          background: red;
-          color: white;
-        }</textarea>
-        <a id="hover">I'm a link!</a>
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Exercise #10: Style the images (20mins)
-
-        Take some time to style your About and Loves images.
-
-        You can also use `width` or `height` on the images to make them all the same size and `margin`, `padding`, `border` to space and style the images.
-
-        If you have some text links on your page, add a hover effect.
-
-        For your reference, check out [exercise-10.html](project/reference/exercise-10.html).
-      </script>
-    </section>
-
     <section class="slide final-exercise" data-markdown>
       <script type="text/template">
         # Final exercise!
@@ -2253,19 +2181,70 @@ border: 15px solid green;</textarea>
       </script>
     </section>
 
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Stretch goals
+
+        Whoa! You either finished early or you're back for more
+
+        (Or <a href="#slide100">Skip ahead</a> to wrap up)
+
+        ![The Incredibles posing for battle.](framework/img/workshop/stretch.gif)
+
+        Let's do this
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Accessible PDFs
+
+        We've talked about accessible *web content* so far, but often we will have files other files that are linked to in our site. Those files need to be accessible too!
+
+        If a PDFs is simply scanned images of paper documents (meaning you cannot select the text in the document), these are **wholly inaccessibile** and should be converted to a text format.
+
+        Please note that all of the settings on the next slide should be set when the PDF is being authored in [Adobe Acrobat Pro](https://acrobat.adobe.com/ca/en/acrobat/acrobat-pro.html). (Some of these tools may not be available in the free Acrobat Reader.)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Making Accessible PDFs
+
+        1. **Set the document title:** Choose File > Properties > Description. Enter a title in the ‘Title’ text box. Click ‘Initial View’, and then choose ‘Document Title’ from the ‘Show’ drop-down list. Click OK to close the Description dialog box.
+        1. **Set the document language:**  Go to File > Properties > Advanced, and in the ‘Reading Options’ section select the language from the drop-down list.
+        1. Prevent **security settings** from interfering with screen readers by allowing text to be copied, printed or extracted: Go to File > Properties > Security. Choose ‘No Security’ from the ‘Security Method’ drop-down list. Click OK and close the ‘Document Properties’ dialog box.
+        1. If your document has more than 21 pages, **bookmarks** are required. Follow [Adobe’s guide to creating Bookmarks](https://helpx.adobe.com/acrobat/using/page-thumbnails-bookmarks-pdfs.html#about_bookmarks)
+        1. Ensure the document has a **high enough contrast** for users with colour blindness. Go to the Edit > Preferences, select ‘Accessibility’ in the left menu, and select the ‘Use High-Contrast colors’ option:
+        [screenshot]
+        1. Just like we do for images on the web, Alt Text must be applied to images used in PDFs. Follow the instructions in this guide depending on the software you are using to author the PDF.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Testing PDFs
+
+        1. Once you've completed the steps on the previous slide, run an accessibility check. In the Tools tab, look for the Accessibility icon:
+        [screenshot]
+        1. Click on the dropdown arrow and ‘Add Shortcut’. You will now see an Accessibility item appear in the right menu. Click on that heading, and then select ‘Full Check’:
+        [screenshot]
+        1. In the dialogue box that appears, keep all options selected and click the ‘Start Checking’ button. A list of any issues will appear in a column on the left of the PDF. Right click on any remaining issue and select ‘Fix’ from the dropdown to resolve that issue.
+      </script>
+    </section>
+
     <section class="slide" data-markdown>
       <script type="text/template">
         # Today...
 
         We learned a whole pile of things:
 
-        * Intro to HTML5
-        * CSS Selectors
-        * The Box Model
-        * Layout and spacing
-        * CSS Typography and Colours
-        * Hover effects
-        * Background images
+        * Intro to HTML
+        * Writing Accessible Content for the web
+        * Video Captions & Transcripts
+        * Intro to CSS
+        * Typography and use of colours
+        * CSS Background images
 
       </script>
     </section>
@@ -2282,10 +2261,8 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         # Next steps
 
-        Here are a couple of ideas for furthering your project.
+        Here are a couple of ideas to add onto your project:
 
-        1. use icon fonts instead of images for the social icons
-          * Try [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icon fonts
         1. add metadata to improve your site's Search Engine Optimization- [info here](https://support.google.com/webmasters/answer/79812?hl=en)
         1. [Add a favicon](http://blog.teamtreehouse.com/how-to-make-a-favicon)
       </script>

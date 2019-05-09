@@ -1,0 +1,86 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+h1, h2 {
+  font-weight: normal; /* removes default bold style */
+}
+h1 {
+  font-size: 75px;  
+}
+h2{
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+}
+h3{
+  color: black;
+}
+p{
+  font-size: 22px;
+  line-height: 1.5; /* adjusts space between the lines */
+}
+a {
+  color: #0e6c5c;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+.button{
+  background: white;
+  color: #0e6c5c;
+  font-size: 22px;
+  text-decoration: none;
+}
+.button:hover{
+  background: #0e6c5c;
+  color: white;
+}
+
+/* PAGE HEADER
+-----------------------------------------*/
+header h1 {
+  font-size: 100px;
+  font-family: 'Playfair Display', serif;
+}
+header h2 {
+  font-size: 32px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Mission
+-----------------------------------------*/
+.mission{
+  background: #d3e6dd;
+}
+
+/* Events
+-----------------------------------------*/
+.events {
+  background: #f5eeeb;
+  color: white;
+}
+.box{
+  background: rgba(255, 255, 255, 0.8);
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Contact
+-----------------------------------------*/
+address{
+  font-size: 28px;
+  font-style: normal;
+}
+
+/* Footer
+-----------------------------------------*/
+footer {
+  background: #0e6c5c;
+  color: #fff;
+}
+footer a{
+  color: #fff;
+  font-size: 16px;
+}
