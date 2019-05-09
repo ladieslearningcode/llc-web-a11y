@@ -138,11 +138,11 @@
 
         Users who are visually impaired or blind, hard of hearing or deaf, the elderly, non-Native English speakers, users who are mobility impaired.
         
-        When we focus conscientiously on these needs, you'll start to notice we are actually designing better websites for everybody!
+        When we focus consciously on these needs, you'll start to realize we are actually just creating better websites for everybody!
       </script>
     </section>
 
-     <section class="slide website-table" data-markdown>
+    <section class="slide website-table" data-markdown>
       <script type="text/template">
         #Barriers
 
@@ -150,7 +150,7 @@
 
         **Attitude** is perhaps the most difficult barrier, but one that's completely within our power to change! Stereotypes form about people because of a lack of information.
 
-        **Architectural** - communication barriers making it difficult to receive or convey information. Small print size, low colour contrast, confusing design and use of unclear language
+        **Architectural** - communication barriers make it difficult to receive or convey information. Small print size, low colour contrast, confusing design and use of unclear language
       </script>
     </section>
 
@@ -161,6 +161,18 @@
         **Technology**, or lack of it, can prevent people from accessing information. Everyday tech tools can present barriers if they are not designed with accessibility in mind.
 
         **Systemic** an organization's policies, practices and procedures that restrict people with disabilities, often unintentionally
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Shared responsibility
+
+        A website could be built by 1 person, but typically a group of people build a website or application together.
+
+        There are many roles involved: **web/UI/UX designers**, **web developers**, **engineers**, **copywriters**, **project managers**, **subject matter consultants**, **SEO experts**, **content translators**, etc.
+
+        Everyone involved in a web project has a different role to play when it comes to creating an accessible product. It's a group effort and **everyone is responsible** for ensuring the end product is compliant with any local legislation.
       </script>
     </section>
 
@@ -344,8 +356,8 @@
 
         Software programs that allow blind or visually impaired users to read the text of a web page
 
-        * can use text-to-speech or braille display
-        * can search for a word
+        * uses text-to-speech or braille display
+        * ability to search for a word or phrase
         * announce the location of the computer's cursor or focused item
 
         > **Should I learn how to use a screen reader?**
@@ -682,7 +694,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #1: Editing your project's HTML page
+        #Exercise #1: Editing your project's HTML page (15mins)
 
         1. In the text editor, open `index.html` (**File** > **Save**)
         1. In *between* the `<title></title>` tags, add a *page title* that reflects the content of your webpage. Example:
@@ -863,12 +875,29 @@
       <script type="text/template">
         #Tips for writing content on the web
 
+        Before you start writing content for your website, create a list of potential keywords that your potential user could use to search for your webpage.
+
+        * What services/products do you offer?
+        * Where do you offer them?
+        * Analyze your competition to see what wording they use
+
+        Once you have that list of words, **use those words in your content**! Search engines like Google will scrape the text content as part of its process to rank your site in search results.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Tips for writing content on the web
+
         * Text should be as simple and clear as possible. Less is more!
         * Avoid using too much industry jargon
         * *“Don’t bury the lede”*: Start each page and section with the most important information
         * Lists are easier to skim then paragraphs (HTML for this on the next slide) 
-        * When abbreviations are used in text, use the HTML `<abbr>` tag to provide the long form, like this:
-          * The `<abbr title="World Health Organization">WHO</abbr>` was founded in 1948.
+      
+        When abbreviations are used in text, use the HTML `<abbr>` tag to provide the long form: `<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>`
+
+        Will look like this: (hover over me!)
+          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>
       </script>
     </section>
 
@@ -964,10 +993,11 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #3 Content
+        #Class Exercise #3: Writing Content (20mins)
 
+        1. Brainstorm a list of keywords to inform your content. Bounce some ideas off your mentors or the people sitting around you
         1. Add 2-3 paragraphs within the sections you created in the last exercise
-        1. Add the HTML list tags if applicable
+        1. Add some lists in your content if applicable
         1. Add 2-3 hyperlinks using the `<a>` tags. You can link to social media properties or an email address
 
         ---
@@ -1044,7 +1074,7 @@
         Images use a self-closing tag. It also requires the `src` *attribute* to tell the browser the location of the image file.
 
         ```
-       <img src="images/image-file.jpg">
+        <img src="images/image-file.jpg">
 
         ```
 
@@ -1064,9 +1094,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Accessible images
-
-        ##Criteria for Alt Text
+        #Tips for writing good alt Text
 
         * Should be short and succinct 
         * Should not include the words “image of” or “photo of” - the screen reader will indicate that this element is an image when it comes across the `img` tag. 
@@ -1079,9 +1107,9 @@
       <script type="text/template">
         #More tips for Accessible images
 
-        Large images can cause your site to slow down sigificantly. Performance is a major consideration when creating a website - if your site is too slow, users are much more likely to leave
+        Large images can cause your site to slow down significantly. Performance is a major consideration when creating a website - if your site is too slow, users are much more likely to leave.
         
-        Try a free service like [tinyjpg](https://tinyjpg.com/) to compress your images before you upload them to a website to decrease the file size
+        Try a free service like [tinyjpg](https://tinyjpg.com/) to compress your images before you upload them to a website to decrease the file size.
 
         ---
         ###Resources
@@ -1093,9 +1121,9 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #4: Add an image
+        #Class Exercise #4: Add an image (10mins)
 
-        1. You can use the existing images within the `project` folder, or use images of your own. If you have images on your own site that you want to use, copy them from their current location into the `images` folder in your project. Ask a mentor if you need help!
+        1. You can use the existing images within the `project` folder, or use images of your own. If you have images on your computer that you want to use, copy them from their current location into the `images` folder in your project. Ask a mentor if you need help!
         1. Add at least two images anywhere within your `index.html` page. Don't forget the `alt` attribute!
 
         ---
@@ -1107,7 +1135,9 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #5 Embed a YouTube Video
+        #In-Class Exercise #5 Embed a YouTube Video
+
+        Video is another great medium to convey information on a webpage, but comes with its own considerations when it comes to accessibility. Let's start by placing a video on our page.
 
         1. Go to [youtube.com](https://www.youtube.com/) and choose a video that you want to insert into your webpage
         1. Click on the share button below the video
@@ -1124,9 +1154,14 @@
         #But wait - is this video accessible?
 
         ##Captions - nice to have
-        Captions are text versions of audio content synchronized with video. They’re crucial for people who are deaf or hard of hearing, and can also be helpful for non-native English speakers. When captions are added to YouTube videos, they can be indexed by search engines, allowing more potential viewers to find your content.
+        Captions are text versions of audio content synchronized with video. They’re crucial for people who are deaf or hard of hearing, and can also be helpful for non-native English speakers.
 
-        >Read more on [YouTube’s guide to adding your own subtitles & closed captions](https://support.google.com/youtube/answer/2734796?hl=en&ref_topic=7296214) to videos. You can also use YouTube’s automatic captioning function and make edits to them as needed.
+        When captions are added to YouTube videos, they can be indexed by search engines, allowing more potential viewers to find your content.
+
+        ---
+        ##Resources
+        * [YouTube’s guide to adding your own subtitles & closed captions](https://support.google.com/youtube/answer/2734796?hl=en&ref_topic=7296214) to videos
+        * You can also use [YouTube’s automatic captioning](https://support.google.com/youtube/answer/6373554?hl=en) function and make edits to them as needed
       </script>
     </section>
 
@@ -1134,14 +1169,16 @@
       <script type="text/template">
         #Is this video accessible?
 
-        ##Transcript - essential
+        ##Transcript - required
         * allows anyone that cannot access audio or video content to read text instead
         * helpful for users who have a slow internet connection, or are otherwise unable to watch a video at that time. 
         * lets users search the text for specific words or copy a quote
 
         The transcript should be a plain `.txt` file, so it is not dependent on software like Adobe Acrobat or Microsoft Word.
 
-        >Read more on [YouTube’s Tips for creating a transcript](https://support.google.com/youtube/answer/2734799?hl=en) to see examples of how to format dialogue and incorporate background sounds.
+        ---
+        ##Resources
+        * [YouTube’s Tips for creating a transcript](https://support.google.com/youtube/answer/2734799?hl=en) to see examples of how to format dialogue and incorporate background sounds
       </script>
     </section>
 
@@ -1149,9 +1186,9 @@
       <script type="text/template">
         #Class Exercise #6: Video transcript (15mins)
 
-        1. Create a plain text file named `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected
-        1. Add a hyperlink in your `index.html` directly below the `iframe` code from Youtube that will open your transcript file
-        1. Personalize more of the content if you have not done so already
+        1. Create a plain text file and name it `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected
+        1. Add a hyperlink (`a` tag) in your `index.html` directly below the `iframe` code from Youtube that links to your transcript file. (Refer to slide #59 for relative paths)
+        1. Personalize more of the content if you have extra time
       </script>
     </section>
 
@@ -1169,7 +1206,7 @@
         * different language from HTML
         * stylesheet language with its own syntax rules
         * used to separate content (HTML) from presentation (CSS)
-        * stylesheet contains a list of rules
+        * a stylesheet contains a list of rules
 
         CSS requires these symbols: curly brackets `{ }`, colon `:`, semi-colon `;`
 
@@ -1189,13 +1226,14 @@
           property: value;
         }
         ```
-        **Properties** determine the *type* of style to be applied (e.g. color). **Values** are specific to the property (red).
+        **Properties** determine the *type* of style to be applied (`color`).<br>
+        **Values** are specific to the property (`red`).
         ```
         p {
           color: red;
         }
         ```
-        >In the above example, what is the selector? Property? Value?
+        > In the above example, what is the selector? Property? Value?
       </script>
     </section>
 
@@ -1211,7 +1249,7 @@
           font-size: 50px;
         }
         ```
-        There are many, many CSS properties. New ones are added as old ones being retired (deprecated).  It's good to have a few resources on hand.
+        There are many, many CSS properties. New ones are added as old ones being retired (deprecated). No one memorizes them all! Here are some resources to have on hand:
 
         ---
         ###Resources
@@ -1317,9 +1355,9 @@ selector { /* select the link */
 
         As pretty as [a site like this](https://www.findjoy.com/2019/01/30/how-much-money-can-you-actually-earn-from-a-side-hustle/) is, it can be difficult or impossible for some visitors to read the content.
 
-        We want to ensure there is enough contrast between foreground and background colours to provide sufficient legibility of text. This also applies to text over a background image.
+        We want to ensure there is enough contrast between foreground and background colours so the text is readable. This also applies to text over a background image.
 
-        Let's start with [this colour blindness simulator](https://www.toptal.com/designers/colorfilter) and test the Canada Learning Code website. (This site may be a little slow when loading the preview)
+        Let's start with [this colour blindness simulator](https://www.toptal.com/designers/colorfilter) and test the Canada Learning Code website. (May be a little slow when loading the preview)
       </script>
     </section>
 
@@ -1362,6 +1400,7 @@ selector { /* select the link */
         ---
         ###Resources
         * [Accessible colour palette generator](https://cloudflare.design/color/)
+        * [A guide to color accessibility in product design](https://medium.com/inside-design/a-guide-to-color-accessibility-in-product-design-516e734c160c)
 
       </script>
     </section>
