@@ -29,6 +29,18 @@ a:hover {
   text-decoration: none;
 }
 
+.button{
+  background: white;
+  color: #0e6c5c;
+  font-size: 22px;
+  text-decoration: none;
+  transition-duration: 0.3s; /* to make a smooth transition - length in seconds */
+}
+.button:hover{ /* change colour on mouseover */
+  background: #0e6c5c;
+  color: white;
+}
+
 /* PAGE HEADER
 -----------------------------------------*/
 header h1 {
@@ -38,10 +50,6 @@ header h1 {
 header h2 {
   font-size: 32px;
   font-family: 'Work Sans', sans-serif;
-}
-
-section{
-  background: #d3e6dd;
 }
 
 /* Mission
