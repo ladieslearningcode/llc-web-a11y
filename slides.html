@@ -711,6 +711,9 @@
           * double click on **index.html** to open it in your default browser
           <br><span class="note">(If Chrome is not your default, right-click/two-finger tap on **index.html** and choose **Open With > Chrome**)</span>
         1. Edit the content between any of the other HTML tags to customize the content on the page. Remember to save your changes in the text editor, and then refresh the web browser.
+
+        <!-- .element: class="delayed" -->
+        Your page should look similar to [exercise-1.html](project/reference/exercise-1.html) in your **reference** folder.
       </script>
     </section>
 
@@ -1015,6 +1018,9 @@
         1. Add some lists in your content if applicable
         1. Add 2-3 hyperlinks using the `<a>` tags. You can link to social media properties or an email address
 
+        <!-- .element: class="delayed" -->
+        Your page should look similar to [exercise-3.html](project/reference/exercise-3.html) in your **reference** folder.
+
         ---
         Reference [this list of HTML tags](https://www.w3schools.com/html/html5_new_elements.asp)
 
@@ -1141,6 +1147,9 @@
         1. You can use the existing images within the `project` folder, or use images of your own. If you have images on your computer that you want to use, copy them from their current location into the `images` folder in your project. Ask a mentor if you need help!
         1. Add at least two images anywhere within your `index.html` page. Don't forget the `alt` attribute!
 
+        <!-- .element: class="delayed" -->
+        Your page should look similar to [exercise-4.html](project/reference/exercise-4.html) in your **reference** folder.
+
         ---
         ###Resources
         * You can crop and resize images using this free tool: [Pixlr](http://apps.pixlr.com/editor/)<br>
@@ -1150,7 +1159,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #In-Class Exercise #5 Embed a YouTube Video
+        #Class Exercise #5 - Embed a YouTube Video
 
         Video is another great medium to convey information on a webpage, but comes with its own considerations when it comes to accessibility. Let's start by placing a video on our page.
 
@@ -1161,6 +1170,8 @@
         1. In Atom, paste the code in your `index.html` file where you want the video to display.
         1. Save your changes and refresh the browser to see your video in action!
 
+        <!-- .element: class="delayed" -->
+        Your page should look similar to [exercise-5.html](project/reference/exercise-5.html) in your **reference** folder.
       </script>
     </section>
 
@@ -1204,6 +1215,9 @@
         1. Create a plain text file and name it `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected
         1. Add a hyperlink (`a` tag) in your `index.html` directly below the `iframe` code from Youtube that links to your transcript file. (Refer to slide #59 for relative paths)
         1. Personalize more of the content if you have extra time
+
+        <!-- .element: class="delayed" -->
+        Your page should look similar to [exercise-6.html](project/reference/exercise-6.html) in your **reference** folder.
       </script>
     </section>
 
@@ -1337,6 +1351,9 @@ selector { /* select the link */
             background: lightblue;
           }
           ```
+
+          <!-- .element: class="delayed" -->
+        Your page should look similar to [exercise-7.html](project/reference/exercise-7.html) in your **reference** folder.
       </script>
     </section>
 
@@ -1449,7 +1466,7 @@ selector { /* select the link */
       <script type="text/template">
         #CSS Font Styles
 
-        The are quite a few CSS properties for styling text.  Here's a few to discuss today. Change some values below to see what happens!
+        We use the word **typography** to describe the technique of arranging type to make it readable and appealing. The are quite a few CSS properties for styling text. Here's a few to discuss today. Change some values below to see what happens!
 
         <textarea class="snippet" data-subject="#css-type">color: slateblue;
 font-family: Helvetica, Arial, sans-serif;
@@ -1470,19 +1487,82 @@ text-transform: lowercase;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Tips for accessible text styles
+        #Tips for accessible typography
 
         * Use at least a 12-point font on all Web pages
-          * Adjust the `line-height` to ensure there is a good amount of spacing between lines of text. A line-height that is too small will cause text to overlap, but a line-height that is too high can also be difficult to read.
+          * Adjust the `line-height` to ensure there is a decent amount of space between lines of text. A `line-height` that is too small will cause text to overlap, but a line-height that is too high can be difficult to read.
         * Never rely on colour alone to indicate behaviour - for example, hyperlinks should be underlined
+<<<<<<< HEAD
           * Use `text-decoration: underline;` in your stylesheet to underline. What would you use as the selector to apply this to links?
         
+=======
+>>>>>>> 9e1dd5b2f652d88379316d19e4229dd787a0810b
 
         ---
         ##Resources
         * [Font usability Guidelines](https://guidelines.usability.gov/guidelines/113)
         * ???
 
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #font-family and Web safe fonts
+
+        When using the `font-family` property, it's best practice to list at least two or three fonts. If the user doesn't have the first font installed on their device, the next option is used instead.
+
+        ```
+        body {
+          font-family: Helvetica, Arial, sans-serif;
+        }
+        ```
+
+        Fonts that are considered *web safe* are fonts that are commonly installed on most computers.
+
+        Here's a listing of web safe fonts: [CSS Font Stack](http://cssfontstack.com/).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Web Fonts
+
+        When using webfonts, as long as the user is connected to the internet, they do not need to have the font installed in order to see it displayed on a webpage.
+
+        Services like [Google Fonts](http://www.google.com/fonts/) (free) and [Typekit](https://typekit.com/) (free & paid) make it easier to add variety, without relying on fonts the user already has installed.
+
+        We'll be using Google Fonts in today's project.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #In-Class Exercise: How to Use Google Fonts
+
+        1. Go to [Google Fonts](http://www.google.com/fonts).
+        1. Click on the **+** icon to select a font, then click on the tab below to view your and customize your selections.
+        ![](framework/img/workshop/google-fonts.png)
+        1. Choose **Customize** to select font weights. <span class="note">The more you choose, the more it will slow down page load time.</span>
+          * The LLC project uses normal 400 for all three fonts.
+          * The default character set should contain what you need.
+        1. Choose **Embed** to get the code:
+          * copy the `<link>` code snippet
+          * add it to the `<head>` of **all** your HTML pages. <span class="note">(Make sure to add the link *before* your the *styles.css* file)</span>
+          ```
+          <head>
+              ...
+              <link href='http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans|Pacifico' rel='stylesheet' type='text/css'>
+              <link rel="stylesheet" href="css/styles.css">
+          </head>
+          ```
+        1. Copy the CSS provided to you and place it within an existing selector, or create a new one.
+
+        ```
+        h1 {
+          font-family: 'Open Sans', sans-serif;
+        }
+        ```
       </script>
     </section>
 
@@ -1501,8 +1581,12 @@ text-transform: lowercase;</textarea>
         * [CSS Reference - Typography](https://cssreference.io/typography/)
         * [W3C Schools - CSS Fonts](https://www.w3schools.com/css/css_font.asp)
 
+        <!-- .element: class="delayed" -->
+        Your page should look similar to [exercise-9.html](project/reference/exercise-9.html) in your **reference** folder.
       </script>
     </section>
+
+
 
     <section class="slide title" data-markdown>
       <script type="text/template">
@@ -1574,7 +1658,7 @@ text-transform: lowercase;</textarea>
 
       <section class="slide" data-markdown>
         <script type="text/template">
-        #In-Class Exercise - Classes
+        #Class Exercise #10 - Classes
 
         Let's update our project.
 
@@ -1593,7 +1677,7 @@ text-transform: lowercase;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #In-Class Exercise - Classes
+        #Class Exercise #10 - Classes
 
         Do you still have blue links? Select the anchor tag and override the default blue.
 
@@ -1619,7 +1703,8 @@ text-transform: lowercase;</textarea>
         }
         ```
 
-        Not exactly super polished yet, but it's getting there!  Your page should look similar to [exercise-10.html](project/reference/exercise-10.html) in your **reference** folder.
+        <!-- .element: class="delayed" -->
+        Not exactly super polished yet, but we're getting there! Your page should look similar to [exercise-10.html](project/reference/exercise-10.html) in your **reference** folder.
       </script>
     </section>
 
@@ -1912,10 +1997,9 @@ border: 15px solid green;</textarea>
 
         When building a web page, it's best to start with the HTML structure, then add CSS styles from general styles to more specific styles.
 
-        But as you may have already noticed, there's no clear cut path for what to build first.  It often takes a step by step approach.
+        But as you may have already noticed, there's no single path for what you need to do first. It often takes a step by step approach.
 
         To avoid CSS specificity issues, let's go over some general advice for using the selectors covered so far.
-
       </script>
     </section>
 
@@ -1959,9 +2043,9 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #Background images
 
-        So far, we've been using `background` to add colours but it can also be used to add background *images*.
+        So far, we've been using `background` to add colours, but it can also be used to add background *images*.
 
-        There are two ways to declare the `background` property.
+        There are two ways to declare the `background` property:
 
         ```css
         /* shorthand */
@@ -1990,12 +2074,80 @@ border: 15px solid green;</textarea>
           |-- index.html
         ```
 
-        Since it&#39;s inside of the **css** folder, the file path needs to reflect that.
-        Use `../` to indicate that the directory needs to move *up* and *out* of the containing folder.
+        Since the stylesheet we're working on is inside of the **css** folder, the file path to our background image needs to reflect that.
+        Use `../` to indicate that we are moving *up* and *out* of the containing folder.
 
         ```css
         background: url(../images/image-file.jpg);
         ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Background Property
+
+        If the image is smaller than the width of your browser window, it will repeat by default. We can change that with the `no-repeat` value like this:
+
+        ```
+        body { /* longhand */
+          background-image: url(../images/kitten.jpg);
+          background-repeat: no-repeat;
+        }
+        ```
+        ```
+        body { /* shorthand */
+          background: url(../images/kitten.jpg) no-repeat;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Class Exercise #11: background
+
+        Copy and paste the code below into your CSS file, one value at a time, to see how each property works.
+
+        ```
+        body { /* longhand */
+          background-image: url('../images/profile.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        ```
+        ```
+        body { /* shorthand */
+          background: url(../images/profile.jpg) no-repeat fixed;
+          background-size: cover;
+        }
+        ```
+
+        ---
+        ###Pro tip!
+
+        Note that `background-size` is the longhand property. To include it in the shorthand style, it **must** be included after `background-position`, separated with the `/` character. In this case, it may be less error prone to just add it via the longhand property.
+
+        ###Resources
+        * [CSS Tricks: background](https://css-tricks.com/almanac/properties/b/background/)
+        * [background-size and positioning](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Opaque background Styles
+
+        The image adds some pizzazz but now it's hard to read the text!
+
+        Remember RGB colour values?  Use this instead of hex or keyword values to set an opacity to a background colour.
+
+        Most online colour resources will have all the different types of values listed, or use image editing software like Photoshop.
+
+        Or a quick online search almost always ends up with a solution like this tool right here: <http://hex.colorrrs.com>!
+
+        The LLC project uses <span style="background:#612940;padding:0 5px;color: white;">#612940</span> which coverts to `rgb(97,41,64)`.
       </script>
     </section>
 
@@ -2012,70 +2164,6 @@ border: 15px solid green;</textarea>
 
         Image source and further reading <!-- .element: class="note" --> [here](http://www.smashingmagazine.com/2009/09/15/the-z-index-css-property-a-comprehensive-look/).
         </div>
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Background Property
-
-        If the image is smaller than the width of your browser window, it will repeat by default. We can change that with the `no-repeat` value like this:
-
-        ```
-        body { /* longhand */
-          background-image: url(../images/buildings.jpg);
-          background-repeat: no-repeat;
-        }
-        ```
-        ```
-        body { /* shorthand */
-          background: url(../images/buildings.jpg) no-repeat;
-        }
-        ```
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Class Exercise #11: background
-
-        Let&#39;s add the below sample code to our project, one value at a time, to see how each property works.
-
-        ```
-        body { /* longhand */
-          background-image: url('../images/buildings.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-        }
-        ```
-        ```
-        body { /* shorthand */
-          background: url(../images/buildings.jpg) no-repeat fixed;
-          background-size: cover;
-        }
-        ```
-
-        ---
-        ###Pro tip!
-
-        Note that `background-size` is the longhand property. To include it in the shorthand style, it **must** be included after `background-position`, separated with the `/` character. In this case, it may be less error prone to just add it via the longhand property. More about background [here](https://css-tricks.com/almanac/properties/b/background/) and [here](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/).
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Opaque background Styles
-
-        The image adds some pizzazz but now it's hard to read the text!
-
-        Remember RGB colour values?  Use this instead of hex or keyword values to set an opacity to a background colour.
-
-        Most online colour resources will have all the different types of values listed, or use image editing software like Photoshop.
-
-        Or a quick online search almost always ends up with a solution like this tool right here: <http://hex.colorrrs.com>!
-
-        The LLC project uses <span style="background:#612940;padding:0 5px;color: white;">#612940</span> which coverts to `rgb(97,41,64)`.
       </script>
     </section>
 
