@@ -364,6 +364,11 @@
         > Most experts do not recommend that a site owner or developer try to learn how to use a screen reader - here's why!
         >
         > We can never accurately emulate what it is like to be someone else. Where possible, conduct user testing with users who actually have the disabilities you're developing for.
+
+
+        ---
+        ###Resources
+        * [Fable: Accessibility testing with real users](https://www.makeitfable.com/)
       </script>
     </section>
 
@@ -982,6 +987,17 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
+        #Naming Files
+
+        
+        ---
+        <small>If a link is going to open in a new tab, the user needs to be aware of this behaviour
+        [Techniques: New window working examples](https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html)</small>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         #Links to PDFs
     
         If you are linking to a PDF on a page, this text should be included somewhere on that page:
@@ -1459,6 +1475,7 @@ text-transform: lowercase;</textarea>
         * Use at least a 12-point font on all Web pages
           * Adjust the `line-height` to ensure there is a good amount of spacing between lines of text. A line-height that is too small will cause text to overlap, but a line-height that is too high can also be difficult to read.
         * Never rely on colour alone to indicate behaviour - for example, hyperlinks should be underlined
+          * Use `text-decoration: underline;` in your stylesheet to underline. What would you use as the selector to apply this to links?
         
 
         ---
@@ -1502,11 +1519,11 @@ text-transform: lowercase;</textarea>
         They were added to give each section *different* styles.
 
         ```xml
-        <section class="about">
+        <section class="mission">
           ...
         </section>
 
-        <section class="loves">
+        <section class="contact">
           ...
         </section>
         ```
@@ -1527,8 +1544,8 @@ text-transform: lowercase;</textarea>
         Class selectors are defined by leading period.
 
         ```
-        /* applies to any element with the class of about */
-        .about {
+        /* applies to any element with the class of mission */
+        .mission {
           background: red;
         }
         ```
@@ -1622,7 +1639,7 @@ text-transform: lowercase;</textarea>
 
         <img src="framework/img/workshop/box-borders-example.jpg" alt="box elements with borders" style="width: 650px">
 
-        Note the spacing between the elements on your page such as the headings and paragraphs. That's the default `margin` and `padding` for those elements.
+        Note the spacing between the elements on your page such as the headings and paragraphs. That's the default `margin` and `padding` for those elements applied by your browser.
       </script>
     </section>
 
@@ -1781,7 +1798,7 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #In-Class - Spacing
+        #In-Class Exercise - Spacing
 
         (Make sure the box model fix from the previous slide has been added to<!-- .element: class="note" --> **styles.css** before proceeding. Also, use the amount of space that looks good to you & use the examples below as a guide.)
 
