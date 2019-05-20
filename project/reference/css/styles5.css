@@ -1,17 +1,9 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-  height: 100%;
-  margin: 0px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
-}
-header,
-section,
-footer {
-    margin: 0;
-    padding: 1px; /* tweaked from 0 to 1px */
 }
 
 body {
@@ -38,20 +30,18 @@ h3{
   color: black;
 }
 p{
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.5; /* adjusts space between the lines */
   margin:0;
 }
-ul{
-  font-size: 20px;
-  line-height: 1.5;
-}
 a {
   color: #0e6c5c;
+  text-decoration: underline;
 }
 a:hover {
   text-decoration: none;
 }
+
 .button{
   background: white;
   border: 2px solid #0e6c5c;
@@ -59,43 +49,24 @@ a:hover {
   font-size: 22px;
   padding: 10px 16px;
   text-decoration: none;
-  transition-duration: 0.3s;
 }
-.button:hover{
-  background: #0e6c5c;
-  color: white;
-}
-.overlay{
-  background: rgba(255, 255, 255, 0.6);
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.text{
-  position: relative;
-  z-index: 2;
-}
-section, header {
-  padding: 140px 60px;
+header,
+section {
+  padding: 100px 150px;
 }
 
 /* PAGE HEADER
 -----------------------------------------*/
-header {
+header{
   background: url(../../images/background1.jpg) center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
   min-height: 80vh;
   margin: 0;
 }
 header h1 {
   font-size: 100px;
   font-family: 'Playfair Display', serif;
-  padding-bottom: 20px;
 }
 header h2 {
   font-size: 32px;
@@ -111,39 +82,31 @@ header h2 {
   max-width: 600px;
   margin: 20px auto 0;
 }
+
 /* Contact
 -----------------------------------------*/
-.contact {
+.contact{
   background: url(../../images/background2.jpg) center bottom no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  position: relative;
 }
 .contact img{
   width: 80px;
 }
-.contact a{
-  opacity: 0.75;
-  transition-duration: 0.3s;
-}
-.contact a:hover{
-  opacity: 1;
-}
 address{
-  display: block;
-  margin: 20px 0;
   font-size: 28px;
   font-style: normal;
+  margin: 20px 0;
 }
 
 /* Footer
 -----------------------------------------*/
 footer {
   background: #0e6c5c;
-  color: #fefefe;
+  color: #fff;
   padding: 20px 0;
 }
 footer a{
-  color: #fefefe;
+  color: #fff;
   font-size: 16px;
 }

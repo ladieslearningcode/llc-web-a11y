@@ -723,7 +723,7 @@
 
         Let's take a look at the webpage design to see how to group related elements and create a page structure:
 
-        ![final project](framework/img/workshop/final-project.jpg) <!-- .element: class="screenshot" -->
+        <img src="framework/img/workshop/final-project.jpg" alt="screenshot of final project" style="width:960px; float: left; margin-right: 15px;">
 
         <div class="labels">
 
@@ -992,20 +992,39 @@
       <script type="text/template">
         #Naming Files
 
+        * Using descriptive file names for any documents your user could potentially download (PDF, word documents, even images)
+        * A document's file name is the first thing assistive technology will recognize and read after opening the document
+
+        Which is more clear?
+
+        `l400-05-19e.pdf`
+        or
+        `CRA-fuel-charge-registration-form.pdf`
         
-        ---
-        <small>If a link is going to open in a new tab, the user needs to be aware of this behaviour
-        [Techniques: New window working examples](https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html)</small>
+        Think about looking through your downloads folder for a specific file, or searching through a list of files by keyword.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Links to PDFs
-    
-        If you are linking to a PDF on a page, this text should be included somewhere on that page:
+        #Naming Files
 
-        “You need a PDF viewer such as Adobe Acrobat Reader to read and access the information contained within PDF files. If you do not have a PDF reader, [download the free Acrobat reader](https://get.adobe.com/reader/).”
+        * Avoid using spaces in a file name. A file with this name:
+
+        `CRA fuel charge registration form.pdf`
+
+         will look like this when opened in a browser:
+
+        `CRA%20fuel%20charge%20registration%20form.pdf`
+
+        Instead, use hyphens to make it more human readable
+
+        `CRA-fuel-charge-registration-form.pdf`
+
+        ---
+        ###Resources
+        * [A complete guide to SEO friendly URLs](https://www.webalive.com.au/seo-friendly-urls/)
+        * [Moz: image file names](https://moz.com/community/q/how-important-are-image-file-names)
       </script>
     </section>
 
@@ -1443,7 +1462,7 @@ selector { /* select the link */
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Excercise 8: Choosing a colour palette
+        #Class Exercise 8: Choosing a colour palette
 
         Choose 2 colours you want to use on your site and test them using the contrast checker.
 
@@ -1452,7 +1471,7 @@ selector { /* select the link */
         * Try not to use solid black or solid white - this can be hard on the eyes. Instead, opt for a dark on light shade of grey, or vice-a-versa
         * Make use of pastel colours in contrast with darker tones
 
-        Jot down the hex codes of the colours you choose so we can use them in our CSS
+        Jot down the hex codes of the colours you choose. We'll be using them in our next exercise
 
         ---
         ###Resources
@@ -1492,11 +1511,7 @@ text-transform: lowercase;</textarea>
         * Use at least a 12-point font on all Web pages
           * Adjust the `line-height` to ensure there is a decent amount of space between lines of text. A `line-height` that is too small will cause text to overlap, but a line-height that is too high can be difficult to read.
         * Never rely on colour alone to indicate behaviour - for example, hyperlinks should be underlined
-<<<<<<< HEAD
           * Use `text-decoration: underline;` in your stylesheet to underline. What would you use as the selector to apply this to links?
-        
-=======
->>>>>>> 9e1dd5b2f652d88379316d19e4229dd787a0810b
 
         ---
         ##Resources
@@ -1568,7 +1583,7 @@ text-transform: lowercase;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Excercise 9: Applying colours and typography
+        #Class Exercise 9: Applying colours and typography
 
         Now that you've chosen colours that satisfy our contrast requirements, let's put them to use!
 
@@ -1987,6 +2002,7 @@ border: 15px solid green;</textarea>
         1. Add some padding to the `.button` selector to make room around the text and the background colour
         1. Try adding a border to the button in a different colour than the background
         
+        <!-- .element: class="delayed" -->
         Your page should now look similar to [exercise-11.html](project/reference/exercise-11.html).
       </script>
     </section>
@@ -2105,7 +2121,7 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #11: background
+        #Class Exercise #12: background
 
         Copy and paste the code below into your CSS file, one value at a time, to see how each property works.
 
@@ -2132,6 +2148,9 @@ border: 15px solid green;</textarea>
         ###Resources
         * [CSS Tricks: background](https://css-tricks.com/almanac/properties/b/background/)
         * [background-size and positioning](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/)
+
+        <!-- .element: class="delayed" -->
+        Your page should now look similar to [exercise-12.html](project/reference/exercise-12.html).
       </script>
     </section>
 
@@ -2139,51 +2158,104 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #Opaque background Styles
 
-        The image adds some pizzazz but now it's hard to read the text!
-
-        Remember RGB colour values?  Use this instead of hex or keyword values to set an opacity to a background colour.
-
-        Most online colour resources will have all the different types of values listed, or use image editing software like Photoshop.
-
-        Or a quick online search almost always ends up with a solution like this tool right here: <http://hex.colorrrs.com>!
-
-        The LLC project uses <span style="background:#612940;padding:0 5px;color: white;">#612940</span> which coverts to `rgb(97,41,64)`.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        # Background styles & the x-axis
+        The background images adds some pizzazz, but now it's a little hard to read the text!
 
         Every time an HTML element is nested, the elements are stacked in layers, kind of like a sandwich!
 
-        ![](framework/img/workshop/graphical-z-index.gif)<!-- .element: class="left" -->
-        </div>
+        ![](framework/img/workshop/css-z-index.png)
 
-        If a background image/colour is added to `body`, it will appear *behind* the nested elements (header, sections and footer).
+        Let's look at the HTML of our header:
+        
+        ```
+        <header>
+          <h1>Yoga Studio</h1>
+          <h2>Drop-in classes, workshops and retreats for all levels</h2>
+        </header>
+        ```
 
-        Image source and further reading <!-- .element: class="note" --> [here](http://www.smashingmagazine.com/2009/09/15/the-z-index-css-property-a-comprehensive-look/).
-        </div>
+        Our background image is the layer behind, and the headings are the layer infront.
+
+        We need to add a new layer in-between the text and the background, and apply a slightly transparent colour to improve the contrast. Let's break it down step-by-step.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Class Exercise #11: background
+        #in-class exercise: Background styles & the x-axis
 
-        Use `rgba()` as the value to create this effect. The values must be declared using this syntax:
+        Use `rgba()` to create a translucent background. The values must be declared using this syntax:
 
         ```css
         rgba(r value, g value, b value, alpha transparency percentage)
         ```
         ```css
-        .about {
-          background: rgba(97, 41, 64, 0.95);
-        }
+        background: rgba(97, 41, 64, 0.95);
         ```
         The closer to 1 the alpha transparency value is, the more solid the colour will appear.
+        Use [this tool](https://www.rapidtables.com/convert/color/hex-to-rgb.html) to change a #hex code to its equivalent RGB value.
       </script>
     </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #in-class exercise: Background styles & the x-axis
+
+       1. In your **index.html**, wrap the text in a `<div>` with a class of `text`.
+       2. Add a new `<div>` to act as the in-between layer with a class of `overlay`. It will look something like this:
+      
+      ```
+      <header>
+        <div class="text">
+          <h1>Yoga Studio</h1>
+          <h2>Drop-in yoga classes and retreats for all levels</h2>
+        </div>
+        <div class="overlay"></div>
+      </header>
+      ```
+
+      In your CSS, add the following lines:
+
+      ```
+      header {
+        position: relative;
+      }
+      .overlay{
+        background: rgba(255, 255, 255, 0.6); /* 60% white */
+        /* play around with the colour or percentage above */
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .text{
+        position: relative;
+        z-index: 2;
+      }
+      ```
+
+      ---
+      <small>In order to apply a `z-index`, we need to also use the CSS property `position`. This goes beyond the scope of what we can cover today, but you can read more about it here:</small>
+
+      ###Resources:
+      * [W3C: CSS layout - the position property](https://www.w3schools.com/css/css_positioning.asp)
+      * [CSS tricks: position](https://css-tricks.com/almanac/properties/p/position/)
+      * [CSS Demo: position](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #in-class exercise: Background styles & the x-axis
+
+      Can you repeat the steps in the last slide to apply this same approach to the `.contact` section? Work with the person next to you or ask a mentor for help!
+
+      ---
+      <!-- .element: class="delayed" -->
+      You can peak at the solution file [final.html](project/reference/final.html) which is referencing [final.css](project/reference/css/final.css).
+    </script>
+  </section>
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
@@ -2191,7 +2263,7 @@ border: 15px solid green;</textarea>
 
         Whoa! You either finished early or you're back for more
 
-        (Or <a href="#slide100">Skip ahead</a> to wrap up)
+        (Or <a href="#slide127">Skip ahead</a> to wrap up)
 
         ![The Incredibles posing for battle.](framework/img/workshop/stretch.gif)
 
@@ -2203,9 +2275,9 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #Accessible PDFs
 
-        We've talked about accessible *web content* so far, but often we will have files other files that are linked to in our site. Those files need to be accessible too!
+        We've talked about accessible *web content*, but often we will have other files that are linked to in our site. Those files need to be accessible too! One of the most common type of those files is a PDF.
 
-        If a PDFs is simply scanned images of paper documents (meaning you cannot select the text in the document), these are **wholly inaccessibile** and should be converted to a text format.
+        If a PDF is just a series of scanned images (meaning you cannot select the text in the document), these are **wholly inaccessibile** and should be converted to a text format.
 
         Please note that all of the settings on the next slide should be set when the PDF is being authored in [Adobe Acrobat Pro](https://acrobat.adobe.com/ca/en/acrobat/acrobat-pro.html). (Some of these tools may not be available in the free Acrobat Reader.)
       </script>
@@ -2220,7 +2292,7 @@ border: 15px solid green;</textarea>
         1. Prevent **security settings** from interfering with screen readers by allowing text to be copied, printed or extracted: Go to File > Properties > Security. Choose ‘No Security’ from the ‘Security Method’ drop-down list. Click OK and close the ‘Document Properties’ dialog box.
         1. If your document has more than 21 pages, **bookmarks** are required. Follow [Adobe’s guide to creating Bookmarks](https://helpx.adobe.com/acrobat/using/page-thumbnails-bookmarks-pdfs.html#about_bookmarks)
         1. Ensure the document has a **high enough contrast** for users with colour blindness. Go to the Edit > Preferences, select ‘Accessibility’ in the left menu, and select the ‘Use High-Contrast colors’ option:
-        [screenshot]
+        <img src="framework/img/workshop/pdf-high-contrast.jpg" alt="set high contrast setting" />
         1. Just like we do for images on the web, Alt Text must be applied to images used in PDFs. Follow the instructions in this guide depending on the software you are using to author the PDF.
       </script>
     </section>
@@ -2230,9 +2302,9 @@ border: 15px solid green;</textarea>
         #Testing PDFs
 
         1. Once you've completed the steps on the previous slide, run an accessibility check. In the Tools tab, look for the Accessibility icon:
-        [screenshot]
+        <img src="framework/img/workshop/pdf-accessibility-tool.jpg" alt="pdf accessibility tool" />
         1. Click on the dropdown arrow and ‘Add Shortcut’. You will now see an Accessibility item appear in the right menu. Click on that heading, and then select ‘Full Check’:
-        [screenshot]
+        <img src="framework/img/workshop/pdf-full-check.jpg" alt="run full accessibility check" />
         1. In the dialogue box that appears, keep all options selected and click the ‘Start Checking’ button. A list of any issues will appear in a column on the left of the PDF. Right click on any remaining issue and select ‘Fix’ from the dropdown to resolve that issue.
       </script>
     </section>
@@ -2257,35 +2329,54 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         # You did it!
 
-        ![Woman doing victory dance.](framework/img/workshop/victory-dance.gif)
+        ![Woman receiving an award with confetti](framework/img/workshop/victory.gif)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Next steps
+        #Resources: Accessibility
 
-        Here are a couple of ideas to add onto your project:
 
-        1. add metadata to improve your site's Search Engine Optimization- [info here](https://support.google.com/webmasters/answer/79812?hl=en)
-        1. [Add a favicon](http://blog.teamtreehouse.com/how-to-make-a-favicon)
+        Here are some resources to learn more about accessibility on the web:
+
+        * [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/intro/wcag)
+        * [Techniques for WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/)
+        * [Using Combined Expertise to Evaluate Web Accessibility](https://www.w3.org/WAI/eval/reviewteams)
+        * [Dos and Dont's of Accessible Design](https://medium.com/level-up-web/dos-donts-of-accessible-design-a3432da183c5)
+
+        ##Evaluation tools:
+        * [WAVE - Web accessibility evaluation tool](https://wave.webaim.org/)
+        * [SortSite: Website Error Checker: Accessibility & Link Checker](https://www.powermapper.com/products/sortsite/)
+
+        ##E-books:
+        * [A practical handbook on accessible graphic design](https://www.rgd.ca/database/files/library/RGD_AccessAbility_Handbook.pdf)
+        * [A practical handbook on accessible web design](https://www.ico-d.org/database/files/library/RGD_AccessAbility_Handbook_2015_ForWebFINAL_.pdf)
+
+        
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Resources
+      #Resources: HTML & CSS
 
-        1. Books:
-          * [HTML5 for Web Designers](https://abookapart.com/products/html5-for-web-designers) from A Book Apart series
-          * [C33S for Web Designers](https://abookapart.com/products/css3-for-web-designers) from A Book Apart series
-          * [HTML & CSS - Design and Build Websites](http://www.htmlandcssbook.com)
-        1. Online tutorials:
-          * http://learn.shayhowe.com/html-css/
-          * https://www.codeschool.com/courses/front-end-foundations
-        1. [Explore more Ladies Learning Code workshops](http://canadalearningcode.ca/learn/)!
-      </script>
+      Here are some handy resources to keep practicing HTML & CSS
+
+      ##Books:
+        * [HTML5 for Web Designers](https://abookapart.com/products/html5-for-web-designers) from A Book Apart series
+        * [C33S for Web Designers](https://abookapart.com/products/css3-for-web-designers) from A Book Apart series
+        * [HTML & CSS - Design and Build Websites](http://www.htmlandcssbook.com)
+
+      ##Online tutorials:
+        * [Shay Howe: Learn to Code HTML & CSS](http://learn.shayhowe.com/html-css/)
+        * [PluralSight: HTML Fundamentals](https://www.codeschool.com/courses/front-end-foundations)
+      
+      [Explore more Ladies Learning Code workshops](https://www.canadalearningcode.ca/learning-with-us/)!
+
+        </script>
     </section>
+
 
     <section class="slide small-type" data-markdown>
       <script type="text/template">
@@ -2294,9 +2385,7 @@ border: 15px solid green;</textarea>
       You will need to register a domain name and purchase hosting. Here are some suggestions:
 
       * [dreamhost.com](http://www.dreamhost.com/r.cgi?2085384) - domains and hosting
-      * [hover.com](http://hover.com/ladiescode) - domains
-
-      Why keep your domains and hosting separate?<!-- .element: class="note" --> [Learn more about Hover](http://ladieslearningcode.com/getting-hosted-domains-with-hover/).
+      * [hover.com](http://hover.com) - domains
 
       You will also need to upload your files to your hosting server. You will need some info usually provided by your hosting service provider: FTP Address, Username, Password.
 
@@ -2308,18 +2397,18 @@ border: 15px solid green;</textarea>
     <section class="slide last">
       <h1>Thank you!</h1>
       <h2 class="heading-bg">
-        <span>Intro to HTML & CSS:<br>Building a one-page website</span>
+        <span>Intro to Accessibility:<br>Building a one-page website</span>
       </h2>
 
-      <!-- <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
-      <h2><span class="cursive">with</span> Instructor Name</h2>
+      <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
+      <h2><span>with</span> Instructor Name</h2>
       <ul>
         <li><a href="mailto:">hello@email.com</a></li>
         <li><a href="#">mywebsite.com</a></li>
         <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul> -->
+      </ul>
 
-      <p class="attribution">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+      <p class="attribution">Slide presentation created by Stacie DaPonte based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
     </section>
 
   </main><!-- cls main section -->
