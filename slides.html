@@ -21,7 +21,7 @@
 <body class="en" data-duration="360">
   <main>
     <section class="slide welcome highlight">
-      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome! (Testing content - in development)</h1>
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
 
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
@@ -32,7 +32,7 @@
 
         <h2>Download<br> & Install</h2>
         <ol class="downloads">
-          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-html-css-one-page/archive/master.zip">http://bit.ly/llc-onepage</a>
+          <li>Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-html-css-one-page/archive/master.zip">http://bit.ly/llc-a11y</a>
             <ul>
               <li>unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
               <li>open <em>slides.html</em> in the browser to view the slides</li>
@@ -44,6 +44,8 @@
             </ul>
           </li>
           <li>Chrome Browser: <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          </li>
+          <li>Screen Reader: <a href="https://www.nvaccess.org/download/">NVDA</a> - If you're using Windows</li>
           </li>
         </ol>
       </div>
@@ -135,7 +137,9 @@
 
         ## Who are we taking into consideration?
 
-        Users who are visually impaired or blind, hard of hearing or deaf, the elderly, non-Native English speakers, users who are mobility impaired.
+        Person who is visually impaired or blind, hard-of-hearing or deaf, the elderly, non-Native English speakers, users who have a mobility or physical disability.
+
+        This also affects those with temporary or situational disabilities, like a sprained wrist or dilated pupils for an eye exam.
         
         When we focus consciously on these needs, you'll start to realize we are actually just creating better websites for everybody!
       </script>
@@ -163,6 +167,14 @@
       </script>
     </section>
 
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Ice Breaker
+
+        ##Can you share an accessibility barrier you or someone you know has faced?
+      </script>
+    </section>
+
     <section class="slide website-table" data-markdown>
       <script type="text/template">
         #Shared responsibility
@@ -177,6 +189,25 @@
 
     <section class="slide website-table" data-markdown>
       <script type="text/template">
+        #Plan ahead of time
+
+        Ideally, before a web project begins, accessibility is taken into account during the initial planning phases.
+
+        Imagine building an entire home, and finding out once the home is built that the hallways are not wide enough to accommodate an adult sized wheelchair. Now, it will be much more costly to rip apart what you've already built, when you could have made those measurements before-hand. The same is true for products built on code. **Accessibility as an after-thought becomes costly and time consuming**.
+
+        That being said, an already existing site can be improved upon. This is where accessibility checker tools come in handy. You can assess an existing site to identify problems, and come up with a plan on how to fix them.
+
+        ---
+        ###Testing resources
+        * [Siteimprove Accessibility Checker (Chrome extension)](https://siteimprove.com/en-ca/core-platform/integrations/browser-extensions/)
+        * [AChecker](https://achecker.ca/checker/index.php)
+      </script>
+    </section>
+
+    
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
         #Canadian laws
 
         AODA - **Accessibility for Ontarians with Disabilities Act**, 2005
@@ -184,7 +215,7 @@
 
         * To improve accessibility standards for Ontarians with physical and mental disabilities to all public sector establishments by 2025.
 
-        Manitoba (2013), Nova Scotia (2017) and British Columbia (2018) followed suit and enacted similar legislation in their respective provinces with varying timelines to acheive their goals.
+        Manitoba (2013), Nova Scotia (2017) and British Columbia (2018) followed suit and enacted similar legislation in their respective provinces with varying time lines to achieve their goals.
 
         Bill C-81: **the Accessible Canada Act**, 2018
         Federal government
@@ -208,13 +239,17 @@
 
         WCAG - **Web Content Accessibility Guidelines**
         * Provides a set of international standards to keep the internet accessible to *everyone*
-          * may require modification
+          * there are different levels - A, AA, or AAA
         * Guidelines were developed by the [W3C](https://www.w3.org/WAI/standards-guidelines/w3c-process/).
         * AODA is the only provincial act that requires compliance with WCAG
 
         The goal isn't "all or nothing" — every improvement you are able to make will help the cause
 
         WCAG is based upon 4 principles: **perceivable, operable, understandable**, and **robust**. Let's examine each of these principles...
+
+        ---
+        ###Resources
+        * [WCAG - Level A, AA and AAA](https://www.linkedin.com/pulse/why-wcag-made-3-level-aa-aaa-different-levels-grade-website-arun-al/)
       </script>
     </section>
 
@@ -226,7 +261,7 @@
 
         * Any non-text content (images, audio or video) needs a text alternative
         * Understanding and operating doesn't *rely solely* on sensory characteristics (colour, shape, size, location or sound)
-          * don't rely on hover or mouseover (touchscreens)
+          * don't rely on hover or mouse-over (touch screens)
       </script>
     </section>
 
@@ -269,7 +304,7 @@
         * browsers (Chrome, Internet Explorer, Firefox, Safari, mobile browsers)
 
         ## Assistive technologies
-        * screenreaders, eye or head trackers, joysticks, trackballs, on-screen keyboards, etc.
+        * screen readers, eye or head trackers, joysticks, trackballs, on-screen keyboards, etc.
 
         This area is really concerned with validated, error-free HTML
       </script>
@@ -326,6 +361,7 @@
 
         **[Atom](https://atom.io/)** is totally free and is the editor we'll be using today.
         <span class="note">(If you have another editor installed, it will work as well but some features may be different.)</span>
+          * Chromebook users can use [Caret](https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en) - it will do the same thing, but will look different than Atom. You may require some help here or there from a mentor
 
         ---
         ###Pro tip!
@@ -353,22 +389,18 @@
       <script type="text/template">
         #Software: Screen Readers
 
-        Software programs that allow blind or visually impaired users to read the text of a web page
+        Software programs that allow users who are blind or visually impaired to read the text of a web page
 
         * uses text-to-speech or braille display
         * ability to search for a word or phrase
         * announce the location of the computer's cursor or focused item
 
-        > **Should I learn how to use a screen reader?**
-        >
-        > Most experts do not recommend that a site owner or developer try to learn how to use a screen reader - here's why!
-        >
-        > We can never accurately emulate what it is like to be someone else. Where possible, conduct user testing with users who actually have the disabilities you're developing for.
-
-
         ---
-        ###Resources
-        * [Fable: Accessibility testing with real users](https://www.makeitfable.com/)
+        ###Free screen readers
+        * Built-in on a Mac: [VoiceOver](https://www.apple.com/accessibility/mac/vision/)
+        * Built-in on a Chromebook: [ChromeVox](https://support.google.com/chromebook/answer/177893?hl=en)
+        * [NVDA - Screen reader for Windows](https://www.nvaccess.org/download/)
+        * [Jaws for Windows](https://support.freedomscientific.com/Downloads/JAWS)
       </script>
     </section>
 
@@ -376,7 +408,9 @@
       <script type="text/template">
         #Hardware: Pointer devices and keyboards
 
-        Your typical keyboard and mouse/trackpad is not suitable for everyone. Special hardware exists to provide alternatives:
+        <img src="framework/img/workshop/focus-2.gif" alt="keyboard focusing on elements" style="width: 550px; float: right;" />
+
+        Your typical keyboard and mouse/track-pad is not suitable for everyone. Special hardware exists to provide alternatives:
 
         * keyboards that are designed to be used with one hand
         * Wands, sticks - worn on the head, held in the mouth or strapped to the chin, manipulated by feet
@@ -387,10 +421,95 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        Potential videos:
+        #Hardware: Sip & Puff systems
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TSIABD6dU1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        https://www.youtube.com/watch?v=3q3U45zjkZE
-        https://www.youtube.com/watch?v=TSIABD6dU1U
+        <small>This video was made by Giesbert Nijhuis using his HeadMouse extreme ([Origin Instruments](http://www.orin.com/access/headmouse/)) controller and KeyStrokes ([AssistiveWare](http://www.assistiveware.com)). The 3D software he's using is called Cheetah3D and he made the music using GarageBand.</small>
+
+        <small>"I am almost completely paralyzed, can only move my head, because of a Spinal Cord Injury (SCI C3/4)."</small>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Demo - Using a Screen Reader
+
+        Walking through your site with a screen reader can help you identify barriers and indicate where pitfalls may exist.
+
+        > It's important to remember that we can never fully emulate what it is like to experience the web in the same way a user with a visual impairment would. You may find using the screen reader difficult, intimidating and frustrating, especially if the site you are testing is not built with accessibility in mind. 
+
+        ---
+        ###Resources
+        <small>Wherever possible, it's a great idea to conduct user testing with users who actually have the disabilities you're developing for.</small>
+
+        * <small>[Fable: Accessibility testing with real users](https://www.makeitfable.com/)</small>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #In-class exercise - Using a screen reader
+
+        1. In the learner files, open the `demo-site` folder and open the `index.html` page. Scan the site as you normally would - try to clicking on some links and navigate the menu.
+        2. Check the volume on your laptop. Turn it up just loud enough for you to hear it
+        3. Start up your screen reader and use the commands on the next slide to try and navigate the website using only your keyboard. You can continue to look at your monitor, or try looking away from your monitor to focus on what is being read to you.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #In-class exercise - Screen reader commands
+
+        <table>
+          <tr>
+            <th>**Screen reader**</th>
+            <th>**Start up**</th>
+            <th>**Shut down**</th>
+          </tr>
+
+          <tr>
+            <td>VoiceOver (Mac)</td>
+            
+            <td>`Cmd` + `F5`</td>
+            
+            <td>`Cmd` + `F5`</td>
+          </tr>
+
+          <tr>
+            <td>NVDA (Windows)</td>
+            
+            <td>`Ctrl` + `Alt` + `n`<br>
+            or use the Desktop shortcut</td>
+            
+            <td>`Insert` + `q`<br>
+            or the Taskbar menu<br>
+            right click, exit</td>
+          </tr>
+        </table>
+
+        * Use `Ctrl` to pause voice over
+        * Use up and down arrow keys to read the previous or next line
+        * `Tab` jump to the next link, `Shift` + `Tab` jump to the last link
+        * `Enter` to 'click' on the selected link
+      </script>
+    </section>
+
+    
+
+    <section class="slide " data-markdown>
+      <script type="text/template">
+        #Screen reader debrief
+
+       
+        What features did you find useful?<!-- .element: class="delayed" -->
+
+        What did you find difficult to use?<!-- .element: class="delayed" -->
+        
+        What did you discover that you had not thought about or experienced yourself before?<!-- .element: class="delayed" -->
+
+        
       </script>
     </section>
 
@@ -421,7 +540,7 @@
         <tag> opening tag --- closing tag </tag>
         ```
 
-        HTML *tags* describe the content inside of them to the web browser or assitive technologies.
+        HTML *tags* describe the content inside of them to the web browser or assistive technologies.
         ```
         <h1>This tag describes a heading</h1>
         <p>This tag is for paragraphs.</p>
@@ -437,7 +556,7 @@
 
         ```
         <outertag>outer content <innertag>inner content</innertag> outer content</outertag>
-        ```
+        ````
 
         Nested tags create a family tree-like relationship, often referred to as *parent* and *child* nodes.
 
@@ -503,7 +622,7 @@
       Inside of the folder you downloaded today, open the **project** folder in your text editor to edit your project.
 
       ```html
-      llc-html-css-one-page-master
+      llc-a11y-master
         |-- framework // Contains files needed for slide presentation. Do not edit!
         |-- project // Contains the exercise files for this workshop. (images, CSS & HTML files)
         |-- slides.html // This is the file you are viewing right now!
@@ -515,7 +634,7 @@
 
       Then:
 
-      * navigate to the **llc-html-css-one-page-master** folder
+      * navigate to the **llc-a11y-master** folder
       * select **project**
       * click **Open**
 
@@ -747,7 +866,7 @@
 
         **Good for SEO** — search engines prioritize keywords used in headings and links, than keywords included in non-semantic tags like a `<div>`, so your site is more *indexable*
         
-        **Good for screenreader users** - screenreaders read those tags out as the user progresses through the content, notifying them what is a header, footer, etc.
+        **Good for  reader users** - screen readers read those tags out as the user progresses through the content, notifying them what is a header, footer, etc.
 
         ---
         ###Resources
@@ -867,7 +986,7 @@
       <script type="text/template">
         #Paragraphs
 
-        Visually, the two examples below will look the same to a sighted user, but the first example doesn't clearly contextualize each paragraph. This is particularly important for visually impaired users:
+        Visually, the two examples below will look the same to a sighted user, but the first example doesn't clearly contextualize each paragraph. This is particularly important for users who have visually impairments:
 
         <pre><code style="background: #b9efc5;" class="xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre>
@@ -1118,7 +1237,7 @@
 
         ```
 
-        `alt` is another attribute that is added to images to provide *alternative text* to visually impaired web visitors using screen readers.
+        `alt` is another attribute that is added to images to provide *alternative text* which is ready by screen readers.
 
         ```
         <img src="images/image-file.jpg" alt="kitten">
@@ -1140,6 +1259,13 @@
         * Should not include the words “image of” or “photo of” - the screen reader will indicate that this element is an image when it comes across the `img` tag. 
           * Words like “illustration of” or “diagram of” can help provide context
         * If the image itself has text in it, like a logo, the `alt` text *must* include that text!
+
+        If the image is simply decorative but serves no practical value, you can leave the `alt` attribute empty. To comply with WCAG standards, the `alt` attribute **must** be present, but if it is left empty, the screen reader will ignore it.
+
+        ```
+        <img src="images/decorative.jpg" alt="">
+
+        ```
       </script>
     </section>
 
@@ -1153,9 +1279,9 @@
 
         ---
         ###Resources
+        * [Making Images Accessible - U of Washington](https://www.washington.edu/accessibility/checklist/images/)
         * [Image Alt Text: What It Is, How to Write It, and Why It Matters](https://blog.hubspot.com/marketing/image-alt-text)
         * [Writing effective ALT text](https://www2.le.ac.uk/webcentre/plone/build/basics/add-images/alt-text)
-        * [Optimize photos for web in Photoshop](https://helpx.adobe.com/photoshop-elements/using/optimizing-images-jpeg-format.html)
       </script>
     </section>
 
@@ -1198,7 +1324,7 @@
       <script type="text/template">
         #But wait - is this video accessible?
 
-        ##Captions - nice to have
+        ##Captions
         Captions are text versions of audio content synchronized with video. They’re crucial for people who are deaf or hard of hearing, and can also be helpful for non-native English speakers.
 
         When captions are added to YouTube videos, they can be indexed by search engines, allowing more potential viewers to find your content.
@@ -1214,7 +1340,7 @@
       <script type="text/template">
         #Is this video accessible?
 
-        ##Transcript - required
+        ##Transcript
         * allows anyone that cannot access audio or video content to read text instead
         * helpful for users who have a slow internet connection, or are otherwise unable to watch a video at that time. 
         * lets users search the text for specific words or copy a quote
@@ -1439,7 +1565,7 @@ selector { /* select the link */
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #In-Class Excercise: Contrast and color blindness
+        #In-Class Exercise: Contrast and color blindness
 
         <img src="framework/img/workshop/colorblind-checker.png">
       </script>
@@ -1447,7 +1573,7 @@ selector { /* select the link */
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #In-Class Excercise: Contrast and color blindness
+        #In-Class Exercise: Contrast and color blindness
 
         You can use [this contrast checking tool](https://webaim.org/resources/contrastchecker/) to confirm if the colours you want to use pass the necessary constrast ratio to meet WCAG standards.
 
@@ -1476,6 +1602,7 @@ selector { /* select the link */
         ---
         ###Resources
         * [Accessible colour palette generator](https://cloudflare.design/color/)
+        * [Contrast Finder](http://contrast-finder.tanaguru.com/)
         * [A guide to color accessibility in product design](https://medium.com/inside-design/a-guide-to-color-accessibility-in-product-design-516e734c160c)
 
       </script>
@@ -1490,7 +1617,7 @@ selector { /* select the link */
         <textarea class="snippet" data-subject="#css-type">color: slateblue;
 font-family: Helvetica, Arial, sans-serif;
 font-weight: normal;
-font-size: 16px;
+font-size: 2rem;
 line-height: 1.25;
 text-transform: lowercase;</textarea>
 
@@ -1506,6 +1633,27 @@ text-transform: lowercase;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
+        #What is `rem` and `em`?
+
+        `rem` or `em` are units of measure, like `px` or `%`. The default `font-size` applied by the browser is 16 pixels, which means the two lines below will have the same result:
+
+        ```
+        font-size: 1rem;
+        font-size: 16px;
+        ```
+
+        Relative units are quite useful — you can size your HTML elements relative to your font or viewport size, so that the layout will still look correct if, for example, the text size is doubled across the whole website by a visually impaired user.
+
+        ---
+        ###Resource
+        * [Introduction to CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
+        * [Font sizing with rem](https://snook.ca/archives/html_and_css/font-size-with-rem)
+        * [Fluid typography](https://www.smashingmagazine.com/2016/05/fluid-typography/)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         #Tips for accessible typography
 
         * Use at least a 12-point font on all Web pages
@@ -1516,7 +1664,7 @@ text-transform: lowercase;</textarea>
         ---
         ##Resources
         * [Font usability Guidelines](https://guidelines.usability.gov/guidelines/113)
-        * ???
+        * TedX Talks: [How a font can help people with dyslexia to read by Christian Boer](https://www.youtube.com/watch?v=qVaeGOflF7w)
 
       </script>
     </section>
@@ -1548,6 +1696,10 @@ text-transform: lowercase;</textarea>
         Services like [Google Fonts](http://www.google.com/fonts/) (free) and [Typekit](https://typekit.com/) (free & paid) make it easier to add variety, without relying on fonts the user already has installed.
 
         We'll be using Google Fonts in today's project.
+
+        ---
+        ##Resources
+        * [Awwwards: Top recommended Google Web Fonts](https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html) "takes into account essential aspects of web and mobile typography, such as legibility and readability, and of course accessibility"
       </script>
     </section>
 
@@ -2049,9 +2201,17 @@ border: 15px solid green;</textarea>
       </script>
     </section>
 
-    <section class="slide final-exercise" data-markdown>
+    <section class="slide centered" data-markdown>
       <script type="text/template">
-        # Final exercise!
+        #Stretch goals
+
+        Whoa! You either finished early or you're back for more
+
+        (Or <a href="#slide127">Skip ahead</a> to wrap up)
+
+        ![The Incredibles posing for battle.](framework/img/workshop/stretch.gif)
+
+        Let's do this
       </script>
     </section>
 
@@ -2181,7 +2341,7 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #in-class exercise: Background styles & the x-axis
+        #in-class exercise: Background styles & the z-axis
 
         Use `rgba()` to create a translucent background. The values must be declared using this syntax:
 
@@ -2198,7 +2358,7 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #in-class exercise: Background styles & the x-axis
+      #in-class exercise: Background styles & the z-axis
 
        1. In your **index.html**, wrap the text in a `<div>` with a class of `text`.
        2. Add a new `<div>` to act as the in-between layer with a class of `overlay`. It will look something like this:
@@ -2247,7 +2407,7 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #in-class exercise: Background styles & the x-axis
+      #in-class exercise: Background styles & the z-axis
 
       Can you repeat the steps in the last slide to apply this same approach to the `.contact` section? Work with the person next to you or ask a mentor for help!
 
@@ -2256,58 +2416,6 @@ border: 15px solid green;</textarea>
       You can peak at the solution file [final.html](project/reference/final.html) which is referencing [final.css](project/reference/css/final.css).
     </script>
   </section>
-
-    <section class="slide centered" data-markdown>
-      <script type="text/template">
-        #Stretch goals
-
-        Whoa! You either finished early or you're back for more
-
-        (Or <a href="#slide127">Skip ahead</a> to wrap up)
-
-        ![The Incredibles posing for battle.](framework/img/workshop/stretch.gif)
-
-        Let's do this
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Accessible PDFs
-
-        We've talked about accessible *web content*, but often we will have other files that are linked to in our site. Those files need to be accessible too! One of the most common type of those files is a PDF.
-
-        If a PDF is just a series of scanned images (meaning you cannot select the text in the document), these are **wholly inaccessibile** and should be converted to a text format.
-
-        Please note that all of the settings on the next slide should be set when the PDF is being authored in [Adobe Acrobat Pro](https://acrobat.adobe.com/ca/en/acrobat/acrobat-pro.html). (Some of these tools may not be available in the free Acrobat Reader.)
-      </script>
-    </section>
-
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-        #Making Accessible PDFs
-
-        1. **Set the document title:** Choose File > Properties > Description. Enter a title in the ‘Title’ text box. Click ‘Initial View’, and then choose ‘Document Title’ from the ‘Show’ drop-down list. Click OK to close the Description dialog box.
-        1. **Set the document language:**  Go to File > Properties > Advanced, and in the ‘Reading Options’ section select the language from the drop-down list.
-        1. Prevent **security settings** from interfering with screen readers by allowing text to be copied, printed or extracted: Go to File > Properties > Security. Choose ‘No Security’ from the ‘Security Method’ drop-down list. Click OK and close the ‘Document Properties’ dialog box.
-        1. If your document has more than 21 pages, **bookmarks** are required. Follow [Adobe’s guide to creating Bookmarks](https://helpx.adobe.com/acrobat/using/page-thumbnails-bookmarks-pdfs.html#about_bookmarks)
-        1. Ensure the document has a **high enough contrast** for users with colour blindness. Go to the Edit > Preferences, select ‘Accessibility’ in the left menu, and select the ‘Use High-Contrast colors’ option:
-        <img src="framework/img/workshop/pdf-high-contrast.jpg" alt="set high contrast setting" />
-        1. Just like we do for images on the web, Alt Text must be applied to images used in PDFs. Follow the instructions in this guide depending on the software you are using to author the PDF.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-        #Testing PDFs
-
-        1. Once you've completed the steps on the previous slide, run an accessibility check. In the Tools tab, look for the Accessibility icon:
-        <img src="framework/img/workshop/pdf-accessibility-tool.jpg" alt="pdf accessibility tool" />
-        1. Click on the dropdown arrow and ‘Add Shortcut’. You will now see an Accessibility item appear in the right menu. Click on that heading, and then select ‘Full Check’:
-        <img src="framework/img/workshop/pdf-full-check.jpg" alt="run full accessibility check" />
-        1. In the dialogue box that appears, keep all options selected and click the ‘Start Checking’ button. A list of any issues will appear in a column on the left of the PDF. Right click on any remaining issue and select ‘Fix’ from the dropdown to resolve that issue.
-      </script>
-    </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -2335,23 +2443,44 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
+        #Be an advocate for accessibility
+
+        Legal Argument: UN Convention on the rights of people with disabilities. Access to communications and technology is a basic human right.
+
+        Technical Argument: By creating accessible websites, you're building upon a responsive, adaptive platform that can serve you well in other areas.
+
+        Market Argument: The market of people with disabilities is huge, and growing as the population ages. People with disabilities have a trillion dollar income, with 200b in discretionary income.
+
+        Humanitarian Argument: You can reach brilliant, innovative users who would not be supported or realize their potential otherwise.
+
+        ---
+        ##Source:
+        * [AddThis Academy](https://www.addthis.com/academy/making-websites-accessible-to-people-with-disabilities/)
+        </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
         #Resources: Accessibility
 
 
         Here are some resources to learn more about accessibility on the web:
 
-        * [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/intro/wcag)
-        * [Techniques for WCAG 2.1](https://www.w3.org/WAI/WCAG21/Techniques/)
-        * [Using Combined Expertise to Evaluate Web Accessibility](https://www.w3.org/WAI/eval/reviewteams)
-        * [Dos and Dont's of Accessible Design](https://medium.com/level-up-web/dos-donts-of-accessible-design-a3432da183c5)
+        * [Create, verify PDF Accessibility](https://helpx.adobe.com/ca/acrobat/using/create-verify-pdf-accessibility.html)
+        * [Accessible Forms](https://www.w3.org/WAI/tutorials/forms/)
 
         ##Evaluation tools:
         * [WAVE - Web accessibility evaluation tool](https://wave.webaim.org/)
-        * [SortSite: Website Error Checker: Accessibility & Link Checker](https://www.powermapper.com/products/sortsite/)
+          * Also available as a Chrome extension!
+        * [AChecker](https://achecker.ca/checker/index.php)
+        * [SortSite: Website Error Checker: Free and Paid versions](https://www.powermapper.com/products/sortsite/)
+        
 
         ##E-books:
         * [A practical handbook on accessible graphic design](https://www.rgd.ca/database/files/library/RGD_AccessAbility_Handbook.pdf)
         * [A practical handbook on accessible web design](https://www.ico-d.org/database/files/library/RGD_AccessAbility_Handbook_2015_ForWebFINAL_.pdf)
+          * [Version 2](https://www.rgd.ca/resources/accessibility/access) was just released on June 6, 2019!
 
         
       </script>
@@ -2375,22 +2504,6 @@ border: 15px solid green;</textarea>
       [Explore more Ladies Learning Code workshops](https://www.canadalearningcode.ca/learning-with-us/)!
 
         </script>
-    </section>
-
-
-    <section class="slide small-type" data-markdown>
-      <script type="text/template">
-      #Getting your site online
-
-      You will need to register a domain name and purchase hosting. Here are some suggestions:
-
-      * [dreamhost.com](http://www.dreamhost.com/r.cgi?2085384) - domains and hosting
-      * [hover.com](http://hover.com) - domains
-
-      You will also need to upload your files to your hosting server. You will need some info usually provided by your hosting service provider: FTP Address, Username, Password.
-
-      Here's a tutorial getting your files online using FileZilla: [FileZilla Client Tutorial](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_%28en%29)
-      </script>
     </section>
 
     <!-- Last slide -->
