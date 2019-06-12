@@ -124,7 +124,7 @@
 
         The HTML & CSS code that we will be writing today will be interpreted by a web browser and presented to the user.
 
-        Some users operate and experience the web in very different ways than what we may be accustomed to, but everyone should be able to access the same information. That's what accessibility is all about!
+        Some people operate and experience the web in very different ways, but everyone deserves ewual access the same information. That's what accessibility is all about!
       </script>
     </section>
 
@@ -132,12 +132,12 @@
       <script type="text/template">
         #What exactly *is* accessibility?
 
-        You may see the acronym **a11y** used to describe accessibility<br>
+        You may have noticed the numeronym **a11y** used to describe accessibility<br>
         (a + 11 letters + y)
 
         ## Who are we taking into consideration?
 
-        Person who is visually impaired or blind, hard-of-hearing or deaf, the elderly, non-Native English speakers, users who have a mobility or physical disability.
+        Person who are visually impaired or blind, hard-of-hearing or Deaf, the elderly, non-Native English speakers, users who have a cognitive disabilities or mobility impairments.
 
         This also affects those with temporary or situational disabilities, like a sprained wrist or dilated pupils for an eye exam.
         
@@ -271,11 +271,16 @@
 
         >"User interface components and navigation must be operable."
 
-        Components = [tabs](https://jqueryui.com/tabs/), [accordions](https://jqueryui.com/accordion/), pop-up windows, chat windows
+        Components = [tabs](https://jqueryui.com/tabs/), [accordions](), pop-up windows, chat windows
 
         * Accessible through use of a keyboard
         * Have enough time to read before content changes
         * The ability to pause, stop, or dismiss easily
+
+        ---
+        ##Resources
+        * [W3C Tab standards](https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel)
+        * [W3C Accordion standards](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion)
       </script>
     </section>
 
@@ -465,8 +470,9 @@
         <table>
           <tr>
             <th>**Screen reader**</th>
-            <th>**Start up**</th>
-            <th>**Shut down**</th>
+            <th width="30%">**Start up**</th>
+            <th width="30%">**Shut down**</th>
+            <th width="30%">**Virtual Cursor**</th>
           </tr>
 
           <tr>
@@ -475,6 +481,7 @@
             <td>`Cmd` + `F5`</td>
             
             <td>`Cmd` + `F5`</td>
+            <td>Ctrl + Opt then Left arrow or Right arrow</td>
           </tr>
 
           <tr>
@@ -486,6 +493,7 @@
             <td>`Insert` + `q`<br>
             or the Taskbar menu<br>
             right click, exit</td>
+            <td>Up arrow or Down arrow</td>
           </tr>
         </table>
 
@@ -862,7 +870,7 @@
       <script type="text/template">
         #HTML5 Structural Elements
 
-        HTML5 introduced new tags to better describe blocks of content such as `<header>`, `<footer>` and `<section>`. There are many more.
+        HTML5 introduced new tags to better describe blocks of content such as `<header>`, `<main>`, `<footer>` and `<section>`. There are many more.
 
         **Good for SEO** — search engines prioritize keywords used in headings and links, than keywords included in non-semantic tags like a `<div>`, so your site is more *indexable*
         
@@ -879,7 +887,7 @@
       <script type="text/template">
         #Class Exercise #2: Structure
 
-        1. Open up your `index.html` file and add a `header` tag to wrap your `h1` and `h2`
+        1. Open up your `index.html` file and add a `header` tag to wrap your `h1` and other headings or paragraphs
         1. Create a `main` tag and add a couple paragraphs within it. Add an `id` attribute inside the `main` tag with the value of 'content'. We will discuss why we did this a little bit later.
         1. Inside of the `main` tag, add two `section` tags and give each of them a unique `class` attribute. We will use these later to give each section their own styles with CSS
         1. Create a `footer` tag and add at least 1 paragraph inside of it.
@@ -920,8 +928,6 @@
         Most screen readers allow you to skip through all headings on the page - like a table of contents - to find specific content.
 
         The order of headings is important as it allows non-visual users (and search engine bots) to understand the importance and hierarchy of content on the page. Heading levels should not be skipped!
-
-        >Pro-tip: Avoid typing in uppercase letters! Some screen readers will read text in all caps letter by letter. If you want a heading to *appear* in all-caps, type it as you normally would in the HTML. We can change the *style* later with CSS!
       </script>
     </section>
 
@@ -1156,11 +1162,10 @@
         1. Add some lists in your content if applicable
         1. Add 2-3 hyperlinks using the `<a>` tags. You can link to social media properties or an email address
 
-        <!-- .element: class="delayed" -->
         Your page should look similar to [exercise-3.html](project/reference/exercise-3.html) in your **reference** folder.
 
         ---
-        Reference [this list of HTML tags](https://www.w3schools.com/html/html5_new_elements.asp)
+        Reference [this list of HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
       </script>
     </section>
@@ -1266,6 +1271,20 @@
         <img src="images/decorative.jpg" alt="">
 
         ```
+
+        Want to link an image? Use the `title` attribute on the link tag:
+        ```
+        <a href="..." title="Follow me on Twitter">
+          <img src="images/twitter-icon.jpg" alt="">
+        </a>
+
+        ```
+
+        >"In this case, you can just leave the alt-text blank. The important thing for the user is to hear the link text. An alt-text of the image would only distract by adding information that the user will not find necessary."
+
+        ---
+        ###Resources
+        * [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
       </script>
     </section>
 
@@ -1357,12 +1376,19 @@
       <script type="text/template">
         #Class Exercise #6: Video transcript (15mins)
 
+        1. Let's add one attribute to the `iframe` code first. We'll use the attribute `title`, and use the video title in YouTube as the value. This'll let the user know what the video is about before they watch it. It'll look like this:
+        ```
+        <iframe title="Styles of yoga" width="560" height="315"...
+        ```
         1. Create a plain text file and name it `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected
         1. Add a hyperlink (`a` tag) in your `index.html` directly below the `iframe` code from Youtube that links to your transcript file. (Refer to slide #59 for relative paths)
         1. Personalize more of the content if you have extra time
 
-        <!-- .element: class="delayed" -->
         Your page should look similar to [exercise-6.html](project/reference/exercise-6.html) in your **reference** folder.
+
+        ---
+        ###Resources
+        * [Using the HTML title attribute](https://developer.paciellogroup.com/blog/2013/01/using-the-html-title-attribute-updated/)
       </script>
     </section>
 
