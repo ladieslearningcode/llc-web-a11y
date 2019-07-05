@@ -53,61 +53,127 @@
       
       Before the class starts, be sure to update the WiFi credentials on slide 1, and your instructor information on slide #112
 
+      We want to make this workshop as collaborative as possible, and many exercises are intended to be done in pairs. Allow enough time for people to settle in, and if you have a small # learners and a lot of space, ask people to sit closer together or closer to the front before the experience begins.
+
+      There are a lot of in-class exercises in this workshop, particularly in part 2 (after lunch or day 2). If possible, consider having some audio set up so you can play music during those periods. Consider instrumental tracks that don't have lyrics which can be distracting. Here are some playlists you can try:
+      https://www.youtube.com/watch?v=hHW1oY26kxQ
+      https://www.youtube.com/watch?v=ZbUCJzTR6yo
+
+
       ##Specific Examples
 
       Slide 1: Intro
       Only Windows users need to download NVDA. Mac & Chromebook users have built-in screen readers
 
+
       Slide 8: (What exactly is accessibility?)
+
+      // Why do we use "a11y"?
+      One of the motivations is the limited space available on social media platforms like Twitter for posting content. Replacing the hashtag #accessibility with #a11y frees up 9 extra characters
+      Another motivation is discoverability. You can find more relevant resources, and with greater precision. Using the term “accessibility” in a Google search, you will find many irrelevant resources. Many accessibility specialists from around the world use “a11y” as an international technical term when speaking about their work.
+
       Can also include situational disabilities (eg. sprained wrist, pupils dialated for an eye exam), slow/spotty internet/data connection, people in a hurry, people with large fingers...
+
 
       Slide 11: (Ice Breaker)
       This is called a think-pair-share exercise. Ask the learners to work in small groups, or with the person next to them and share any experiences they feel comfortable with. Remind them of the Coder's Code in terms of acceptable conduct. Once they've had some time, ask if anyone then feels comfortable sharing their story with the room.
 
-      Slide 13: (Perceivable)
+      Slide 14: (CANADIAN LAWS)
+      Take a moment to google your own province/territory accessibility laws + government requirement (search for a11y to filter results)
+
+      Slide 16: (Perceivable)
       Can also include situational disabilities (eg. sprained wrist, pupils dialated for an eye exam), slow/spotty internet/data connection, people in a hurry, people with large fingers...
 
-      Slide 14: (Operable)
+      Slide 17: (Operable)
       Take some time to go through the tab and accordion demos so people can get a visual representation of what these components are.
       You can ask people to share gripes/bad experiences they've had with content being hard or impossible to close
 
-      Slide 17: (Accessing websites and web pages)
+      Slide 20: (Accessing websites and web pages)
       You can mention that you can't share a local path with a friend, but we can talk about how to get your website "live" and online at the end of the workshop
 
-      Slide 20:  (Software: Screen Readers)
+      Slide 23:  (Software: Screen Readers)
       The box can present an opportunity to have a conversation
 
-      Slide 34:  (The HEAD ELEMENT)
-      People can *see* your body. What is going on inside your head is integral to you being able to use your body, but people cannot see what is going on inside your head. You need to have a "peek under the hood" (view source) to see what is in the <head> element
+      Slide 29: (SCREEN READER DEBRIEF)
 
-      Slide 38:  (Class Exercise #1: Editing your project's HTML page)
+      Questions you may get asked:
+
+      Q: Does it read ads?
+      A: A google ad will be announced by the screen reader as "Third party ad content".
+      Ads with auto play audio or videos (often seen on news sites) completely obscures the speech of the screen reader. This means that people who are blind can't hear the screen reader and therefore they can't navigate to the 'stop' button to stop the noise. Even sighted users hate auto play videos and ads so it's a good rule of thumb to avoid them at all costs.
+
+      Q: How does the screen reader move down the page?
+      A: It’s actually reading the code, not the page itself, so it will read the HTML content of your page from top to bottom. Screen readers do have tools to allow the user to 'skim' or jump around sections to find what they're looking for instead of waiting for the fixed sequence.
+
+      Q: Can it speak in different languages?
+      A: Depends on the screenreader. VoiceOver includes built-in voices that speak over 30 languages. NVDA has been translated into 54 languages. 
+
+      Q: Would it read CSS?
+      A: Nope! The screenreader is concerned with the content, not the presentation (sizes of elements, colours, fonts, layout)
+
+
+      Slide 25: (Video, HARDWARE: SIP & PUFF SYSTEMS)
+      Emphasizes how difficult using 3D software is for any person! This guy is doing extremely complicated stuff using his sip n puff system.
+
+      Slide 41:  (The HEAD ELEMENT)
+      People can *see* your body. What is going on inside your head is integral to you being able to use your body, but people cannot SEE exactly what is going on inside your head. You need to have a "peek under the hood" (view source) to see what is in the <head> element
+
+      Slide 45:  (Class Exercise #1: Editing your project's HTML page)
       Let the learners do this exercise without you leading them. They can work with their mentors and the people around them. Feel free to walk around and help if people get stuck.
 
-      Slide 41:  (Class Exercise #2: Structure)
+      Slide 48:  (Class Exercise #2: Structure)
       Walk the learners through this exercise. Let them try to do #4 on their own.
 
-      Slide 47:  (PARAGRAPHS)
+      Slide 52: (GROUP EXERCISE: HEADING ORDER TEST)
+      In our pilot, the learners identified these points on their own:
+
+      - the HTML for Good Foot Delivery weren't showing many headers. They use many h1 headings (not good!) Many headings should be paragraphs. Heading tags are skipped (hierarchy).
+      - If I look at this as a Table of Content I’m quite confused. Starts listing names of individuals without context
+
+      You can also point out the ‘chat’ feature that pops up - what would a screen reader do with that? How would the user manage?
+      You can also make a general point about the performance of each website - that is to say how fast it loads. Folks in different parts of the country will have different connection speeds, but you can also consider someone on a mobile phone with a throttled connection.
+
+      Slide 53:  (PARAGRAPHS)
       Be sure to clarify the 1st box is the good example, the 2nd box it the bad one. People may not be able to see the colour difference!
 
-      Slide 70:  (CSS: The presentation layer)
+      Slide 78:  (CSS: The presentation layer)
       Underscore why we have taken so much time on building a foundation with quality HTML markup. Some visually impaired users will not experience the layout, colours or background imagery we will be applying with CSS
 
-      Slide 71:  (CSS Syntax & Terminology)
+      Slide 79:  (CSS Syntax & Terminology)
       Note the American spelling of the word 'colour'.
       Take the time to go through the last question on this slide and make sure it is clear before moving on
 
-      Slide 81:  (CSS FONT STYLES)
+      Slide 90: (CLASS EXERCISE 8: CHOOSING A COLOUR PALETTE)
+      There are going to be a lot of exercises from this point on and less verbal instruction. Feel free to play some music to make everyone feel more relaxed. Consider playing instrumental music without lyrics which can be distracting, especially when writing content.
+
+      Slide 91:  (CSS FONT STYLES)
       Explain what each property does while updating each example in the code editor. Talk about the difference between using line-height with and without a measurement unit.
 
       Refer back to when we advised headings not to be spelled in the HTML in all-caps. We can use this text-transform property to change the style of headings into uppercase!
 
-      Slide 96:  (MARGIN AND PADDING)
-      Encourage them to use the long-hand today since it's easier to understand. If they want to try the short hand, use comments to refer back to later
+      Slide 96: (IN-CLASS EXERCISE: HOW TO USE GOOGLE FONTS)
+      Take some time here to walk through the different categories of fonts. If you're not familiar with them, here is a quick infographic that explains the difference:
 
-      Slide 116: Background images
+      llc-a11y-master/framework/img/font-types-infographic.webp
+      Monospace fonts, not in the picture above, are used for coding because each character is of equal width. Imagine a giant grid in your text editor where every letter lines up vertically.
+
+      Slide 105:  (THE BOX MODEL)
+      You can visualize this like a fragile object being packed in a box to be shipped.
+      The padding is like the bubble wrap or packing peanuts to insulate on the INSIDE of the box.
+      The border is the outer edges of the box.
+      The margin is how far away the box is from any objects around it.
+
+      Slide 106:  (MARGIN AND PADDING)
+      Encourage them to use the long-hand today since it's easier to understand. If they want to try the short hand, use comments to refer back to later.
+
+
+
+      Slide 122: Background images
       This is often a point of confusion for learners. Show them the relationship between files and folders in Atom, and then again in your File Explorer/Finder. Point to the files on the projector to be as clear as possible.
       You can compare the ../ to having to go up a flight of stairs in a home to retrieve an item.
 
+      Slide 130: Show & Tell
+      Depending on your class size, the amount of time left, and how reluctant people are to share, you can decide to run this as a group show & tell or in pairs.
       
       
     </script>

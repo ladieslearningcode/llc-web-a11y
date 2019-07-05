@@ -153,7 +153,7 @@
 
         **Attitude** is perhaps the most difficult barrier, but one that's completely within our power to change! Stereotypes form about people because of a lack of information.
 
-        **Architectural** - communication barriers make it difficult to receive or convey information. Small print size, low colour contrast, confusing design and use of unclear language
+        **Architectural** - communication barriers make it difficult to receive or convey information. Small print size, low colour contrast, confusing design and use of unclear language. Eg. if someone has colour blindness, they would struggle with low contrast
       </script>
     </section>
 
@@ -163,7 +163,7 @@
 
         **Technology**, or lack of it, can prevent people from accessing information. Everyday tech tools can present barriers if they are not designed with accessibility in mind.
 
-        **Systemic**, an organization's policies, practices and procedures that restrict people with disabilities, often unintentionally
+        **Systemic**, an organization's policies, practices and procedures that restrict people with disabilities, often unintentionally. Eg. if someone is deaf, are there is no closed captions available
       </script>
     </section>
 
@@ -639,7 +639,7 @@
 
       Go to **File** > ** Add Project Folder**. A popup will appear.
 
-      ![](framework/img/workshop/editor-add-project-1.jpg)
+      ![](framework/img/workshop/editor-add-project-pc.jpg)<!-- .element: width="25%" --> ![](framework/img/workshop/editor-add-project-1.jpg) 
 
       Then:
 
@@ -680,11 +680,11 @@
         Go to **Preferences** to open the customization options.<br />
         For Windows Users, go to the **File** menu and choose Settings.
 
-        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="70%" -->
+        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="40%" --> ![](framework/img/workshop/atom-settings-pc.jpg)<!-- .element: width="25%" --> 
 
         Select the **Editor** tab in the left menu
 
-        ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+         ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
 
         Make sure the **Soft Wrap** and **Show Indent Guide** options are checked.
 
@@ -993,7 +993,7 @@
       <script type="text/template">
         #Paragraphs
 
-        Visually, the two examples below will look the same to a sighted user, but the second example doesn't clearly contextualize each paragraph. This is particularly important for users who have visually impairments:
+        Visually, the two examples below will look the same to a sighted user, but the second example doesn't clearly contextualize each paragraph. This is particularly important for users who have visual impairments:
 
         <pre><code style="background: #b9efc5;" class="xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre>
@@ -1309,7 +1309,7 @@
       <script type="text/template">
         #Class Exercise #4: Add an image (10mins)
 
-        1. You can use the existing images within the `project` folder, or use images of your own. If you have images on your computer that you want to use, copy them from their current location into the `images` folder in your project. Ask a mentor if you need help!
+        1. You can use the existing images within the `project` folder, or use images of your own. If you have images on your computer that you want to use, copy them from their current location into the `images` folder in your project. Ask a mentor if you need help, or work with the person next to you to figure it out together!
         1. Add at least two images anywhere within your `index.html` page. Don't forget the `alt` attribute!
 
         <!-- .element: class="delayed" -->
@@ -1328,7 +1328,7 @@
 
         Video is another great medium to convey information on a webpage, but comes with its own considerations when it comes to accessibility. Let's start by placing a video on our page.
 
-        1. Go to [youtube.com](https://www.youtube.com/) and choose a video that you want to insert into your webpage
+        1. Go to [youtube.com](https://www.youtube.com/) and choose a video that you want to insert into your webpage. <small>Please note that some videos may be blocked for embedding on a webpage for users in Canada. You will see an error message if that is the case.</small>
         1. Click on the share button below the video
         1. Choose the embed option
         1. Copy the HTML code provided
@@ -1584,7 +1584,7 @@ selector { /* select the link */
 
         Some visitors of your website may have a decreased ability to see colour or differences in colour.
 
-        We want to ensure there is enough contrast between foreground and background colours so the text is readable. This also applies to text over a background image.
+        We want to ensure there is enough contrast between foreground and background colours so the text is readable. This also applies to text over a background image. Pie charts, as another example, may have lots of colours that for someone with colour blindness may all look very similar.
 
         Let's start with [this colour blindness simulator](https://www.toptal.com/designers/colorfilter) and test the Canada Learning Code website. (May be a little slow when loading the preview)
       </script>
@@ -1610,6 +1610,8 @@ selector { /* select the link */
         And the background colour code is: `#fed1cf`
 
         <img src="framework/img/workshop/colour-example.png"> 
+
+        Try this again with some other colour combinations to see the results.
       </script>
     </section>
 
@@ -1766,7 +1768,7 @@ text-transform: lowercase;</textarea>
 
         Now that you've chosen colours that satisfy our contrast requirements, let's put them to use!
 
-        1. Using the CSS `background` property, change the colour of your `body`, `section` or `footer` tags. Refer back to slide 73 for the syntax!
+        1. Using the CSS `background` property, change the colour of your `body`, `section` or `footer` tags. Refer <a href="#slide85">back to slide 85</a> for the syntax!
         2. Using the `color` property, change the text colour. You can select all tags of a type, like `p`, `a` or `li`. Ask a mentor to select something more specific, like only paragraphs in the footer!
         3. Change other font styles like `font-size`, `font-weight`, `text-transform` or `text-align`.
 
@@ -1835,20 +1837,6 @@ text-transform: lowercase;</textarea>
         ```
       </script>
     </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Background colours
-
-        Adding background colours to sections of the page can help to visualize the HTML blocks of content.
-
-        > What selector should be used to apply this style?
-
-<pre class="delayed"><code>header {
-
-}</code></pre>
-        </script>
-      </section>
 
       <section class="slide" data-markdown>
         <script type="text/template">
@@ -1993,15 +1981,13 @@ text-transform: lowercase;</textarea>
     <section class="slide">
       <h1>Practice!</h1>
 
-      <p>Practice using margin and padding below, using 1 to 4 values.</p>
+      <p>Practice using margin and padding below, using 1 to 4 values. You can play with these values with the person next to you. What do you notice as you change the values? Try to describe your observations using only words.</p>
       <textarea class="snippet" data-subject="#example">background: lightblue;
 padding: 0px; /* top, right, bottom, left */
 margin: 0px; /* top, right, bottom, left */</textarea>
       <div id="example" class="example">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nesciunt sint beatae dolor dolorum aliquid quis explicabo vitae numquam, quas illo dolore molestiae ratione, perferendis, deleniti nemo ea voluptatibus! Quibusdam.</p>
       </div>
-
-      <p>Notice that the background colour doesn't flow into the space created by <code>margin</code>, since margin adds space <strong>around</strong> and <strong>outside</strong> of the element.</p>
     </section>
 
     <section class="slide">
@@ -2117,7 +2103,7 @@ border: 15px solid green;</textarea>
       </script>
     </section>
 
-    <section class="slide" data-markdown>
+    <!--section class="slide" data-markdown>
       <script type="text/template">
         #Descendant selectors
 
@@ -2171,7 +2157,7 @@ border: 15px solid green;</textarea>
         }
         ```
       </script>
-    </section>
+    </section-->
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -2186,7 +2172,7 @@ border: 15px solid green;</textarea>
       </script>
     </section>
 
-    <section class="slide" data-markdown>
+    <!--section class="slide" data-markdown>
       <script type="text/template">
         # Building a web page in blocks
 
@@ -2226,7 +2212,7 @@ border: 15px solid green;</textarea>
         }
         ```
       </script>
-    </section>
+    </section-->
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
@@ -2234,7 +2220,7 @@ border: 15px solid green;</textarea>
 
         Whoa! You either finished early or you're back for more
 
-        (Or <a href="#slide127">Skip ahead</a> to wrap up)
+        (Or <a href="#slide125">Skip ahead</a> to wrap up)
 
         ![The Incredibles posing for battle.](framework/img/workshop/stretch.gif)
 
@@ -2258,7 +2244,12 @@ border: 15px solid green;</textarea>
         /* longhand */
         background-image: url(folder-name/image-file.jpg);
         ```
-        `background` is shorthand for many different background properties.
+        `background` is shorthand for many different background properties. Using a shorthand property, you can write more concise style sheets, saving time and energy.
+
+        ---
+        ###Resources
+        * W3C: [CSS Background properties](https://www.w3schools.com/css/css_background.asp)
+        * Moz: [CSS Shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
       </script>
     </section>
 
@@ -2444,21 +2435,48 @@ border: 15px solid green;</textarea>
     </script>
   </section>
 
-    <section class="slide" data-markdown>
+  <section class="slide" data-markdown>
       <script type="text/template">
-        # Today...
+      #Class exercise: Screen Reader check
 
-        We learned a whole pile of things:
+      You now have a functional and beautiful website! Let's try using the screen reader again on **our** site now and see how easy it is to navigate! Refer <a href="#slide28">back to slide 28</a> for the screen reader commands.
 
-        * Intro to HTML
-        * Writing Accessible Content for the web
-        * Video Captions & Transcripts
-        * Intro to CSS
-        * Typography and use of colours
-        * CSS Background images
+      If you have time, you can try downloading the [WAVE webaim extension for Chrome](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh). This is similar to the website we used in an earlier exercise, but can be used to test local files.
+      In order to get this working on local files, you need to turn this setting on:
 
+      ![Manage extensions](framework/img/workshop/wave-ext.png) <!-- .element: width="25%" -->
+
+      ![Manage extensions](framework/img/workshop/wave-enable.png) <!-- .element: width="60%" -->
+    </script>
+  </section>
+
+  <section class="slide" data-markdown>
+      <script type="text/template">
+        # Wanna show us what you've done today?
+
+        <p style="text-align:center;">![Woman looking excited to hear something](framework/img/workshop/show-us.gif) <!-- .element: width="45%" --></p>
+
+        Share with the person next to you or with the whole class what you built! What elements of accessibility did you take into account when building your site?
+
+        
       </script>
     </section>
+
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      # Today...
+
+      We learned a whole pile of things:
+
+      * Intro to HTML
+      * Writing Accessible Content for the web
+      * Video Captions & Transcripts
+      * Intro to CSS
+      * Typography and use of colours
+      * CSS Background images
+
+    </script>
+  </section>
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
@@ -2472,13 +2490,13 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #Be an advocate for accessibility
 
-        Legal Argument: UN Convention on the rights of people with disabilities. Access to communications and technology is a basic human right.
+        **Legal Argument:** UN Convention on the rights of people with disabilities. Access to communications and technology is a basic human right.
 
-        Technical Argument: By creating accessible websites, you're building upon a responsive, adaptive platform that can serve you well in other areas.
+        **Technical Argument:** By creating accessible websites, you're building upon a responsive, adaptive platform that can serve you well in other areas.
 
-        Market Argument: The market of people with disabilities is huge, and growing as the population ages. People with disabilities have a trillion dollar income, with 200b in discretionary income.
+        **Market Argument:** The market of people with disabilities is huge, and growing as the population ages. People with disabilities have a trillion dollar income, with 200b in discretionary income.
 
-        Humanitarian Argument: You can reach brilliant, innovative users who would not be supported or realize their potential otherwise.
+        **Humanitarian Argument:** You can reach brilliant, innovative users who would not be supported or realize their potential otherwise.
 
         ---
         ##Source:
@@ -2494,6 +2512,7 @@ border: 15px solid green;</textarea>
 
         Here are some resources to learn more about accessibility on the web:
 
+        * [The A11Y Project: A community-driven effort to make web accessibility easier](https://a11yproject.com/)
         * [Create, verify PDF Accessibility](https://helpx.adobe.com/ca/acrobat/using/create-verify-pdf-accessibility.html)
         * [Accessible Forms](https://www.w3.org/WAI/tutorials/forms/)
 
