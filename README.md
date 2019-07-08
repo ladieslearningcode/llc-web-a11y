@@ -2,16 +2,22 @@
 
 ## HTML & CSS for Beginners: Learn to Build a One Page Website From Scratch
 
-A full day introductory HTML & CSS workshop.
+A full day introductory HTML & CSS workshop on Web Accessibility.
 This workshop covers HTML and CSS basics and is intended for complete beginners.
+
+### Quick links
+
+Slides: https://ladieslearningcode.github.io/llc-web-a11y/slides-en.html
+
+Instructor notes: https://ladieslearningcode.github.io/llc-web-a11y/notes-en.html
 
 ### Attributions
 
-Created by Jesse R Mykolyn for [Canada Learning Code](https://www.canadalearningcode.ca/).
-Slide presentation created by [Christina Truong](http://christinatruong.com/) for [Canada Learning Code](https://www.canadalearningcode.ca/).
-Contributions by Stacie DaPonte
+Created by Stacie Daponte for [Canada Learning Code](https://www.canadalearningcode.ca/), with contributions from Jesse R Mykolyn.
 
-Email questions & comments to <content@ladieslearningcode.com>.
+Slide presentation created by [Christina Truong](http://christinatruong.com/) for [Canada Learning Code](https://www.canadalearningcode.ca/).
+
+Email questions & comments to <content@canadalearningcode.ca>.
 
 This content was created with the advisory of and in collaboration with educators, industry representatives and technologists. These individuals have helped us to ensure that lesson content represents the technology landscape and educator needs, with learners in mind. If you'd like to contribute to future lesson content development, let us know [here](https://docs.google.com/forms/d/e/1FAIpQLSfJ8NSMKVAmzpdn3EAymxCbDDz3XZPxyDdmtQ87GECuvXzzDQ/viewform).
 
