@@ -2,7 +2,7 @@
 
 # Ladies Learning Code
 
-## HTML & CSS for Beginners: Learn to Build a One Page Website From Scratch
+## Web Accessibility with HTML & CSS 
 
 A full day introductory HTML & CSS workshop on Web Accessibility.
 This workshop covers HTML and CSS basics and is intended for complete beginners.
