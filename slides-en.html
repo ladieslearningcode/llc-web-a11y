@@ -1664,8 +1664,25 @@ text-transform: lowercase;</textarea>
       <script type="text/template">
         #What is `rem` and `em`?
 
-        `rem` or `em` are units of measure, like `px` or `%`. The default `font-size` applied by the browser is 16 pixels, which means the two lines below will have the same result:
+        `rem` and `em` are units of measure, like `px` or `%`.
+        `em` is a proportion of the inherited font size of an element, and `rem` is relative to the document's font size.
 
+        Try playing with the demo below to see how relative font sizes work:
+        <textarea class="snippet" data-subject="#css-rel-units">.parent {
+            font-size: 10px;
+          }
+          .child {
+            font-size: 2em;
+          }</textarea>
+
+        <div id="css-rel-units" class="example parent">
+          <p>My font size is 10px!</p>
+          <p class="child">
+            My font size is 2 × 10px, which is 20px!
+          </p>
+        </div>
+
+        The default `font-size` applied to the document is usually around 16 pixels, which means the two lines below will have the same result in most browsers:
         ```
         font-size: 1rem;
         font-size: 16px;
