@@ -26,24 +26,24 @@ h1, h2 {
   font-weight: normal; /* removes default bold style */
 }
 h1 {
-  font-size: 75px;  
+  font-size: 4.7rem;
 }
 h2{
   color: black;
   font-family: 'Playfair Display', serif;
-  font-size: 56px;
+  font-size: 3.5rem;
   margin-bottom: 30px;
 }
 h3{
   color: black;
 }
 p{
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5; /* adjusts space between the lines */
   margin:0;
 }
 ul{
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 1.5;
 }
 a {
@@ -56,7 +56,7 @@ a:hover {
   background: white;
   border: 2px solid #0e6c5c;
   color: #0e6c5c;
-  font-size: 22px;
+  font-size: 1.4rem;
   padding: 10px 16px;
   text-decoration: none;
   transition-duration: 0.3s;
@@ -93,12 +93,12 @@ header {
   margin: 0;
 }
 header h1 {
-  font-size: 100px;
+  font-size: 6.3rem;
   font-family: 'Playfair Display', serif;
   padding-bottom: 20px;
 }
 header h2 {
-  font-size: 32px;
+  font-size: 2rem;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -132,7 +132,7 @@ header h2 {
 address{
   display: block;
   margin: 20px 0;
-  font-size: 28px;
+  font-size: 1.8rem;
   font-style: normal;
 }
 
@@ -145,5 +145,5 @@ footer {
 }
 footer a{
   color: #fefefe;
-  font-size: 16px;
+  font-size: 1rem;
 }
