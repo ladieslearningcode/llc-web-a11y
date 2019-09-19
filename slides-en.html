@@ -1027,10 +1027,8 @@
         * *“Don’t bury the lede”*: Start each page and section with the most important information
         * Lists are easier to skim then paragraphs (HTML for this on the next slide)
 
-        When abbreviations are used in text, use the HTML `<abbr>` tag to provide the long form: `<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>`
-
-        Will look like this: (hover over me!)
-          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr>
+        When abbreviations are used in text, provide the long form as well, at least for the first time it's used on a page:
+        > Web Content Accessibility Guidelines (WCAG) is a series of guidelines for improving web accessibility. WCAG was first developed in 1999.
       </script>
     </section>
 
@@ -1273,16 +1271,13 @@
 
         ```
 
-        Want to link an image? Use the `title` attribute on the link tag:
+        Want to link an image? Describe the link in the image's alt text.
         ```
-        <a href="..." title="Follow me on Twitter">
-          <img src="images/twitter-icon.jpg" alt="">
+        <a href="#">
+          <img src="images/twitter-icon.jpg" alt="Follow me on Twitter">
         </a>
 
         ```
-
-        >"In this case, you can just leave the alt-text blank. The important thing for the user is to hear the link text. An alt-text of the image would only distract by adding information that the user will not find necessary."
-
         ---
         ###Resources
         * [Alt-texts: The Ultimate Guide](https://axesslab.com/alt-texts/)
