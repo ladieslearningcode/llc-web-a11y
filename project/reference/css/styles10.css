@@ -18,10 +18,10 @@ h1, h2 {
   font-weight: normal; /* removes default bold style */
 }
 h1 {
-  font-size: 75px;  
+  font-size: 4.7rem;
 }
 p {
-  font-size: 18px;
+  font-size: 1.5rem;
   line-height: 1.5; /* adjusts space between the lines */
 }
 a {
@@ -53,10 +53,10 @@ header {
   background: #CECCCC;
 }
 header h1 {
-  font-size: 100px;
+  font-size: 6.3rem;
 }
 header h2 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 
