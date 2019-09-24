@@ -1,9 +1,19 @@
+header,
+section,
+footer {
+    margin: 0;
+    padding: 1px; /* tweaked from 0 to 1px */
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 h1, h2 {
+  margin: 0; /* removes default space */
   font-weight: normal; /* removes default bold style */
 }
 h1 {
@@ -13,6 +23,7 @@ h2{
   color: black;
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
+  margin-bottom: 30px;
 }
 h3{
   color: black;
@@ -20,13 +31,34 @@ h3{
 p{
   font-size: 1.5rem;
   line-height: 1.5; /* adjusts space between the lines */
+  margin:0;
+}
+ul{
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 a {
   color: #0e6c5c;
-  text-decoration: underline;
 }
 a:hover {
   text-decoration: none;
+}
+.button{
+  background: grey;
+  color: purple;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.button:hover{
+  background: #0e6c5c;
+  color: #efefef;
+}
+.text{
+  position: relative;
+  z-index: 2;
+}
+section, header {
+  padding: 140px 60px;
 }
 
 /* PAGE HEADER
@@ -34,14 +66,11 @@ a:hover {
 header h1 {
   font-size: 6.3rem;
   font-family: 'Playfair Display', serif;
+  padding-bottom: 20px;
 }
 header h2 {
   font-size: 2rem;
   font-family: 'Work Sans', sans-serif;
-}
-
-section{
-  background: #d3e6dd;
 }
 
 /* Mission
@@ -53,10 +82,21 @@ section{
   max-width: 600px;
   margin: 20px auto 0;
 }
-
 /* Contact
 -----------------------------------------*/
+.contact img{
+  width: 80px;
+}
+.contact a{
+  opacity: 0.75;
+  transition-duration: 0.3s;
+}
+.contact a:hover{
+  opacity: 1;
+}
 address{
+  display: block;
+  margin: 20px 0;
   font-size: 1.8rem;
   font-style: normal;
 }
@@ -65,9 +105,10 @@ address{
 -----------------------------------------*/
 footer {
   background: #0e6c5c;
-  color: #fff;
+  color: #fefefe;
+  padding: 20px 0;
 }
 footer a{
-  color: #fff;
+  color: #fefefe;
   font-size: 1rem;
 }

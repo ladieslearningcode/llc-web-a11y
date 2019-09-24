@@ -659,6 +659,7 @@
 
         ```html
         project
+          |-- css
           |-- images
           |-- reference
         ```
@@ -884,20 +885,6 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #2: Structure
-
-        1. Open up your `index.html` file and add a `header` tag to wrap your `h1` and other headings or paragraphs
-        1. Create a `main` tag and add a couple paragraphs within it. Add an `id` attribute inside the `main` tag with the value of 'content'. We will discuss why we did this a little bit later.
-        1. Inside of the `main` tag, add two `section` tags and give each of them a unique `class` attribute. We will use these later to give each section their own styles with CSS
-        1. Create a `footer` tag and add at least 1 paragraph inside of it.
-
-        <!-- .element: class="delayed" -->
-        Your page should now look similar to [exercise-2.html](project/reference/exercise-2.html).
-      </script>
-    </section>
-
     <section class="slide title" data-markdown data-toc>
       #Writing Accessible Content for the web
 
@@ -985,6 +972,8 @@
         Toronto, ON<br>
         M5V 2L3</address>
         ```
+
+        >Do you have an address on your project page? If you do, use the `<address>` tag instead of the generic `<p>` tag.
 
       </script>
     </section>
@@ -1107,7 +1096,7 @@
         <a href="files/annual-report.pdf">Read our annual report</a>.
         ```
         ---
-        <small>If a link is going to open in a new tab, the user needs to be aware of this behaviour
+        ><small>If a link is going to open in a new tab, the user needs to be aware of this behaviour
         [Techniques: New window working examples](https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html)</small>
       </script>
     </section>
@@ -1154,14 +1143,14 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #3: Writing Content (20mins)
+        #Class Exercise: Writing Content (20mins)
 
-        1. Brainstorm a list of keywords to inform your content. Bounce some ideas off your mentors or the people sitting around you
-        1. Add 2-3 paragraphs within the sections you created in the last exercise
-        1. Add some lists in your content if applicable
-        1. Add 2-3 hyperlinks using the `<a>` tags. You can link to social media properties or an email address
+        1. Brainstorm a list of keywords to inform your content. Bounce some ideas off your mentors or the people sitting around you.
+        1. Add 2-3 paragraphs within the sections you created in the last exercise.
+        1. Add some lists in your content if applicable. (<a href="#slide58">Slide 58 for the syntax</a>)
+        1. Add 2-3 hyperlinks using the `<a>` tags. You can link the social media icons and the email address.  (<a href="#slide59">Slide 59 for the syntax</a>)
 
-        Your page should look similar to [exercise-3.html](project/reference/exercise-3.html) in your **reference** folder.
+        Your page should look similar to [exercise-1.html](project/reference/exercise-1.html) in your **reference** folder.
 
         ---
         Reference [this list of HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
@@ -1206,7 +1195,7 @@
         images/backgrounds/dark/dark-background-1.jpg
         ```
 
-        We'll be using relative paths to add images shortly!
+        Notice the relative paths used in the `img` tags in your project.
       </script>
     </section>
 
@@ -1302,13 +1291,13 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #4: Add an image (10mins)
+        #Class Exercise #2: Add an image (10mins)
 
         1. You can use the existing images within the `project` folder, or use images of your own. If you have images on your computer that you want to use, copy them from their current location into the `images` folder in your project. Ask a mentor if you need help, or work with the person next to you to figure it out together!
         1. Add at least two images anywhere within your `index.html` page. Don't forget the `alt` attribute!
 
         <!-- .element: class="delayed" -->
-        Your page should look similar to [exercise-4.html](project/reference/exercise-4.html) in your **reference** folder.
+        Your page should look similar to [exercise-2.html](project/reference/exercise-2.html) in your **reference** folder.
 
         ---
         ###Resources
@@ -1319,19 +1308,18 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #5 - Embed a YouTube Video
+        #Class Exercise - Embed a YouTube Video
 
-        Video is another great medium to convey information on a webpage, but comes with its own considerations when it comes to accessibility. Let's start by placing a video on our page.
+        Video is another great medium to convey information on a webpage, but comes with its own considerations when it comes to accessibility. We already have a video on our page! Let's replace it with a new one that relates to the content of your website.
 
         1. Go to [youtube.com](https://www.youtube.com/) and choose a video that you want to insert into your webpage. <small>Please note that some videos may be blocked for embedding on a webpage for users in Canada. You will see an error message if that is the case.</small>
         1. Click on the share button below the video
-        1. Choose the embed option
+        <img alt="share video icon" src="framework/img/workshop/video-share.png" width="600"/>
+        1. Choose the embed option<br>
+        <img alt="share video icon" src="framework/img/workshop/video-embed.png" width="400"/>
         1. Copy the HTML code provided
-        1. In Atom, paste the code in your `index.html` file where you want the video to display.
+        1. In Atom, paste the code in your `index.html` file to replace the existing `iframe` code.
         1. Save your changes and refresh the browser to see your video in action!
-
-        <!-- .element: class="delayed" -->
-        Your page should look similar to [exercise-5.html](project/reference/exercise-5.html) in your **reference** folder.
       </script>
     </section>
 
@@ -1370,17 +1358,17 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #6: Video transcript (15mins)
+        #Class Exercise #3: Accessible Video (10mins)
 
         1. Let's add one attribute to the `iframe` code first. We'll use the attribute `title`, and use the video title in YouTube as the value. This'll let the user know what the video is about before they watch it. It'll look like this:
         ```
         <iframe title="Styles of yoga" width="560" height="315"...
         ```
-        1. Create a plain text file and name it `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected
-        1. Add a hyperlink (`a` tag) in your `index.html` directly below the `iframe` code from Youtube that links to your transcript file. (Refer to slide #59 for relative paths)
-        1. Personalize more of the content if you have extra time
+        1. Create a plain text file and name it `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected.
+        1. Add a hyperlink (`a` tag) in your `index.html` directly below the `iframe` code from Youtube that links to your transcript file. (Refer to slide #59 for relative paths).
+        1. Personalize more of the content if you have extra time.
 
-        Your page should look similar to [exercise-6.html](project/reference/exercise-6.html) in your **reference** folder.
+        Your page should look similar to [exercise-3.html](project/reference/exercise-3.html) in your **reference** folder.
 
         ---
         ###Resources
@@ -1476,7 +1464,7 @@ selector { /* select the link */
       <script type="text/template">
         #Referencing CSS
 
-        Today, we&#39;ll be creating a separate style sheet file for the CSS.  To create a stylesheet, just name the file with a `.css` file extension.
+        We already have a separate stylesheet file that contains the CSS code. To create a stylesheet, make sure the file end with a `.css` extension.
 
         The style sheet is then referenced within the `<head>` of the HTML document (different tag from `<header>`).
 
@@ -1485,7 +1473,7 @@ selector { /* select the link */
         ```
         <head>
           <title>Page Title</title>
-          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="css/styles.css">
         </head>
         ```
 
@@ -1494,33 +1482,6 @@ selector { /* select the link */
         ---
         ###Resource
         There are several ways to add CSS. [Read more about the different ways to reference CSS](https://www.hostpapa.ca/knowledgebase/understanding-external-internal-inline-css-styles/).
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #7: Create your project's CSS File
-
-        1. In Atom, right click on the **project** folder in the left menu. Select New folder, and call it **css**.
-        1. In the text editor, create a new CSS file by selecting **File > New File** (keyboard shortcut **ctrl/cmd + n**).
-        1. Name it **styles.css** and save it to the **css** folder you created in step 1 <span class="note">You can name the file anything, but it's best to choose a name that describes the file content. (i.e. styles.css, global.css, custom.css, project-name.css, etc)</span>
-        1. Then, add this line to your **index.html**.
-          ```
-          <head>
-              ....
-              ....
-              <link rel="stylesheet" href="css/styles.css">
-          </head>
-          ```
-        1. Run a test by changing the background colour of the `body`. Add this declaration to the empty CSS file:
-          ```
-          body {
-            background: lightblue;
-          }
-          ```
-
-          <!-- .element: class="delayed" -->
-        Your page should look similar to [exercise-7.html](project/reference/exercise-7.html) in your **reference** folder.
       </script>
     </section>
 
@@ -1612,7 +1573,7 @@ selector { /* select the link */
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise 8: Choosing a colour palette
+        #Class Exercise: Choosing a colour palette
 
         Choose 2 colours you want to use on your site and test them using the contrast checker.
 
@@ -1776,7 +1737,7 @@ text-transform: lowercase;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise 9: Applying colours and typography
+        #Class Exercise #4: Applying colours and typography
 
         Now that you've chosen colours that satisfy our contrast requirements, let's put them to use!
 
@@ -1790,7 +1751,7 @@ text-transform: lowercase;</textarea>
         * [W3C Schools - CSS Fonts](https://www.w3schools.com/css/css_font.asp)
 
         <!-- .element: class="delayed" -->
-        Your page should look similar to [exercise-9.html](project/reference/exercise-9.html) in your **reference** folder.
+        Your page should look similar to [exercise-4.html](project/reference/exercise-4.html) in your **reference** folder.
       </script>
     </section>
 
@@ -1807,8 +1768,8 @@ text-transform: lowercase;</textarea>
       <script type="text/template">
         # Class attributes
 
-        Remember adding a class attribute to the Mission & Contact section?
-        They were added to give each section *different* styles.
+        Let's have a look at the class attributes on each of the the `section` tags in our project.
+        They can be used to apply *different* styles to each unique section.
 
         ```xml
         <section class="mission">
@@ -1852,7 +1813,7 @@ text-transform: lowercase;</textarea>
 
       <section class="slide" data-markdown>
         <script type="text/template">
-        #Class Exercise #10 - Classes
+        #Class Exercise #5 - Classes
 
         Let's update our project.
 
@@ -1871,7 +1832,7 @@ text-transform: lowercase;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #10 - Classes
+        #Class Exercise #5 Cont'd
 
         Do you still have blue links? Select the anchor tag and override the default blue.
 
@@ -1890,7 +1851,7 @@ text-transform: lowercase;</textarea>
         **CSS:**
         ```
         .button{
-          background: white;
+          background: grey;
           color: purple;
           font-size: 1.4rem;
           text-decoration: none;
@@ -1898,7 +1859,7 @@ text-transform: lowercase;</textarea>
         ```
 
         <!-- .element: class="delayed" -->
-        Not exactly super polished yet, but we're getting there! Your page should look similar to [exercise-10.html](project/reference/exercise-10.html) in your **reference** folder.
+        Not exactly super polished yet, but we're getting there! Your page should look similar to [exercise-5.html](project/reference/exercise-5.html) in your **reference** folder.
       </script>
     </section>
 
@@ -2094,137 +2055,17 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #In-Class Exercise - Spacing
+        #Class Exercise #6 - Spacing and Size
 
-        Notice the white space around the edge of the page? That's default space in the `body` element. Reset it by setting the values to 0.
-
-        ```
-        body {
-          margin: 0;
-          padding: 0;
-        }
-        ```
-
-        Use `margin` to adjust the default space around the  `<h1>` and `<h2>` tag.  (You can *inspect the element* using the dev tools to see the default margin.)
-
-        ```
-        h1, h2 {
-          margin: 0; /* removes default space */
-        }
-        ```
-      </script>
-    </section>
-
-    <!--section class="slide" data-markdown>
-      <script type="text/template">
-        #Descendant selectors
-
-        Descendant selectors are used to select an element that is a descendant (nested tag) of another element.
-
-        This is useful when targeting elements inside of a specific block of content (e.g. an `h1` in the `header`).
-
-        Note the space in *between* each selector. This is a requirement.
-
-        ```css
-        p a {
-          /* targets only anchor link tags nested inside of a p tag */
-        }
-        ul li a {
-          /* targets a link nested in a list item in an unordered list */
-        }
-        ```
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Descendant selectors
-
-        **Pro tip!** Just like [Inception](http://www.imdb.com/title/tt1375666/), avoid going more than three levels.
-
-        ```
-        nav ul li a {
-          /* NOOOOOOOOOOO */
-        }
-        ```
-
-        You can skip a level but specificity rules apply.
-
-        For example, `nav ul li a` would override `nav a` because it&#39;s more specific.
-
-        It&#39;s generally better to start with generic selectors and make them more specific, as needed.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #In-Class - Change Size
-
-        Now that we know how to change the size of elements using `width`, let's resize the social media icon images!
-
-        ```
-        .contact img { /* images inside of the contact section */
-          width: 100px;
-          /* height will adjust automatically if you don't specify that property */
-        }
-        ```
-      </script>
-    </section-->
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Class Exercise #11 - Spacing and Size
-
-        1. Practice applying the `padding`, `margin` or `border` to different elements.
+        1. Modify any of the existing values or `padding`, `margin` or `border` on the various elements in your stylesheet. Try to make one change at a time and then refresh in the browser to preview the results.
         1. Add some padding to the `.button` selector to make room around the text and the background colour
         1. Try adding a border to the button in a different colour than the background
 
-        <!-- .element: class="delayed" -->
-        Your page should now look similar to [exercise-11.html](project/reference/exercise-11.html).
+        >Bonus: Use the `:hover` pseudo selector to change the style of the button on mouseover. Ask a mentor for help!
+
+        Your page should now look similar to [exercise-6.html](project/reference/exercise-6.html).
       </script>
     </section>
-
-    <!--section class="slide" data-markdown>
-      <script type="text/template">
-        # Building a web page in blocks
-
-        When building a web page, it's best to start with the HTML structure, then add CSS styles from general styles to more specific styles.
-
-        But as you may have already noticed, there's no single path for what you need to do first. It often takes a step by step approach.
-
-        To avoid CSS specificity issues, let's go over some general advice for using the selectors covered so far.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #CSS Selectors: Best Practices
-
-        **HTML element selectors:**  Use this to apply a style to all or *most* of that particular element on the page.  (e.g. all links on the page).
-
-        ```
-        a {
-          color: red;
-        }
-        ```
-
-        **Descendant selectors:** Use this to apply a style to a specific element within another element. (e.g. Only links within the navigation)
-
-        ```
-        nav a {
-          color: blue;
-        }
-        ```
-
-        **Class selectors:**  Use this to apply a style to an element that is not specific to an  HTML element, only the class.  (e.g. a portion of the page that uses the same HTML tag as another page block)
-
-        ```
-        .about {
-          color: green;
-        }
-        ```
-      </script>
-    </section-->
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
@@ -2232,7 +2073,7 @@ border: 15px solid green;</textarea>
 
         Whoa! You either finished early or you're back for more
 
-        (Or <a href="#slide125">Skip ahead</a> to wrap up)
+        (Or <a href="#slide121">Skip ahead</a> to wrap up)
 
         ![The Incredibles posing for battle.](framework/img/workshop/stretch.gif)
 
@@ -2311,7 +2152,7 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise #12: background
+        #Class Exercise #7: background
 
         Copy and paste the code below into your CSS file, one value at a time, to see how each property works.
 
@@ -2338,9 +2179,6 @@ border: 15px solid green;</textarea>
         ###Resources
         * [CSS Tricks: background](https://css-tricks.com/almanac/properties/b/background/)
         * [background-size and positioning](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/)
-
-        <!-- .element: class="delayed" -->
-        Your page should now look similar to [exercise-12.html](project/reference/exercise-12.html).
       </script>
     </section>
 
@@ -2449,7 +2287,7 @@ border: 15px solid green;</textarea>
 
   <section class="slide" data-markdown>
       <script type="text/template">
-      #Class exercise: Screen Reader check
+      #Bonus exercise: Screen Reader check
 
       You now have a functional and beautiful website! Let's try using the screen reader again on **our** site now and see how easy it is to navigate! Refer <a href="#slide28">back to slide 28</a> for the screen reader commands.
 
