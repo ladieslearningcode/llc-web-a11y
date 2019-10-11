@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Femmes en programmation</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S’occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Durée / barre de progression : définissez la durée de la présentation avec « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+
+
+  <main>
+
+  <section class="slide" data-toc data-markdown>
+    <script type="text/template">
+      ###Notes de la formatrice
+
+      ###Femmes en programmation : accessibilité Web avec le HTML et le CSS
+
+      <br>
+      ##Ordre du jour
+
+      <strong>Important :</strong>
+      Ces notes ne sont que des suggestions. Vous n’avez pas besoin de les suivre à la lettre! Concentrez-vous davantage sur les apprenantes et leur compréhension. Tant qu'elles ont bien suivi, ce n'est pas un problème si vous ne faites pas toutes les diapositives.
+
+      <em>Remarque </em>: l’horaire indiqué correspond à celui d’un atelier d’une journée complète.
+      Si vous faites l'atelier en deux soirées, divisez l’horaire en deux. N’oubliez pas de faire une pause de 15 à 30 minutes tous les jours. Les 15 ou 20 premières minutes du deuxième jour devraient être consacrées à la révision et aux questions sur la dernière séance.
+
+      * <strong>Intro (10 h 00 - 11 h 00)</strong> : Projet du jour, Qu'est-ce que l'accessibilité?
+      * <strong>Intro au HTML (11 h 00 - 12 h 30)</strong> : L’anatomie d’une page Web
+      * <strong>Dîner (12 h 30 - 13 h 00)</strong>
+      * <strong>CSS (13 h 00 - 15 h 30)</strong> : Ajouter du style à une page
+      * <strong>Conclusion (15 h 30 - 16 h 00)</strong>
+
+
+      <br>
+      ##Remarques générales
+
+      * <strong>Important</strong> : Accordez aux apprenantes assez de temps pour télécharger les fichiers d'apprentissage. À l'accueil, vérifiez si les apprenantes ont bien téléchargé les fichiers.
+      * Problème fréquent : Les apprenantes utilisant Windows doivent extraire tout le dossier afin d’utiliser les fichiers. Si une apprenante voit les diapositives sans style ou mise en page, essayez cette méthode.
+
+      Avant le début de l'atelier, mettez à jour les identifiants du Wi-Fi sur la diapositive 1 ainsi que les informations sur la formatrice sur la dernière diapositive.
+
+      Nous souhaitons que cet atelier soit axé sur la collaboration. Ainsi, la majorité des exercices sont conçus pour le travail d’équipe. Donnez aux apprenantes assez de temps pour s’installer. Si vous avez peu d'apprenantes dans un grand local, demandez au groupe de se rapprocher au début de l'expérience.
+
+      Il y a beaucoup d'exercices durant l'atelier, particulièrement dans la deuxième partie (après le dîner ou durant la dernière journée). Si possible, assurez-vous d'avoir le matériel nécessaire pour faire jouer de la musique durant les exercices. Il est conseillé de faire jouer de la musique instrumentale, car les paroles pourraient distraire le groupe. Voici quelques listes de lecture recommandées :
+      https://www.youtube.com/watch?v=hHW1oY26kxQ ou
+      https://www.youtube.com/watch?v=ZbUCJzTR6yo
+
+
+      ##Exemples
+
+      **Diapositive 1 : (Intro)**
+
+      Les utilisateurs de Windows doivent télécharger NVDA. Les utilisateurs de Mac et de Chromebook n’ont pas à télécharger de logiciel, car leur ordinateur a un lecteur d’écran intégré.
+
+
+      **Diapositive 8 : (Qu'est-ce que l'accessibilité?)**
+
+      // Quelle est la définition du mot accessibilité? Pourquoi « a11y »?
+      En ce qui concerne « a11y », l'abréviation est née en raison des limites de caractères sur les réseaux sociaux comme Twitter. En remplaçant le mot-clic #accessibility par #a11y dans nos messages, nous gagnons 9 caractères.
+      De plus, « a11y » est un mot plus précis qu’« accessibility », ce qui favorise la recherche sur Google et les autres moteurs. En écrivant « accessibility » ou « accessibilité » sur Google, vous verrez qu’il y a beaucoup de résultats non pertinentes. Partout dans le monde, les spécialistes de l'accessibilité utilisent « a11y » comme terme technique pour montrer leurs travaux et discuter.
+
+      Déficiences temporaires et selon la situation : poignet foulé, pupilles dilatées pendant les examens de la vue, connexion Internet lente ou instable, connexion mobile restreinte, manque de temps, mains avec de gros doigts...
+
+
+      **Diapositive 11 : (Activité brise-glace)**
+
+      Cet exercice est du type « Pense, discute, partage ». Demandez aux apprenantes de travailler en petit groupe ou avec leur voisine et de discuter de leurs expériences, si elles sont à l'aise. Rappelez à tous le Code des programmeuses, qui définit les comportements encouragés en classe. Après l'activité, demandez aux apprenantes si elles souhaitent faire partager leurs expériences avec le groupe en entier.
+
+      **Diapositive 14 : (Lois du Canada)**
+
+      Prenez quelques instants pour chercher les lois et les exigences gouvernementales concernant l'accessibilité dans votre province ou territoire. Cherchez « a11y » si vous voulez filtrer les résultats. À noter que la plupart des sites seront en anglais.
+
+      **Diapositive 16 : (Perceptibilité)**
+
+      Déficiences temporaires et selon la situation : poignet foulé, pupilles dilatées pendant les examens de la vue, connexion Internet lente ou instable, connexion mobile restreinte, manque de temps, mains avec de gros doigts...
+
+      **Diapositive 17 : (Utilisabilité)**
+
+      Prenez le temps de montrer le fonctionnement de l’accordéon et de l’onglet afin que les apprenantes aient une représentation visuelle de ces composantes.
+      Demandez aux apprenantes si elles ont déjà eu de mauvaises expériences avec du contenu difficile à arrêter ou à fermer.
+
+      **Diapositive 20 : (Accéder à des sites et à des pages Web)**
+
+      Mentionnez qu’elles ne pourront pas partager un chemin local avec quelqu’un d'autre, mais que vous leur montrerez comment publier leur site en ligne à la fin de l'atelier.
+
+      **Diapositive 23 :  (Logiciel : lecteur d’écran)**
+
+      La boîte offre une bonne occasion de discussion.
+
+      **Diapositive 29 : (Retour sur l'expérience avec le lecteur d'écran)**
+
+      Questions et réponses possibles :
+
+      Question : Le lecteur lit-il les publicités?
+
+      Réponse : Dans le cas d’une publicité Google Ads, le lecteur d’écran la présentera comme du « Contenu publicitaire d’un tiers ».
+      Les publicités avec la lecture automatique du son ou les vidéos (par exemple, sur les sites de nouvelles) couvrent totalement les paroles du lecteur d’écran. Ainsi, les personnes malvoyantes ne peuvent pas entendre le lecteur d’écran et naviguer jusqu'au bouton d'arrêt pour interrompre le son. En fait, même les personnes voyantes n’aiment pas la lecture automatique des vidéos. Il est donc conseillé d’éviter toute lecture automatique.
+
+      Question : Comment le lecteur d’écran va-t-il jusqu'en bas de la page?
+
+      Réponse : Comme le lecteur lit le code, mais pas la page elle-même, le HTML sera lu de haut en bas. Les lecteurs d’écran ont des fonctions qui nous permettent de sauter d’une section à une autre pour trouver les informations que nous recherchons plutôt que d’attendre la séquence fixe.
+
+      Question : Le lecteur parle-t-il différentes langues?
+
+      Réponse : Seulement certains lecteurs d’écran parlent plusieurs langues. En ce qui concerne VoiceOver, 30 langues sont prises en charge, tandis que NVDA est traduit en 54 langues.
+
+      Question : Le lecteur lit-il le CSS?
+
+      Réponse : Non. Le lecteur d’écran ne s’intéresse qu'au contenu, pas à la présentation (taille des éléments, couleurs, polices et mise en page).
+
+
+      **Diapositive 25 : (Vidéo, matériel : contacteurs au souffle)**
+
+      Vous voyez à quel point les logiciels 3D sont difficiles à utiliser pour tout le monde! La personne dans la vidéo fait des actions très complexes avec son contacteur au souffle.
+
+      **Diapositive 41 :  (L'élément HEAD)**
+
+      Les utilisateurs peuvent *voir* votre corps, mais ils ne peuvent pas voir ce qui se passe dans votre tête. Par contre, ce que vous avez dans la tête est essentiel au fonctionnement de votre corps. Pour voir le contenu de la tête, l’élément HEAD, il faut regarder dans le code source de la page.
+
+      **Diapositive 45 :  (Exercice de groupe n°4 : modifier la page HTML du projet)**
+
+      En premier lieu, laissez les apprenantes faire cet exercice par elles-mêmes. Elles peuvent travailler avec leurs voisines et demander de l'aide aux mentores. N'hésitez pas à faire le tour de la classe plus tard pour aider les apprenantes.
+
+      **Diapositive 48 :  (Exercice de groupe n°2 : structure)**
+
+      Pour cet exercice, guidez les apprenantes. Au point 4, laissez-les se débrouiller par elles-mêmes.
+
+      **Diapositive 52 : (Exercice de groupe : tester l'ordre des en-têtes)**
+
+      Durant notre atelier pilote, les apprenantes ont relevé ces aspects :
+
+      - Le code HTML de Good Foot Delivery n’avait pas beaucoup d’en-têtes différents. Il y avait beaucoup d'en-têtes h1 (à ne pas faire!). Une bonne partie des en-têtes auraient dû être des paragraphes. La hiérarchie des balises d’en-tête n'est pas respectée.
+      - Comme table des matières, la liste d'en-têtes est incompréhensible. Elle commence par des noms de personnes, sans contexte.
+
+      Mentionnez aussi la fonction de clavardage qui s'affiche. Comment un lecteur d’écran lirait-il ce code? Comment l’utilisateur pourrait-il interagir?
+      Vous pouvez aussi parler de la performance (le temps de chargement) de chaque site en général. Selon la région et les conditions, la vitesse de connexion Internet pourrait être très variable. Pensez aussi aux utilisateurs qui dépendent d’une connexion mobile limitée.
+
+      **Diapositive 53 :  (Paragraphes)**
+
+      Précisez que la première boîte est un bon exemple, mais que ce n'est pas le cas pour la deuxième boîte. Il est possible que certaines personnes ne voient pas la différence de couleur!
+
+      **Diapositive 78 :  (CSS : la présentation du site)**
+
+      Soulignez les raisons pour lesquelles nous avons pris le temps de bien comprendre les bases du HTML. N’oubliez pas que certains utilisateurs malvoyants ne verront pas la mise en page, les couleurs ou les arrière-plans que nous définirons avec le CSS.
+
+      **Diapositive 79 :  (CSS : syntaxe et terminologie)**
+
+      Précisez que le mot « color » en code s’écrit seulement avec l’orthographe américaine. « colour », l’orthographe canadienne et britannique, ne fonctionne pas.
+      Prenez le temps de bien faire la dernière question et assurez-vous que tout le monde a compris avant de passer à la prochaine diapositive.
+
+      **Diapositive 90 : (Exercice de groupe n°8 : choisir une palette de couleurs)**
+
+      À ce point-ci, l'atelier sera moins magistral, car nous ferons beaucoup d'exercices pratiques. N’hésitez pas à faire jouer de la musique pour mettre tout le monde à l'aise. Il est recommandé de faire jouer de la musique instrumentale, car les paroles peuvent distraire les apprenantes lorsqu'elles écrivent du contenu.
+
+      **Diapositive 91 :  (Styles de police CSS)**
+
+      Expliquez les fonctions des propriétés tout en mettant à jour chaque exemple dans l’éditeur de code. Parlez de l’utilisation de line-height (hauteur de ligne) sans et avec une unité de mesure.
+
+      Rappelez-leur de ne pas écrire les en-têtes HTML en majuscules. En fait, nous pouvons utiliser la propriété text-transform pour mettre tous nos en-têtes en majuscules!
+
+      **Diapositive 96 : (Exercice : Google Fonts)**
+
+      Montrez les différentes catégories de polices aux apprenantes. Si vous ne les connaissez pas, voici un graphique expliquant les différences :
+
+      llc-a11y-master-fr/framework/img/font-types-infographic.webp
+
+      Les polices Monospace, qui ne se trouvent pas dans le graphique ci-dessus, sont idéales pour la programmation, car tous les caractères ont une largeur égale. Imaginez qu’il y a une grille dans votre éditeur de texte et que chaque lettre est alignée verticalement.
+
+      **Diapositive 105 :  (Modèle de boîte)**
+
+      Présentez le modèle en utilisant l'analogie d’une boîte contenant un objet fragile à expédier.
+      L’objet est protégé par du remplissage (padding) À L’INTÉRIEUR de la boîte, c'est-à-dire du papier bulle ou des flocons de styromousse.
+      La bordure (border) correspond aux côtés extérieurs de la boîte.
+      La marge (margin) est la distance de la boîte par rapport aux objets qui l’entourent.
+
+      **Diapositive 106 :  (Marge et remplissage)**
+
+      Encouragez les apprenantes à utiliser les formes longues des propriétés, car elles sont plus faciles à comprendre pour le moment. Si elles souhaitent utiliser les formes courtes, elles pourront ce faire plus tard en consultant les diapositives.
+
+
+
+      **Diapositive 122 : (Images d'arrière-plan)**
+
+      Les apprenantes ont souvent de la difficulté à comprendre ces notions. D'abord, montrez-leur la relation entre les fichiers et les dossiers dans Atom, puis dans l’Explorateur Windows et dans Finder. Pointez les fichiers sur le projecteur afin que tout soit bien clair.
+      Pour expliquer le ../, faites une analogie avec un escalier. Il faut monter un escalier dans une maison pour récupérer un objet.
+
+      **Diapositive 130 : (Présentations)**
+
+      Selon la taille du groupe, le temps restant et la volonté des apprenantes, vous pouvez organiser une « exposition » en grand groupe ou présenter les créations seulement en petit groupe de deux.
+
+
+    </script>
+  </section>
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>

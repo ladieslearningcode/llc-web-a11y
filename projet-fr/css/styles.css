@@ -1,0 +1,84 @@
+header,
+section,
+footer {
+    margin: 0;
+    padding: 1px; /* Modifié de 0px à 1px */
+}
+
+body {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1, h2 {
+  margin: 0; /* Enlève l'espace par défaut */
+}
+h1 {
+  font-size: 4.7rem;
+}
+h2{
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+p{
+  font-size: 1.5rem;
+  margin: 0;
+}
+ul{
+  font-size: 1.3rem;
+}
+
+.texte{
+  position: relative;
+  z-index: 2;
+}
+section, header {
+  padding: 140px 60px;
+}
+
+/* EN-TÊTE DE LA PAGE
+-----------------------------------------*/
+header {
+  position: relative;
+  min-height: 80vh;
+  margin: 0;
+}
+header h1 {
+  font-size: 6.3rem;
+  padding-bottom: 20px;
+}
+header h2 {
+  font-size: 2rem;
+}
+
+/* Mission
+-----------------------------------------*/
+.mission{
+  background: #d3e6dd;
+}
+.mission p{
+  margin: 20px auto 0;
+}
+/* Contact
+-----------------------------------------*/
+.contact img{
+  width: 80px;
+}
+address{
+  display: block;
+  margin: 20px 0;
+  font-size: 1.8rem;
+}
+
+/* Bas de page
+-----------------------------------------*/
+footer {
+  background: #0e6c5c;
+  color: #fefefe;
+  padding: 20px 0;
+}
+footer a{
+  color: #fefefe;
+  font-size: 1rem;
+}

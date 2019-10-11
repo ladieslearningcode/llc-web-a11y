@@ -1,0 +1,104 @@
+header,
+section,
+footer {
+    margin: 0;
+    padding: 1px; /* Modifié de 0px à 1px */
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1, h2 {
+  margin: 0; /* Enlève l'espace par défaut */
+  font-weight: normal; /* Enlève le style gras par défaut */
+}
+h1 {
+  font-size: 4.7rem;
+}
+h2{
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+h3{
+  color: black;
+}
+p{
+  font-size: 1.5rem;
+  line-height: 1.5; /* Règle l'espace entre les lignes */
+  margin:0;
+}
+ul{
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+a {
+  color: #0e6c5c;
+}
+a:hover {
+  text-decoration: none;
+}
+.texte{
+  position: relative;
+  z-index: 2;
+}
+section, header {
+  padding: 140px 60px;
+}
+
+/* EN-TÊTE DE LA PAGE
+-----------------------------------------*/
+header h1 {
+  font-size: 6.3rem;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 20px;
+}
+header h2 {
+  font-size: 2rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Mission
+-----------------------------------------*/
+.mission{
+  background: #d3e6dd;
+}
+.mission p{
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+/* Contact
+-----------------------------------------*/
+.contact img{
+  width: 80px;
+}
+.contact a{
+  opacity: 0.75;
+  transition-duration: 0.3s;
+}
+.contact a:hover{
+  opacity: 1;
+}
+address{
+  display: block;
+  margin: 20px 0;
+  font-size: 1.8rem;
+  font-style: normal;
+}
+
+/* Bas de page
+-----------------------------------------*/
+footer {
+  background: #0e6c5c;
+  color: #fefefe;
+  padding: 20px 0;
+}
+footer a{
+  color: #fefefe;
+  font-size: 1rem;
+}

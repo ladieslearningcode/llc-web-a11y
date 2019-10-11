@@ -1,0 +1,2466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Femmes en programmation</title>
+  <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/styles.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- S’occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Durée / barre de progression : définissez la durée de la présentation avec « data-duration » en minutes. -->
+<body class="en" data-duration="360">
+  <main>
+    <section class="slide welcome highlight">
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Logo de Femmes en programmation">Bienvenue!</h1>
+
+      <div class="instructions">
+        <!-- AJOUTER LES INFOS SUR LE WI-FI ICI -->
+        <!-- <h2>Connectez- <br>vous</h2>
+        <p><strong>Wi-Fi :</strong> réseau Wi-Fi</p>
+        <p><strong>Mot de passe :</strong> mot de passe du Wi-Fi</p>
+        <hr> -->
+
+        <h2>Téléchargez<br> et installez</h2>
+        <ol class="downloads">
+          <li>Fichiers d’apprentissage (dossier zip) : <a href="https://github.com/ladieslearningcode/llc-web-a11y/archive/master.zip">http://bit.ly/llc-a11y</a> (a11y = a + 11 (onze) + y)
+            <ul>
+              <li>Dézippez le dossier (<em>Extraire tout</em> sur Windows).</li>
+              <li>Ouvrez <em>diapositives.html</em> dans le navigateur pour afficher les diapositives.</li>
+            </ul>
+          </li>
+          <li>Éditeur Atom : <a href="http://atom.io">http://atom.io</a>
+            <ul>
+              <li>Si vous avez un ordinateur Chromebook, utilisez <a href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en" target="_blank">Caret</a>.</li>
+            </ul>
+          </li>
+          <li>Navigateur Chrome : <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          </li>
+          <li>Lecteur d’écran <a href="https://www.nvaccess.org/download/">NVDA</a> - Si vous utilisez Windows.</li>
+          <br><br>
+          </li>
+        </ol>
+      </div>
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+    <section class="slide intro">
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Logo de Femmes en programmation">
+      <h1 class="heading-bg">
+        <span>Accessibilité Web<br>avec le HTML et le CSS</span>
+      </h1>
+
+      <ul>
+        <li><a href="http://twitter.com/learningcode">@learningcode</a></li>
+        <li><a href="https://twitter.com/search?q=%23ladieslearningcode&src=typd">#ladieslearningcode</a></li>
+      </ul>
+
+      <!--div class="sponsor">
+        <p>En partenariat avec<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
+      </div-->
+      <footer>
+        <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" src="framework/img/cc-by-nc.png" /></a>s
+        <p class="right">Utilisez les flèches gauche <span class="arrow">&#8592;</span> et droite <span class="arrow">&#8594;</span> pour naviguer.</p>
+      </footer>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Le code des programmeuses
+
+        1. Soyez chaleureuses et accueillantes.
+        1. Choisissez bien vos mots et vos actions.
+        1. Respectez l'espace des autres durant les conversations.
+        1. Posez des questions.
+        1. Faites de votre mieux (et amusez-vous!)
+      </script>
+    </section>
+
+<!--Diapositive temporaire-->
+     <section class="slide" data-markdown>
+        <script type="text/template">
+          ## Le thème du mois de décembre est...
+
+          # l'action!
+
+          Nous avons eu une année riche en apprentissages durant laquelle nous avons élargi nos horizons et acquis de nouvelles compétences. À quelques semaines de 2020, nous vous invitons à plonger dans l'avenir, à réfléchir et à vous engager dans une cause en réalisant un projet.
+
+          ** Agissez et créez un site Web accessible. **
+
+          Publiez votre projet sur les réseaux sociaux avec le mot-clic #clcCode4Change. Pour obtenir plus d’informations, cliquez [ici](https://www.canadalearningcode.ca/code-can-change-the-world/).
+
+        </script>
+      </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Le projet du jour
+
+        Consultez le projet complet [ici](projet-fr/référence/final.html).
+
+        ![Projet final](framework/img/workshop/projetfinal.png)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Plan de cours
+
+        <div class="table-of-contents"></div>
+      </script>
+    </section>
+
+    <section class="slide title dark" data-markdown data-toc>
+      <script type="text/template">
+        #Premiers pas
+        ##Accessibilité et sites Web
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Qu'est-ce qu’un site Web, en fait?
+
+        Un **site** Web est composé d’une ou de plusieurs **pages** Web et de fichiers (comme des images et des documents HTML) placés dans des dossiers.
+
+        Le code HTML et CSS que nous écrirons aujourd’hui sera interprété par un navigateur Web et présenté à l’utilisateur.
+
+        Certaines personnes ont une expérience très différente en naviguant le Web, mais tout le monde mérite d'avoir un accès égal aux mêmes informations. C'est ça, le but de l’accessibilité!
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Qu'est-ce que l'accessibilité?
+
+        Par définition, quelque chose d'<b>accessible</b> est facile à utiliser et à comprendre. En anglais, vous verrez parfois le numéronyme « a11y » pour parler d’« accessibility »
+        (a + 11 + y).<br>
+
+        ## Quelles catégories de personnes ont des besoins particuliers en matière d'accessibilité?
+
+        <ul><li>Les personnes malvoyantes ou ayant une déficience visuelle</li>
+<li>Les personnes malentendantes</li>
+<li>Les personnes âgées</li>
+<li>Les personnes n'ayant pas le français comme langue maternelle</li>
+<li>Les personnes atteintes d’un trouble cognitif</li>
+<li>Les personnes atteintes d’un trouble de mobilité</li></ul>
+
+        Il ne faut pas oublier les personnes ayant des difficultés temporaires ou des déficiences dans certaines situations, par exemple, un poignet foulé ou une pupille dilatée après un examen de la vue.
+
+        En essayant de répondre aux besoins de ces catégories d’utilisateurs, vous verrez qu'en fait, vous créez des sites Web qui conviennent à tout le monde!
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Barrières
+
+        Une barrière est quelque chose empêchant une personne atteinte d’une déficience ou vivant une difficulté de participer pleinement à toutes les sphères de la société.
+
+        L’**attitude** est peut-être la plus grande barrière, mais nous pouvons facilement la faire tomber! Les stéréotypes sur les gens naissent d’un manque d’informations.
+
+        Il y a aussi des barrières **architecturales**, c'est-à-dire des barrières de communication rendant difficile la réception ou la transmission des informations. Ces barrières peuvent être de petits caractères, un faible contraste de couleurs, une conception complexe ou un langage difficile à comprendre. Par exemple, une personne daltonienne aurait de la difficulté à naviguer un site ayant un faible contraste de couleurs (texte, images et arrière-plans).
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Barrières
+
+        La **technologie** et le manque d'appareils peuvent empêcher quelqu’un d'accéder à des informations. Lorsqu’ils ne sont pas conçus en fonction de l'accessibilité, les appareils et les services de technologie que nous utilisons au quotidien présentent des obstacles.
+
+        Le manque d'accessibilité est un problème **systémique** souvent non intentionnel. Les politiques, les règlements et les procédures d’une organisation restreignent parfois l’utilisation des services par des personnes atteintes de déficiences. Exemple : le manque de sous-titres pour les personnes malentendantes.
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Activité brise-glace
+
+        ##Avez-vous déjà rencontré des obstacles à l’accessibilité?
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Responsabilité commune
+
+        Bien que certaines soient créées par une seule personne, les applications et les pages Web sont généralement conçues par une équipe.
+
+        Cette équipe comprend plusieurs personnes occupant des postes différents : **conceptrices et concepteurs d’IU/EU**, **développeuses et développeurs Web**, **ingénieuses et ingénieurs**, **rédactrices et rédacteurs**, **gestionnaires de projet**, **spécialistes**, **spécialistes en référencement naturel**, **traductrices et traducteurs**, etc.
+
+        Toutes les personnes travaillant sur un projet Web jouent un rôle dans la conception d’un produit accessible. Comme il s'agit d’un travail d’équipe, **tout le monde a la responsabilité** de s'assurer que le produit final respecte les normes et lois locales.
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Planification
+
+        Idéalement, avant le début d’un projet Web, l'accessibilité devrait être prise en considération dès les premières phases de planification.
+
+        Imaginez que vous faites construire une maison. Lorsque vous emménagez, vous rendez compte que les couloirs ne sont pas assez larges pour accueillir un fauteuil roulant pour adulte. Vous devrez débourser énormément d'argent pour rectifier la situation quand vous auriez pu tout simplement planifier le tout en prenant des mesures avant même de commencer la construction. Ce principe s'applique aussi lorsque vous créez des sites Web et des applications avec du code. **Lorsqu'elle n’est pas prise en compte dès le début, l’accessibilité nous fait perdre à la fois du temps et de l'argent.**
+
+        Malgré cela, il est toujours possible de rendre un site plus accessible. Les outils d'évaluation de l’accessibilité sont pratiques, car ils identifient les problèmes sur un site et proposent une solution.
+
+        ---
+        ###Outils d’évaluation de l'accessibilité
+        * [Siteimprove (extension Chrome)](https://siteimprove.com/en-ca/core-platform/integrations/browser-extensions/)
+        * [AChecker](https://achecker.ca/checker/index.php)
+      </script>
+    </section>
+
+
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Lois du Canada
+
+        <i>**Loi sur l'accessibilité pour les personnes handicapées de l'Ontario**</i>, 2005
+        Cette loi a été adoptée par le Gouvernement de l’Ontario.
+
+        * Elle vise à améliorer les standards d'accessibilité pour les personnes atteintes d'une déficience physique ou mentale dans les établissements publics de l’Ontario d’ici 2025.
+
+        Le Manitoba (2013), la Nouvelle-Écosse (2017) et la Colombie-Britannique (2018) ont aussi adopté des lois semblables avec des échéances différentes pour atteindre leurs objectifs.
+
+        Loi C-81 : **Loi canadienne sur l'accessibilité**, 2018.
+        Cette loi a été adoptée par le gouvernement fédéral.
+
+        * Son but est de déterminer, d’éliminer et d'empêcher les barrières à l'accessibilité dans le secteur privé régi par le gouvernement fédéral (transport, radiodiffusion, télécommunications et finances).
+
+        ---
+        ###Ressources
+        * [Accessibility Ontario](https://accessontario.com/)
+        * [<i>Loi sur l'accessibilité pour les Manitobains</i>](http://www.accessibilitymb.ca/)
+        * [<i>Loi sur l'accessibilité de la Nouvelle-Écosse</i>](https://novascotia.ca/accessibility/)
+        * [Barrier-Free BC](http://barrierfreebc.org/)
+        * [Bâtir un Canada accessible pour les personnes en situation de handicap](https://www.canada.ca/fr/emploi-developpement-social/programmes/accessible-personnes-handicapees.html)
+
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Standards d'accessibilité Web - application
+
+        **Règles pour l'accessibilité des contenus Web** (WCAG)
+
+        * Ces règles contiennent des standards internationaux favorisant l'accessibilité de l’Internet pour *tout le monde*.
+          * Il y a différents niveaux : A, AA et AAA.
+        * Ces règles ont été établies par [W3C](https://www.w3.org/Translations/WCAG20-fr/).
+        * La <i>Loi sur l'accessibilité pour les personnes handicapées</i> de l'Ontario est la seule loi provinciale exigeant l'adhésion aux règles pour l'accessibilité des contenus Web.
+
+        L’objectif n'est pas de nécessairement rendre tout 100 % accessible, mais chaque amélioration est un pas dans la bonne direction.
+
+        Les règles s'appuient sur 4 principes d'accessibilité : **perceptibilité, utilisabilité, compréhensibilité et robustesse**.
+
+        ---
+        ###Ressources
+        * [WCAG - Niveaux A, AA et AAA](https://www.linkedin.com/pulse/why-wcag-made-3-level-aa-aaa-different-levels-grade-website-arun-al/)
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Perceptibilité
+
+        >Les informations et les composantes de l’interface utilisateur doivent être présentées aux utilisateurs **de façon perceptible**.
+
+        * Tout contenu non textuel (images, audio ou vidéo) doit être accompagné de texte alternatif.
+        * La compréhension et l’utilisabilité *ne dépendent pas seulement* de caractéristiques perceptibles par les sens (couleurs, formes, tailles, emplacements et sons).
+          * La conception ne dépend pas des effets de survol avec la souris (écrans tactiles).
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Utilisabilité
+
+        >Les composantes de l’interface utilisateur et de la navigation doivent être utilisables.
+
+        Composantes = [onglets](https://jqueryui.com/tabs/), [accordéons](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion), fenêtres surgissantes et fenêtres de clavardage
+
+        * La conception doit être accessible avec un clavier.
+        * Le contenu doit être lisible en entier avant de changer.
+        * La conception doit intégrer des fonctions de pause, d’arrêt et de fermeture faciles d'accès.
+
+        ---
+        ##Ressources
+        * [Normes W3C pour les onglets](https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel)
+        * [Normes W3C pour les accordéons](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion)
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Compréhensibilité
+
+        >Le contenu textuel doit être lisible et compréhensible.
+
+        * Les formes longues des abréviations doivent être indiquées en premier dans le texte.
+        * Le texte doit comprendre des expressions faciles à comprendre par des personnes qui ne sont pas des spécialistes.
+        * Les étiquettes et les instructions sont visibles et claires.
+        * Les messages d'erreur sont descriptifs et utiles.
+          * « Veuillez indiquer une adresse courriel valide. » est un message d'erreur accessible. « Champ obligatoire » n'en est pas un.
+      </script>
+    </section>
+
+    <section class="slide website-table" data-markdown>
+      <script type="text/template">
+        #Robustesse
+
+        > La conception maximise la compatibilité avec les **agents utilisateurs actuels et futurs**, y compris les **appareils fonctionnels**.
+
+        ## Agents utilisateurs
+        * Appareils (tablettes, ordinateurs, téléphones intelligents, téléviseurs intelligents, montres intelligentes)
+        * Navigateurs (Chrome, Internet Explorer, Firefox, Safari, navigateurs mobiles)
+
+        ## Appareils fonctionnels
+        * Les appareils fonctionnels sont des technologies d'assistance, comme les lecteurs d’écran, les systèmes de suivi de la tête ou des yeux, les manches, les boules de commande, les claviers visuels à l’écran, etc.
+
+        Pour ces appareils, il est essentiel d'avoir du code HTML valide et sans erreurs.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Accéder à des sites et pages Web
+
+        Lorsque nous voulons afficher une page précise d’un site Web, nous donnons une URL au navigateur indiquant *comment* et *où* trouver les fichiers :
+
+        ```xml
+        https://www.canadalearningcode.ca/fr/a-propos/
+        ```
+
+        Nous travaillerons sur un fichier enregistré sur notre ordinateur qui ressemblera à ceci :
+
+        ```xml
+        file:///C:/Utilisateurs/TonNom/Bureau/llc-web-a11y-master/projet-fr/index.html
+        ```
+      </script>
+    </section>
+
+    <!--section class="slide" data-markdown>
+      <script type="text/template">
+        #À propos des URLs
+
+        Généralement, les URLs contiennent les éléments suivants :
+
+        - `schéma` - Le schéma indique au navigateur *comment* trouver le fichier.
+        - `hôte` - L’hôte est le nom du site Web. Il dit au navigateur où le fichier se trouve *généralement* (un peu comme une adresse de résidence).
+        - `chemin` - Le chemin dit *exactement* où se trouve le fichier. Si l’`hôte` est l’équivalent d’une adresse de résidence, le `chemin` est plutôt le nom de la personne que vous recherchez et la pièce où elle se trouve.
+
+        ```xml
+        <schéma>//<hôte>/<chemin>/
+        ```
+
+        ```xml
+        https://www.canadalearningcode.ca/about/
+        ```
+
+        ---
+        ###Ressource
+        https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2
+      </script>
+    </section-->
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Logiciel : éditeur de texte
+
+        * L’éditeur de texte sert à écrire et à modifier du code.
+        * Voici quelques bonnes options : [Notepad++](http://notepad-plus-plus.org/), [Sublime Text](http://www.sublimetext.com/) (essai gratuit sans limite de temps), [Brackets](http://brackets.io) et [TextWrangler](http://www.barebones.com/products/textwrangler/).
+
+        **[Atom](https://atom.io/)** est un éditeur libre gratuit que nous utiliserons aujourd'hui.
+        <span class="note">(Si vous avez un autre éditeur installé, il fonctionnera aussi, mais quelques fonctions seront différentes.)</span>
+        *Les utilisateurs de Chromebook peuvent utiliser [Caret](https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=fr). L'extension a les mêmes fonctions qu'Atom, mais l'apparence est différente. Vous pourriez avoir besoin de l'aide des mentores pour installer ces logiciels.
+
+        ---
+        ###Truc de pro :
+        Améliorez votre efficacité en utilisant des [raccourcis de clavier](https://www.canadalearningcode.ca/wp-content/uploads/keyboard-shortcuts.pdf).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Logiciel : navigateur Web
+
+        La fonctionnalité principale d’un [navigateur](http://browsehappy.com) est de présenter une *ressource Web* dans une fenêtre.
+
+        Pour avoir une expérience optimale, choisissez un navigateur moderne qui prend en charge les standards Web actuels et comprend des outils de développement.
+
+        Dans [Google Chrome](https://www.google.com/intl/fr-CA/chrome/browser/) (et dans d’autres navigateurs), vous pouvez afficher le code source de *toutes les pages Web*. Faites un clic droit / tapez à deux doigts dans le navigateur et sélectionnez « Afficher le code source de la page ». Ce que vous voyez, c'est du HTML!
+
+        ---
+        ###Ressource
+        http://browsehappy.com
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Logiciel : lecteur d’écran
+
+        Les lecteurs d’écran sont des programmes qui permettent aux utilisateurs malvoyants ou ayant une déficience visuelle de lire le texte d’une page Web.
+
+        * Ils font appel à la synthèse texte-parole ou au braille pour afficher les pages.
+        * Ils ont une fonction de recherche de mot ou de phrase.
+        * Ils disent à l’utilisateur où se trouve le curseur de l’ordinateur ou l’élément sélectionné.
+
+        ---
+        ###Lecteurs d’écran gratuits
+        * Intégré aux ordinateurs Mac : [VoiceOver](https://www.apple.com/ca/fr/accessibility/mac/vision/)
+        * Intégré aux ordinateurs Chromebook : [ChromeVox](https://support.google.com/chromebook/answer/177893?hl=fr)
+        * [NVDA - Lecteur d’écran pour Windows](https://www.nvaccess.org/download/)
+        * [Jaws pour Windows](https://support.freedomscientific.com/Downloads/JAWS)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Matériel : pointeurs et claviers
+
+        <img src="framework/img/workshop/focus-2.gif" alt="clavier sélectionnant des éléments" style="width: 550px; float: right;" />
+
+        Les claviers, souris et pavés tactiles traditionnels ne conviennent pas à tout le monde. Heureusement, il existe du matériel spécial conçu pour l'accessibilité :
+
+        * claviers utilisables à une main
+        * tiges et baguettes portées sur la tête, insérées dans la bouche, attachées au menton ou manipulées par les pieds
+        * contacteur activé par le souffle (inspiration ou expiration)
+        * dispositifs de pointage électroniques fonctionnant par ultrasons, lasers infrarouges, mouvements oculaires, influx nerveux ou ondes cérébrales
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Matériel : contacteur au souffle
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TSIABD6dU1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <small>Cette vidéo a été créée par Giesbert Nijhuis avec son appareil de commande HeadMouse ([Origin Instruments](http://www.orin.com/access/headmouse/)) et KeyStrokes ([AssistiveWare](https://www.assistiveware.com/fr/)). Le logiciel 3D qu’il utilise s'appelle Cheetah3D. La musique a été créée dans GarageBand.</small>
+
+        <small>« Je suis presque complètement paralysé. Je peux seulement bouger ma tête en raison d’une blessure à la colonne vertébrale (C3/4). »</small>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Démonstration : utilisation d’un lecteur d’écran
+
+        En consultant votre site avec un lecteur d’écran vous-même, vous pouvez voir les barrières et les problèmes potentiels en matière d'accessibilité.
+
+        >N’oubliez pas qu’il nous est impossible de reproduire exactement l'expérience d’une personne malvoyante sur le Web. Vous pourriez trouver le lecteur d’écran difficile à utiliser, intimidant ou frustrant, particulièrement si le site que vous consultez n'est pas pensé pour l’accessibilité.
+
+        ---
+        ###Ressources
+        <small>Autant que possible, il est conseillé de faire des tests avec des utilisateurs atteints de déficiences afin de savoir comment répondre à leurs besoins en concevant votre site.</small>
+
+        * <small>[Fable : test d'accessibilité avec des utilisateurs réels](https://www.makeitfable.com/)</small>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : utiliser un lecteur d’écran
+
+        1. Dans les fichiers d'apprentissage, ouvrez le dossier `démo-site` et le fichier `index.html`. Consultez le site comme vous le feriez d’habitude : cliquez sur des liens et allez dans le menu.
+        2. Vérifiez que le son sur votre ordinateur est bien activé. Mettez-le à un niveau raisonnable.
+        3. Lancez le lecteur d’écran et utilisez les commandes qui se trouvent sur la diapositive suivante pour naviguer le site seulement avec votre clavier. Vous avez le choix de continuer à regarder votre moniteur ou de seulement écouter le lecteur d’écran.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : commandes du lecteur d’écran
+
+        <table>
+          <tr>
+            <th>**Lecteur d’écran**</th>
+            <th width="30%">**Ouverture**</th>
+            <th width="30%">**Fermeture**</th>
+            <th width="30%">**Pointeur visuel**</th>
+          </tr>
+
+          <tr>
+            <td>VoiceOver (Mac)</td>
+
+            <td>`Cmd` + `F5`</td>
+
+            <td>`Cmd` + `F5`</td>
+            <td>Ctrl + Opt et la flèche gauche ou droite</td>
+          </tr>
+
+          <tr>
+            <td>NVDA (Windows)</td>
+
+            <td>`Ctrl` + `Alt` + `n`<br>
+            ou le raccourci clavier pour accéder au bureau</td>
+
+            <td>`Inser` + `q`<br>
+            ou le menu de la barre de tâches<br>
+            clic droit, quitter</td>
+            <td>Flèche vers le haut ou le bas</td>
+          </tr>
+        </table>
+
+        * Utilisez `Ctrl` pour interrompre la voix.
+        * Utilisez les flèches vers le haut ou le bas pour lire la ligne précédente ou suivante.
+        * Utilisez `Tab` pour sauter au prochain lien et `Maj` + `Tab` pour sauter au dernier lien.
+        * Tapez `Entrée` pour cliquer sur le lien sélectionné.
+      </script>
+    </section>
+
+
+
+    <section class="slide " data-markdown>
+      <script type="text/template">
+        #Retour sur l'expérience avec le lecteur d’écran
+
+
+        Quelles fonctionnalités vous ont été utiles?<!-- .element: class="delayed" -->
+
+        Quelles fonctionnalités étaient difficiles à utiliser?<!-- .element: class="delayed" -->
+
+        Qu’avez-vous découvert? Qu'est-ce qui était surprenant?<!-- .element: class="delayed" -->
+
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Intro au HTML
+        ##Hypertext Markup Language (langage de balisage hypertexte)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Syntaxe du HTML
+
+        Les balises s’écrivent avec des chevrons `< >` et une barre oblique vers l'avant `/` pour la balise de fermeture. Familiarisez-vous avec ces touches!
+
+        ![Touches du clavier](framework/img/workshop/keyboard-html_fr.png)<!-- .element: width="70%" -->
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #HTML : le contenu du site
+
+        Les balises viennent en paires (une balise d’ouverture et une balise de fermeture) et *entourent* le contenu.  Vous remarquerez que la balise de fermeture prend une barre oblique (`/`).
+
+        ```
+        <balise> balise d’ouverture --- balise de fermeture </balise>
+        ```
+
+        Les *balises* HTML décrivent le contenu qui se trouve à l’intérieur afin que le navigateur Web ou les appareils fonctionnels le comprennent.
+        ```
+        <h1>Cette balise décrit un en-tête (heading).</h1>
+        <p>Cette balise indique un paragraphe.</p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Balises imbriquées
+
+        Les balises peuvent être *imbriquées* dans d'autres balises, comme ceci :
+
+        ```
+        <baliseexterne>contenu externe <baliseinterne>contenu interne</baliseinterne> contenu externe</baliseexterne>
+        ```
+
+        Les balises imbriquées ont une relation hiérarchique semblable à un arbre généalogique. Il y a des balises *parents* et des balises *enfants*.
+
+        La balise interne est l'enfant de la balise externe, le parent.
+
+        ```
+        <parent>
+          <enfant></enfant>
+        </parent>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Organisation du code
+
+        Le HTML a été conçu pour être lu par les navigateurs Web, pas par les humains. Ce code est absolument compréhensible par les navigateurs :
+
+        ```
+        <!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title></title></head><body></body></html>
+        ```
+
+        Toutefois, pour nous, l’utilisation d'espace et d’indentation (touche Tab) facilite la lecture du HTML. Pour imbriquer une balise, tapez sur Tab une fois avant la ligne :
+
+        ```
+        <baliseexterne>
+          <baliseinterne>
+          </baliseinterne>
+        </baliseexterne>
+        ```
+      </script>
+    </section>
+
+    <section id="basic-tags" class="slide" data-markdown>
+      <script type="text/template">
+        #Balises HTML de base
+
+        Les balises ci-dessous doivent se trouver dans *chaque* document HTML.
+
+        ```
+        <!DOCTYPE html>
+        <html lang="fr">
+          <head>
+            <meta charset="UTF-8">
+            <title></title>
+          </head>
+          <body>
+            <!-- Le contenu de la page va ici. (Au fait, ceci est un commentaire HTML.) -->
+          </body>
+        </html>
+        ```
+        (Nous connaîtrons le sens de ces balises très bientôt.)<!-- .element: class="note" -->
+
+        Pour créer un fichier HTML, enregistrez votre fichier avec l'extension `.html`.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Préparation du projet
+
+      À l’intérieur du dossier que vous avez téléchargé, ouvrez le dossier **projet** dans votre éditeur de texte pour modifier les fichiers.
+
+      ```html
+      llc-web-a11y-master
+        |-- framework // Ce dossier contient les fichiers nécessaires pour afficher ces diapositives. Ne modifiez PAS le contenu!
+        |-- projet-fr // Ce dossier contient les fichiers d'exercice pour l'atelier. (images et fichiers CSS et HTML)
+        |-- slides-fr.html // Vous lisez ce fichier en ce moment!
+      ```
+
+      Allez dans **File** > ** Add Project Folder**. Une fenêtre s'affichera.
+
+      ![](framework/img/workshop/editor-add-project-pc.jpg)<!-- .element: width="25%" --> ![](framework/img/workshop/editor-add-project-1.jpg)
+
+      Ensuite :
+
+      * Allez dans le dossier **llc-web-a11y-master**.
+      * Sélectionnez le dossier **projet-fr**.
+      * Cliquez sur **Ouvrir**.
+
+      Les fichiers du dossier s'afficheront maintenant dans la barre latérale.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Préparation du projet
+
+        La structure du dossier de votre projet devrait ressembler à ceci :
+
+        ```html
+        projet-fr
+          |-- css
+          |-- images
+          |-- référence
+        ```
+
+        Le dossier **images** contient une sélection d’images que vous pouvez utiliser dans votre projet. Vous pouvez aussi y ajouter des images de votre choix pendant les exercices.
+
+        Le fichier `index.html` est notre page HTML.
+
+        Le dossier **référence** contient le corrigé de chaque exercice. Ne le consultez pas, sauf si vous avez vraiment de la difficulté.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #À la découverte d'Atom
+
+        En prenant le temps de découvrir les fonctionnalités de votre éditeur de texte, vous améliorerez grandement votre efficacité. Dans cette lancée, modifions l’option d’habillage du texte pour rendre les longs blocs de code et le texte plus faciles à lire.
+
+        Allez dans **Preferences** pour afficher les options de personnalisation.<br />
+        Si vous utilisez Windows, allez dans le menu **File** et choisissez **Settings**.
+
+        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="40%" --> ![](framework/img/workshop/atom-settings-pc.jpg)<!-- .element: width="25%" -->
+
+        Sélectionnez l’onglet **Editor** dans le menu à gauche.
+
+         ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+
+        Assurez-vous que les cases des options **Soft Wrap** (Habillage du texte) et **Show Indent Guide** (Afficher l’indentation) sont bien cochées.
+
+        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+
+        ---
+        ###Ressources
+        * [Documentation d’Atom](https://atom.io/docs)
+        * [Raccourcis d’Atom](https://bugsnag.com/blog/atom-editor-cheat-sheet)
+        * [Personnalisation d’Atom](https://atom.io/docs/v0.61.0/customizing-atom)
+        * [Thèmes](https://atom.io/themes) for Atom
+        * [Snippets](https://github.com/atom/snippets), pour créer des raccourcis d’extraits de code
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #Doctype
+
+        * Bien qu’il ne s'agisse pas d’une balise HTML, il doit être le premier élément dans un document HTML.
+        * Le Doctype dit au navigateur la version du HTML de la page.
+        * Dans l'exemple ci-dessous, le Doctype correspond à HTML5.
+
+        <pre><code><strong>&lt;!DOCTYPE html&gt;</strong>
+        &lt;html lang=&quot;fr&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;!-- Le contenu de la page va ici. --&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #L’ÉLÉMENT HTML
+
+        * Il s'agit toujours de la première balise HTML, car elle définit le document comme étant du HTML.
+        * Cet élément est la racine et l'ancêtre de toutes les autres balises, car celles-ci sont toutes *imbriquées* à l’intérieur.
+        *  L’*attribut* `lang` indique la langue dans laquelle le contenu de la page est rédigé. Il est important de préciser la langue pour favoriser l'accessibilité de la page!
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        <strong>&lt;html lang=&quot;fr&quot;&gt;</strong>
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;!-- Le contenu de la page va ici. --&gt;
+          &lt;/body&gt;
+        <strong>&lt;/html&gt;</strong>
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #L’ÉLÉMENT HEAD
+
+        * Cet élément, la « tête », comprend des informations sur la page, mais *son contenu n'est pas affiché sur la page*.
+        * Les balises `<title></title>` définissent le titre de la page Web ou du document.
+          * Ces informations s'affichent dans les onglets du navigateur, les marque-pages / favoris et les résultats dans les moteurs de recherche.
+        * Le CSS, le JavaScript et les [métadonnées](https://searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags) peuvent aussi être indiqués ici.
+        * *Le contenu de la page ne va PAS ici.*
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;fr&quot;&gt;
+          <strong>&lt;head&gt;</strong>
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;Le titre de ma page&lt;/title&gt;
+          <strong>&lt;/head&gt;</strong>
+          &lt;body&gt;
+            &lt;!-- Le contenu de la page va ici. --&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide highlighted-tags" data-markdown>
+      <script type="text/template">
+        #L’ÉLÉMENT BODY
+
+        Le corps est la partie la plus importante d’une page. Le contenu que nous souhaitons afficher dans la fenêtre du navigateur va entre les balises `<body></body>`.
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;fr&quot;&gt;
+          &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;title&gt;Le titre de ma page&lt;/title&gt;
+          &lt;/head&gt;
+          <strong>&lt;body&gt;</strong>
+            &lt;!-- Le contenu de la page va ici. --&gt;
+          <strong>&lt;/body&gt;</strong>
+        &lt;/html&gt;
+        </code></pre>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributs
+
+        * Les attributs fournissent des informations ou des consignes supplémentaires à l’élément.
+        * Ils se trouvent à l’*intérieur de la balise d’ouverture*.
+        * Ils suivent la syntaxe suivante : `attribut="valeur"` (remarquez bien la position des guillemets).
+        * Il y a beaucoup d'attributs différents, y compris certains spécialement conçus pour l'accessibilité.
+
+        ```
+        <attribut de la balise="valeur">contenu</balise>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributs : exemples
+
+        Dans notre exemple de page HTML de base, il y a deux attributs.
+
+        L'attribut `lang` sert à définir la langue de la page.
+
+        ```
+        <html lang="fr">
+        ```
+
+        L’attribut `charset` définit le codage de caractères (c'est-à-dire l'alphabet) de la page.
+        ```
+        <meta charset="UTF-8">
+        ```
+
+        Durant les exercices, nous verrons d'autres attributs.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice n°1 : modifier la page HTML du projet (15 minutes)
+
+        1. Dans l’éditeur de texte, ouvrez `index.html` (**Fichier** > **Enregistrer**).
+        1. *Entre* les balises `<title></title>`, ajoutez un *titre de page* reflétant le contenu de votre page Web. Exemple :
+          ```
+          <title>Laura Ipsum | Conceptrice numérique et développeuse</title>
+          ```
+        1. Ouvrez `index.html` dans le navigateur.
+          * Allez dans l’Explorateur Windows ou Finder.
+          * Allez dans le dossier **llc-web-a11y-master > projet-fr**.
+          * Faites un double clic sur **index.html** pour l’ouvrir dans votre navigateur par défaut.
+          <br><span class="note">(Si Chrome n'est pas votre navigateur par défaut, faites un clic droit/tapez à deux doigts sur **index.html** et choisissez **Ouvrir avec > Chrome**.)</span>
+        1. Modifiez le contenu entre les autres balises HTML pour personnaliser le contenu de la page. N’oubliez pas de sauvegarder les modifications dans l’éditeur de texte et de rafraîchir le navigateur Web.
+
+        <!-- .element: class="delayed" -->
+        Votre page devrait ressembler au fichier [exercice-1.html](projet-fr/référence/exercice-1.html) dans le dossier **référence**.
+      </script>
+    </section>
+
+    <section class="slide page-layout" data-markdown>
+      <script type="text/template">
+        # MISE EN PAGE - Sémantique
+
+        Prenons le temps de regarder la mise en page du projet final pour voir comment regrouper des éléments du même type et créer la structure d’une page.
+
+        <img src="framework/img/workshop/projetfinal.png" alt="capture d’écran du projet final" style="width:960px; float: left; margin-right: 15px;">
+
+        <div class="labels">
+
+        en-tête <!-- .element: class="en-tête" -->
+
+        mission <!-- .element: class="à-propos" -->
+
+        contact <!-- .element: class="jaime" -->
+
+        bas de page <!-- .element: class="bas de page" -->
+        </div>
+        </header>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Éléments structurels HTML5
+
+        Le HTML5 a amené de nouvelles balises qui décrivent mieux les blocs de contenu, comme `<header>` (en-tête), `<main>` (principal), `<footer>` (bas de page) et `<section>`. Ce ne sont que quelques exemples de balises.
+
+        Ces balises sont bonnes pour le **référencement naturel** (SEO). En effet, les moteurs de recherche donnent la priorité aux mots-clés dans les en-têtes et les liens plutôt que les mots-clés dans les balises non sémantiques comme `<div>` afin que le site puisse être *référencé* ou « indexé ».
+
+        Elles sont aussi adaptées aux **lecteurs d’écran**, qui lisent les balises au fur et à mesure que l’utilisateur consulte le contenu. Les lecteurs d’écran avertissent l’utilisateur si un élément est un en-tête, un bas de page, etc.
+
+        ---
+        ###Ressources
+        * [HTML : une bonne base pour l'accessibilité](https://developer.mozilla.org/fr/docs/Apprendre/a11y/HTML)
+
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      #Écriture de contenu accessible pour le Web
+
+      ##En-têtes, images, vidéos et plus encore
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #En-têtes
+
+        Les balises HTML d’en-tête définissent les sujets principaux de la page.
+
+        Ces balises d’en-tête sont numérotées de `<h1>` à `<h6>` et servent à décrire la *hiérarchie* de la structure de la page. Pour déterminer l’en-tête à utiliser, imaginez que vous faites un plan de texte. Quelles sont vos idées principales ou secondaires? Quels sont vos titres ou sous-titres?
+
+        ```xml
+        <h1>Types de pommes</h1>
+        <h2>Types de pommes rouges</h2>
+        <h3>Pomme Fuji</h3>
+        ```
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #En-têtes
+
+        La plupart des lecteurs d’écran nous permettent de parcourir les en-têtes d’une page pour trouver du contenu précis, un peu comme une table des matières.
+
+        L’ordre des en-têtes est donc important, car les personnes malvoyantes (et les robots des moteurs de recherche) peuvent comprendre l’importance du contenu de la page selon la hiérarchie. Faites attention aux numéros des en-têtes!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : tester l’ordre des en-têtes
+
+        Mettez-vous en équipe avec la personne à côté de vous. Choisissez un de ces deux sites (un site différent par personne) :
+
+          * [ca.endy.com](https://qc.endy.com/)
+          * [goodfootdelivery.com](https://www.goodfootdelivery.com/)
+
+        1. Copiez l’URL du site Web qui se trouve dans la barre de votre navigateur.
+        1. Allez sur le site de [l’outil d’évaluation d’accessibilité Web](http://wave.webaim.org/) et collez l’URL.
+        1. Cliquez sur l’icône de la page pour voir le plan des en-têtes :
+
+        <img src="framework/img/workshop/heading-outline.jpg" style="width: 260px;">
+
+        Comparez vos réponses avec votre partenaire. Quel site a une meilleure hiérarchie d'en-têtes? Comment pourriez-vous améliorer la hiérarchie?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Paragraphes
+
+        Qu’ils contiennent une seule phrase ou plusieurs, les **paragraphes** ont tous besoin d’une paire de balises `<p> </p>`.
+
+        ```xml
+        <p>Ceci est un paragraphe.</p>
+
+        <p>Ceci est un long paragraphe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero dolor expedita quasi reiciendis minus unde sapiente id eveniet saepe officia quibusdam aspernatur, sint voluptate ipsam ex magni. Aliquam, ex!</p>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Paragraphes
+
+        Si vous avez besoin d’écrire du texte sur une nouvelle ligne, utilisez la balise autofermante `<br>`. Une balise autofermante s'écrit seule, pas en paire, donc nous n’avons pas besoin d’ajouter `</br>` (cette balise n’existe même pas!). Exemple :
+
+        ```xml
+        <p>129 Spadina Avenue<br>
+        Toronto, ON<br>
+        M5V 2L3</p>
+        ```
+
+        Toutefois, nous pourrions utiliser une autre balise dans cet exemple. En effet, il y a une balise HTML qui définit une `adresse` :
+
+
+        ```xml
+        <address>129 Spadina Avenue<br>
+        Toronto, ON<br>
+        M5V 2L3</address>
+        ```
+
+        >Avez-vous une adresse sur la page de votre projet? Dans ce cas-ci, utilisez la balise `<address>` plutôt que la balise de paragraphe générique `<p>`.
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Paragraphes
+
+        Visuellement, les deux exemples ci-dessous sont identiques pour une personne ayant une vue normale. Toutefois, le deuxième exemple n’offre pas de contexte pour chaque paragraphe. Il s'agit d’un aspect particulièrement important pour les personnes ayant une déficience visuelle :
+
+        <pre><code style="background: #b9efc5;" class="xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre>
+
+        <pre><code style="background: #f3b4b4;" class="xml hljs"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></code></pre>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Conseils pour écrire du contenu pour le Web
+
+        Avant de commencer à écrire du contenu, créez une liste de mots-clés que vos utilisateurs pourraient chercher pour trouver votre site Web.
+
+        * Quels services ou produits offrez-vous?
+        * Où les offrez-vous?
+        * Analysez les sites de vos concurrents pour voir les mots-clés qu’ils utilisent.
+
+        Lorsque vous aurez créé votre liste de mots-clés, **utilisez-les dans votre contenu**! Les moteurs de recherche comme Google regardent le contenu textuel pour déterminer le rang et la pertinence de votre site dans les résultats de recherche.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Conseils pour écrire du contenu sur le Web
+
+        * Le texte devrait être le plus simple et clair possible. Moins vous écrivez, mieux c'est!
+        * Évitez les termes trop spécialisés.
+        * *N’enterrez pas les informations principales sous une montagne d’informations secondaires.* Chaque page ou section doit commencer par les informations les plus importantes.
+        * Les listes sont plus faciles à lire rapidement que les paragraphes (vous verrez les balises HTML des listes sur la diapositive suivante).
+
+        Si vous utilisez des abréviations dans un texte, écrivez d’abord la forme longue de l'expression sur la page.
+        > Les Règles pour l'accessibilité des contenus Web (WCAG) sont des lignes directrices visant à améliorer l'accessibilité en ligne. Ces standards ont été établis en 1999.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Listes
+
+        Les **listes numérotées** classent des éléments dans un ordre précis. Pour créer une liste numérotée, nous avons besoin de deux balises : une balise de liste numérotée `<ol>` et une balise d’élément de liste `<li>` :
+
+        ```xml
+        <p>Yogourt libre-service : procédure</p>
+        <ol>
+          <li>Prenez un gobelet.</li>
+          <li>Mettez du yogourt dans le gobelet.</li>
+          <li>Ajoutez des garnitures.</li>
+          <li>Pesez le gobelet et payez selon le poids.</li>
+        </ol>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Listes
+
+        Utilisez des **listes à puces** pour créer des listes d’éléments qui n’ont pas d’ordre précis. La syntaxe est presque la même que celle de la liste numérotée, mais les balises `<li>` doivent être entourées de balises `<ul>` plutôt que `<ol>`` :
+
+        ```xml
+        <ul>
+          <li>Pain</li>
+          <li>Huile d’olive</li>
+          <li>Bananes</li>
+        </ul>
+        ```
+        ---
+        ###Ressources
+        * [Styles CSS de liste](https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Hyperliens
+
+        Un hyperlien fait référence à des données, comme une page Web ou un document, auxquelles l’utilisateur peut accéder.
+
+        Utilisez la balise d’ancrage `<a>` pour créer un lien. Cette balise nécessite un attribut `href` pour donner des informations sur l'emplacement de la ressource.
+
+        L'exemple ci-dessous contient un chemin *absolu* vers le site Web de Femmes en programmation.
+
+        ```xml
+        <a href="http://ladieslearningcode.com">Femmes en programmation</a>
+        ```
+        Voici la syntaxe d’un lien vers une adresse courriel :
+        ```xml
+        <a href="mailto:allo@moncourriel.com">allo@moncourriel.com</a>
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Conseils pour créer des hyperliens accessibles
+
+        Le texte du lien devrait décrire le but et la destination du lien. Si vous lisez le lien sans lire le reste du paragraphe, le but et la destination du lien devraient être clairs.
+
+        Plutôt que de faire ceci :
+
+        ```xml
+        <a href="fichiers/rapport-annuel.pdf">Cliquez ici</a> pour lire notre rapport annuel.
+        ```
+
+        Faites ceci :
+
+        ```xml
+        <a href="fichiers/rapport-annuel.pdf">Lisez notre rapport annuel</a>.
+        ```
+        ---
+        ><small>Si vous avez créé un lien qui s’ouvre dans un nouvel onglet, l’utilisateur doit en être au courant.
+        [Techniques : Exemples, nouvelle fenêtre](https://www.w3.org/WAI/WCAG20/Techniques/working-examples/G201/new-window.html)</small>
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Nom des fichiers
+
+        * Il est important d'utiliser des noms de fichier qui reflètent le contenu des documents (PDF, documents Word, images).
+        * Le nom de fichier est le premier élément qu’une technologie d'assistance ou un appareil fonctionnel reconnaîtra et lira après avoir ouvert un document.
+
+        Entre ces deux noms de fichier, lequel est le plus clair?
+
+        `l400-05-19e.pdf`
+        ou
+        `formulaire-inscription-frais-carburant-ARC.pdf`
+
+        Il est essentiel de nommer vos fichiers de manière descriptive. Facilitez la recherche de vos fichiers en choisissant des mots-clés clairs.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Nom des fichiers
+
+        * Évitez les espaces dans les noms de fichier. Un fichier portant ce nom :
+
+        `formulaire inscription frais carburant ARC.pdf`
+
+         Ressemblera à ceci dans un navigateur :
+
+        `formulaire%20inscription%20frais%20carburant%20ARC.pdf`
+
+        Utilisez plutôt des traits d’union pour rendre vos noms de fichier lisibles par un humain.
+
+        `formulaire-inscription-frais-carburant-ARC.pdf`
+
+        ---
+        ###Ressources
+        * [Guide complet pour adapter des URLs et favoriser le référencement naturel](https://www.webalive.com.au/seo-friendly-urls/)
+        * [Moz : noms de fichiers images](https://moz.com/community/q/how-important-are-image-file-names)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : écrire du contenu (20 minutes)
+
+        1. Faites un remue-méninges pour trouver une liste de mots-clés qui décrivent votre contenu. Proposez vos idées aux personnes qui vous entourent.
+        1. Ajoutez 2 ou 4 paragraphes dans les sections que vous avez créées durant le dernier exercice.
+        1. Ajoutez des listes dans votre contenu, au besoin. (<a href="#slide58">Consultez la diapositive 58 pour connaître la syntaxe.</a>)
+        1. Ajoutez 2 ou 3 hyperliens avec les balises `<a>`. Vous pouvez faire des liens vers les icônes des réseaux sociaux et les adresses courriels.  (<a href="#slide59">Consultez la diapositive 59 pour connaître la syntaxe.</a>)
+
+        Votre page devrait ressembler au fichier [exercice-1.html](projet-fr/référence/exercice-1.html) dans le dossier **référence**.
+
+        ---
+        Utilisez [cette liste de balises HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element) comme référence.
+
+      </script>
+    </section>
+
+    <section class="slide project" data-markdown>
+      <script type="text/template">
+        #Chemins
+
+        Une partie du contenu sur les pages Web se trouve directement sur la page (p. ex., le texte), mais l'autre partie est à l'extérieur (p. ex., dans le dossier des images, sur un autre site Web, etc.).
+
+        Quand nous voulons afficher du contenu qui se trouve *à l'extérieur* de la page actuelle, nous devons dire au navigateur où il se trouve. Cette information s'appelle un `chemin`.
+      </script>
+    </section>
+
+    <section class="slide project" data-markdown>
+      <script type="text/template">
+        #Types de chemins
+
+        Les chemins permettent au navigateur de trouver, obtenir et afficher des ressources externes comme des images, des fichiers CSS et d'autres pages Web.
+
+        Il y a deux types de chemins :
+
+        * Chemin `relatif` - Ce type de chemin dit au navigateur comment trouver la ressource externe à partir de la page actuelle.
+        * Chemin `absolu` - Ce type de chemin dit au navigateur *exactement* où trouver la ressource externe en ligne.
+
+        Les chemins relatifs sont comme des directions, tandis que les chemins absolus sont comme des adresses de résidence.
+      </script>
+    </section>
+
+    <section class="slide project" data-markdown>
+      <script type="text/template">
+        #Chemins relatifs
+
+        **Nous utilisons les chemins relatifs pour faire un lien entre deux ressources sur le même site Web.**
+
+        Les chemins relatifs partent de la page actuelle et disent au navigateur quels sont les dossiers à accéder pour trouver la ressource externe.
+
+        ```xml
+        images/arrières-plans/foncé/arrière-plan-foncé-1.jpg
+        ```
+
+        Vous remarquerez que les balises `img` utilisent des chemins relatifs.
+      </script>
+    </section>
+
+    <section class="slide project" data-markdown>
+      <script type="text/template">
+        #Chemins absolus
+
+        **Nous utilisons des chemins absolus pour obtenir des ressources qui se trouvent *à l'extérieur* de notre site Web (ailleurs en ligne).**
+
+        ```xml
+        // Image
+        http://siteweb.com/images/image-1.jpg
+
+        // CSS
+        https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css
+        ```
+
+        Les chemins absolus commencent par un protocole (c'est-à-dire `http` ou `https`), suivi de l'emplacement de la ressource. Habituellement, nous n’avons pas besoin d’ajouter `www` devant le nom de domaine.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Images : balises autofermantes
+
+        Les balises autofermantes ne formatent pas le contenu et ne nécessitent pas de balise de fermeture. Elles servent à intégrer des objets à la page. En fait, elles *sont* le contenu de la page!
+
+        Les images prennent une balise autofermante. De plus, elles exigent l’ajout d’un *attribut* `src` pour dire au navigateur l’emplacement du fichier image.
+
+        ```
+        <img src="images/fichier-image.jpg">
+
+        ```
+
+        `alt` est un autre attribut ajouté aux images pour afficher du *texte alternatif*, c'est-à-dire une description prête à être lue par les lecteurs d’écran.
+
+        ```
+        <img src="images/fichier-image.jpg" alt="chaton">
+
+        ```
+
+        L'attribut `alt` est aussi utile quand une image ne se charge pas.
+        <img src="" alt="chaton">
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Conseils pour écrire du texte alternatif de qualité
+
+        * Le texte alternatif devrait être court et simple.
+        * Le texte alternatif ne devrait pas comprendre les mots « image de » ou « photo de ». À la base, le lecteur d’écran indiquera que l’élément est une image dès qu’il verra la balise `img`.
+          * Vous pouvez ajouter des mots comme « illustration de » ou « graphique de » pour ajouter du contexte à l’image.
+        * Si l’image elle-même contient du texte, comme un logo, votre texte `alt` *doit* contenir ce texte!
+
+        Si l’image est tout simplement décorative et ne contient pas d’informations essentielles, vous pouvez laisser l'attribut `alt` vide. Si vous voulez adhérer aux standards d'accessibilité sur le Web, l'attribut `alt` **doit** être présent et avoir une valeur. Toutefois, si vous le laissez vide, le lecteur d’écran l’ignorera.
+
+        ```
+        <img src="images/décorative.jpg" alt="">
+
+        ```
+
+        Souhaitez-vous faire un lien vers une image? Décrivez le lien dans le texte alternatif de l’image.
+        ```
+        <a href="#">
+          <img src="images/icône-twitter.jpg" alt="Suivez-moi sur Twitter">
+        </a>
+
+        ```
+        ---
+        ###Ressources
+        * [Texte alternatif : le guide complet](https://axesslab.com/alt-texts/)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Conseils pour des images accessibles
+
+        Si vous utilisez des images qui sont grandes ou lourdes, votre site pourrait être long à charger. Lorsque vous créez un site Web, vous devez absolument penser au temps de chargement. Si votre site est trop long à charger, les utilisateurs auront tendance à le quitter rapidement.
+
+        Utilisez un service gratuit comme [tinyjpg](https://tinyjpg.com/) pour compresser vos images avant de les téléverser sur votre site Web afin d'en réduire la taille.
+
+        ---
+        ###Ressources
+        * [Rendre des images plus accessibles - U of Washington](https://www.washington.edu/accessibility/checklist/images/)
+        * [Texte alternatif pour des images : De quoi s'agit-il? Comment le définir? Pourquoi est-ce important?](https://blog.hubspot.com/marketing/image-alt-text)
+        * [Écrire du texte alternatif efficace](https://www2.le.ac.uk/webcentre/plone/build/basics/add-images/alt-text)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe n°2 : ajouter une image (10 minutes)
+
+        1. Vous pouvez utiliser les images qui se trouvent déjà dans le dossier `projet` ou choisir vos propres images. Si vous avez des images que vous souhaitez utiliser, trouvez-les sur votre ordinateur et copiez-les dans le dossier `images` de votre projet. Demandez à une mentore ou travaillez avec votre voisine si vous avez besoin d'aide!
+        1. Ajoutez au moins deux images n’importe où sur votre page `index.html`. N’oubliez pas l'attribut `alt`!
+
+        <!-- .element: class="delayed" -->
+        Votre page devrait ressembler au fichier [exercice-2.html](projet-fr/référence/exercice-2.html) dans le dossier **référence**.
+
+        ---
+        ###Ressources
+        * Vous pouvez découper et changer la taille de vos images avec cet outil gratuit : [Pixlr](http://apps.pixlr.com/editor/)<br>
+        * Compression d’image : [tinyjpg](https://tinyjpg.com/)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : intégrer une vidéo YouTube
+
+        Les vidéos sont excellentes pour transmettre des informations sur une page Web. Toutefois, il y a des aspects à considérer en ce qui concerne leur accessibilité. <br><br>Vous avez sûrement remarqué que nous avons déjà une vidéo sur notre page. Remplaçons-la par une vidéo en lien avec le contenu de notre site Web.
+
+        1. Allez sur [youtube.com](https://www.youtube.com/) et choisissez une vidéo que vous voulez mettre sur votre page. <small>Veuillez noter que l’intégration de certaines vidéos sur des pages Web pourrait être interdite pour les utilisateurs au Canada. Dans ce cas, vous verrez un message d'erreur.</small>
+        1. Cliquez sur le bouton de partage sous la vidéo.
+        <img alt="icône de partage de la vidéo" src="framework/img/workshop/video-share_fr.png" width="600"/>
+        1. Choisissez l’option d’intégration de la vidéo.<br>
+        <img alt="icône d'intégration de la vidéo" src="framework/img/workshop/video-embed_fr.png" width="400"/>
+        1. Copiez le code HTML indiqué.
+        1. Dans Atom, collez le code dans le fichier `index.html` et remplacez le code `iframe` qui s'y trouve déjà.
+        1. Enregistrez vos changements et rafraîchissez votre navigateur pour visionner votre vidéo intégrée.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Un instant, est-ce que ma vidéo est accessible?
+
+        ##Sous-titres
+        Les sous-titres sont une version textuelle du son synchronisée avec la vidéo. Ils sont essentiels aux personnes malentendantes et servent aussi aux personnes ayant une langue maternelle autre que celle de la vidéo.
+
+        Quand vous ajoutez des sous-titres aux vidéos YouTube, ils peuvent être référencés par les moteurs de recherche. Les utilisateurs pourront donc trouver votre contenu plus facilement.
+
+        ---
+        ##Ressources
+        * [Guide YouTube pour ajouter des sous-titres aux vidéos.](https://support.google.com/youtube/answer/2734796?hl=fr&ref_topic=7296214)
+        * Vous pouvez aussi utiliser la [fonction de sous-titrage automatique de YouTube](https://support.google.com/youtube/answer/6373554?hl=fr) et modifier le texte au besoin.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Cette vidéo est-elle accessible?
+
+        ##Transcription
+        * La transcription permet aux personnes ne pouvant pas écouter ou regarder une vidéo d'en lire le texte.
+        * Elle est particulièrement pratique pour les personnes ayant une connexion Internet lente ou ne pouvant pas regarder une vidéo à un moment précis.
+        * Il est possible de rechercher des mots-clés précis dans le texte ou de copier une citation.
+
+        Le texte doit se trouver dans un simple fichier `.txt` afin qu'il puisse être lu sans logiciels comme Adobe Acrobat ou Microsoft Word.
+
+        ---
+        ##Ressources
+        * [Conseils pour faire la transcription d’une vidéo YouTube](https://support.google.com/youtube/answer/2734799?hl=fr). Cette page contient des exemples de formatage du dialogue et montre comment intégrer les sons d'arrière-plan.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe n°3 : rendre une vidéo accessible (10 minutes)
+
+        1. D'abord, ajoutons un attribut au code `iframe`. Nous utiliserons l'attribut `titre` et mettrons le titre de la vidéo sur YouTube comme valeur. Ainsi, les utilisateurs connaîtront le sujet de la vidéo avant de la regarder. Le tout ressemblera à ceci :
+        ```
+        <iframe title="Styles de yoga" width="560" height="315".../>
+        ```
+
+        1. Créez un fichier texte et nommez-le `sous-titres.txt`. Mettez-le dans le dossier racine de votre projet (c'est-à-dire dans le même dossier que le fichier `index.html`). Tapez les premières phrases de votre vidéo dans le fichier texte.
+        1. Ajoutez un hyperlien (balise `a`) vers votre fichier texte dans `index.html` directement sous le code `iframe` de YouTube. (Consultez la diapositive 59 pour en savoir plus sur les chemins relatifs.)
+        1. S’il vous reste du temps, ajoutez plus de contenu aux sous-titres.
+
+        Votre page devrait ressembler au fichier [exercice-3.html](projet-fr/référence/exercice-3.html) dans le dossier **référence**.
+
+        ---
+        ###Ressources
+        * [Utiliser l'attribut HTML « titre »](https://developer.paciellogroup.com/blog/2013/01/using-the-html-title-attribute-updated/)
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Intro au CSS
+        ##CSS : Cascading Style Sheets (feuilles de style en cascade)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS : la présentation du site
+
+        * Le CSS est un langage différent du HTML.
+          * Il a ses propres règles de syntaxe.
+        * Ce système à deux langages permet de séparer le contenu (HTML) de la présentation (CSS).
+        * La feuille de style du CSS contient une liste de règles qui déterminent l'apparence du site.
+
+        Le CSS nécessite ces symboles : accolades `{ }`, deux-points `:`, point-virgule `;`.
+
+        ![clavier](framework/img/workshop/keyboard-css_fr.jpg)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #CSS : syntaxe et terminologie
+
+        **Sélecteur :** l’élément HTML auquel nous appliquerons des styles.<br>
+        **Déclaration :** règles de style écrites en paire selon le format `propriété:valeur`. Elles se terminent par un point-virgule `;` et sont entourées d'accolades `{ }`.
+
+        ```
+        sélecteur {
+          propriété: valeur;
+        }
+        ```
+        Les **propriétés** déterminent le *type* de style qui sera appliqué (p. ex. : `color` pour de la couleur).<br>
+        Les **valeurs** sont propres à la propriété (p. ex., : `red` pour définir la valeur de la propriété de couleur en « rouge »).
+        ```
+        p {
+          color: red;
+        }
+        ```
+        > Dans l’exemple ci-dessus, quel est le sélecteur? Quelle est la propriété? Quelle est la valeur?
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Multiples déclarations CSS
+
+        Il est possible d'ajouter de multiples déclarations à un sélecteur. Assurez-vous de finir chaque déclaration par un point-virgule `;` et d'écrire vos déclarations sur des lignes séparées pour en favoriser la lisibilité.
+
+        ```
+        h2 {
+          background-color: green;
+          font-size: 3rem;
+        }
+        ```
+        Il existe un nombre infini de propriétés CSS. En effet, de nouvelles propriétés sont ajoutées constamment, tandis que certaines sont retirées du lot (elles sont « dépréciées »). Ne vous inquiétez pas : vous n'avez pas besoin de les retenir! Il vous suffit de consulter des ressources, comme celles indiquées ci-dessous.
+
+        ---
+        ###Ressources
+        * http://caniuse.com
+        * https://developer.mozilla.org/fr/docs/Web/CSS/Reference
+        * http://htmldog.com/reference/cssproperties/
+      </script>
+    </section>
+
+    <section class="slide">
+      <h1>Exercez-vous à sélectionner un élément</h1>
+      <p>Dans l'exemple de code HTML ci-dessous, modifiez le **sélecteur** selon les consignes dans les commentaires.</p>
+<pre><code>&lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;
+&lt;h2&gt;Ceci est un h2.&lt;/h2&gt;
+</code></pre>
+<textarea class="snippet" data-subject="#css-selectors">sélecteur { /* Sélectionnez le paragraphe */
+  color: red;
+}
+sélecteur { /* Sélectionnez le lien */
+  color: blue;
+}</textarea>
+      <div id="css-selectors" class="example">
+        <p>Ceci est un paragraphe.</p>
+        <h2 style="margin-top:0;">Ceci est un en-tête h2.</h2>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Référence au CSS
+
+        Dans notre projet, nous avons une feuille de style séparée qui contient le code CSS. Pour créer une feuille de style, enregistrez le fichier qui contient votre code CSS avec l'extension `.css`.
+
+        Ensuite, faites une référence à la feuille de style dans la balise `<head>` du document HTML. N’oubliez pas que `<head>` (la tête de la page) est une balise *différente* de `<header>` (l’en-tête de la page).
+
+        Utilisez la balise `<link>` et deux *attributs*, `ref` et `href`.
+
+        ```
+        <head>
+          <title>Titre de page</title>
+          <link rel="stylesheet" href="css/styles.css">
+        </head>
+        ```
+
+        Bien que ce ne soit pas obligatoire, les fichiers CSS sont souvent enregistrés dans un dossier séparé, tout comme les images. <!-- .element: class="note" -->
+
+        ---
+        ###Ressource
+        Il y a différentes manières de faire référence au code CSS dans une page. [Consultez cette ressource pour en savoir plus sur la référence au CSS.](https://www.hostpapa.ca/knowledgebase/understanding-external-internal-inline-css-styles/)
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #CSS : couleurs<br> et typographie
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Couleurs CSS
+
+        * **Mots-clés** : utilisez le nom des couleurs en anglais.
+        (p. ex. : `red`, `green`, `blue`, `pink`, `papayaWhip`, `paleGoldenrod`, etc.)
+        * **Couleurs RVB (rouge, vert, bleu)** : écrivez 3 valeurs numériques entre `0` (noir) et `255` (blanc). Veuillez noter qu'en anglais, « RVB » est « RGB ».
+        * **Code hexadécimal :** écrivez un carré (`#`) suivi de 6 caractères (0-9, A-F).
+
+        ```
+        /* Ces codes de couleur sont différents, mais ils représentent la même couleur. Au fait, voici un commentaire CSS! */
+        p {
+          background: firebrick;
+          background: rgb(178,34,34);
+          background: #B22222;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Organisation du CSS avec des commentaires
+
+        Pour organiser vos styles, utilisez des commentaires CSS.
+
+        Vos commentaires peuvent contenir n’importe quels caractères, mais ils doivent absolument commencer par `/*` et se terminer par `*/`. Vous avez le choix du format des commentaires. Voici quelques formats recommandés :
+
+        ```
+        /* Commentaires CSS */
+        ```
+        ```
+        /*
+        Commentaires CSS
+        */
+        ```
+        ```
+        /* Commentaires CSS
+        ----------------*/
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Contraste et daltonisme
+
+        Certains utilisateurs pourraient éprouver des difficultés à percevoir le contraste ou les différences de couleur sur votre site.
+
+        Afin que le texte soit lisible, nous voulons nous assurer qu’il y a assez de contraste entre les couleurs d'avant-plan et d'arrière plan. Cette règle s’applique aussi au texte placé sur un arrière-plan. De plus, les graphiques pourraient comprendre des couleurs difficiles à distinguer pour les personnes daltoniennes.
+
+        Pour vérifier le tout, utilisez ce [simulateur de daltonisme](https://www.toptal.com/designers/colorfilter) avec le site de Canada en programmation. (L'aperçu du site pourrait prendre quelques temps à se charger.)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : contraste et daltonisme
+
+        <img src="framework/img/workshop/colorblind-checker_fr.png">
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : contraste et daltonisme
+
+        Vous pouvez utiliser [cet outil de vérification de contraste](https://webaim.org/resources/contrastchecker/) pour déterminer si les couleurs que vous avez choisies ont un rapport de contraste assez élevé pour satisfaire aux normes WCAG.
+
+        Commencez par vérifier le contraste des couleurs ci-dessous.
+
+        Ici, le code de couleur de l'avant-plan (le texte) est `#ff483c`.<br>
+        Le code de couleur de l'arrière-plan est `#fed1cf`.
+
+        <img src="framework/img/workshop/colour-example.png">
+
+        Essayez d'autres combinaisons de couleurs pour voir le résultat.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : choisir une palette de couleurs
+
+        Choisissez 2 couleurs que vous souhaitez utiliser sur votre site et essayez-les dans le vérificateur de contraste.
+
+        ##Conseils pour choisir des palettes de couleurs accessibles
+
+        * Il n'est pas conseillé d’utiliser du noir de jais ou du blanc pur, car ces couleurs sont fatigantes pour les yeux. Choisissez plutôt des teintes de gris foncées sur du gris pâle ou l’inverse.
+        * Utilisez des couleurs pastel sur des teintes foncées.
+
+        Prenez en note les codes hexadécimaux des couleurs que vous sélectionnez pour votre site. Nous nous en servirons dans le prochain exercice.
+
+        ---
+        ###Ressources
+        * [Générateur de palette de couleurs accessible](https://cloudflare.design/color/)
+        * [Outil de contraste Contrast Finder](http://contrast-finder.tanaguru.com/)
+        * [Guide des couleurs accessibles pour la conception de produits](https://medium.com/inside-design/a-guide-to-color-accessibility-in-product-design-516e734c160c)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Styles de police CSS
+
+        Le mot **typographie** désigne les techniques de modification des polices pour les rendre plus lisibles et attrayantes. Il y a plusieurs propriétés CSS pour modifier le style du texte. Nous en verrons quelques-unes aujourd’hui. Modifiez les valeurs dans le code ci-dessous pour essayer différents paramètres!
+
+        <textarea class="snippet" data-subject="#css-type">color: slateblue;
+font-family: Helvetica, Arial, sans-serif;
+font-weight: normal;
+font-size: 2rem;
+line-height: 1,25;
+text-transform: lowercase;</textarea>
+
+        <div id="css-type" class="example">
+          <p>Bonjour! Voici du texte pour essayer les styles du code ci-dessus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellat sunt quae fugit illum in aut sed, quis nesciunt totam veritatis, dolores alias modi fuga commodi dicta facilis, consequatur temporibus.</p>
+        </div>
+
+        ---
+        ###Ressource
+        [Référence CSS - Typographie](https://cssreference.io/typography/)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Définition : `rem` et `em`
+
+        `rem` and `em` sont des unités de mesure, comme `px` et `%`.<br>
+        `em` est une proportion de la taille de police héritée d’un élément, tandis que `rem` est une proportion relative à la taille de police du document.
+
+        Modifiez le code ci-dessous pour comprendre le fonctionnement des tailles de police relatives :
+        <textarea class="snippet" data-subject="#css-rel-units">.parent {
+            font-size: 10px;
+          }
+          .enfant {
+            font-size: 2em;
+          }</textarea>
+
+        <div id="css-rel-units" class="example parent">
+          <p>Ma taille de police est de 10 px!</p>
+          <p class="enfant">
+            Ma taille de police est de 2 x 10 px, ce qui égale 20 px!
+          </p>
+        </div>
+
+        La propriété `font-size` appliquée par défaut est d’environ 16 px, ce qui veut dire que les 2 lignes ci-dessous sont identiques dans la plupart des navigateurs :
+        ```
+        font-size: 1rem;
+        font-size: 16px;
+        ```
+
+        Les unités de mesure relatives sont très pratiques. Elles nous permettent de définir la taille de nos éléments HTML relativement à la taille de la police ou de la fenêtre. Ainsi, la mise en page du site sera fonctionnelle même si, par exemple, un utilisateur malvoyant a doublé la taille du texte sur le site en entier.
+
+        ---
+        ###Ressource
+        * [Introduction aux valeurs et aux unités CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
+        * [Définir la taille de la police avec rem](https://snook.ca/archives/html_and_css/font-size-with-rem)
+        * [Typographie fluide](https://www.smashingmagazine.com/2016/05/fluid-typography/)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Conseils pour une typographie accessible
+
+        * Utilisez une police ayant une taille d’au moins 12 px sur toutes les pages Web.
+          * Réglez `line-height` (hauteur de la ligne) pour vous assurer qu’il y a assez d'espace entre les lignes du texte. Si `line-height` est réglé à une taille trop petite, le texte sera superposé. Toutefois, si `line-height` est réglé à une taille trop grande, le texte sera difficile à lire.
+        * N’utilisez jamais les couleurs pour indiquer la possibilité de faire une action. Par exemple, soulignez les liens plutôt que de seulement les mettre d’une autre couleur.
+          * Utilisez `text-decoration: underline;` dans la feuille de style pour souligner du texte. Quel sélecteur utiliseriez-vous pour appliquer ce style aux liens?
+
+        ---
+        ##Ressources
+        * [Lignes directrices pour la convivialité des polices](https://guidelines.usability.gov/guidelines/113)
+        * Conférences TedX : [Comment un choix de police peut aider des gens atteints de dyslexie à lire, par Christian Boer](https://www.youtube.com/watch?v=qVaeGOflF7w)
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #font-family et polices adaptées au Web
+
+        En utilisant la propriété `font-family`, vous devriez indiquer au moins deux ou trois polices. Ainsi, si les utilisateurs n’ont pas la première police installée sur leur ordinateur, le deuxième choix sera utilisé.
+
+        ```
+        body {
+          font-family: Helvetica, Arial, sans-serif;
+        }
+        ```
+
+        Les polices considérées comme « adaptées au Web » sont celles qui sont généralement installées sur la plupart des ordinateurs et des appareils.
+
+        Voici une liste de polices adaptées au Web : [CSS Font Stack](http://cssfontstack.com/).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Polices Web
+
+        Vous pouvez aussi utiliser des polices qui se trouvent directement sur le Web. L’utilisateur n'a pas besoin d'avoir ces polices installées sur son ordinateur ou son appareil, mais il doit absolument être connecté à Internet pour pouvoir les afficher dans son navigateur.
+
+        Des services comme [Google Fonts](http://www.google.com/fonts/) (gratuit) and [Typekit](https://typekit.com/) (gratuit, avec version payante) nous permettent d'avoir de la variété dans nos polices et de ne pas seulement utiliser celles qui sont installées par défaut.
+
+        Nous utiliserons des polices Web tirées de Google Fonts dans notre projet d'aujourd’hui.
+
+        ---
+        ##Ressources
+        * [Awwwards : polices Web recommandées par Google](https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.html) qui prennent en compte les aspects essentiels de la typographie Web et mobile, comme la lisibilité et la visibilité ainsi que l'accessibilité.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : Google Fonts
+
+        1. Allez sur le site de [Google Fonts](http://www.google.com/fonts).
+        1. Cliquez sur l’icône **+** pour sélectionner une police. Ensuite, cliquez sur l’onglet en dessous pour afficher et personnaliser la sélection.
+        ![](framework/img/workshop/google-fonts.png)
+        1. Choisissez **Customize** pour sélectionner le poids de la police. <span class="note">Plus une police est lourde, plus votre site prendra du temps à se charger.</span>
+          * Les trois polices de l'exemple de projet utilisent les paramètres « normal 400 ».
+          * Le jeu de caractères par défaut (« character set ») devrait convenir à vos besoins.
+        1. Choisissez **Embed** pour obtenir le code d’intégration à une page Web :
+          * Copiez l'extrait de code `<link>`.
+          * Ajoutez-le à la balise `<head>` de **toutes** vos pages HTML. <span class="note">(Assurez-vous d’ajouter le lien *avant* la référence au fichier *styles.css*.)</span>
+          ```
+          <head>
+              ...
+              <link href='http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans|Pacifico' rel='stylesheet' type='text/css'>
+              <link rel="stylesheet" href="css/styles.css">
+          </head>
+          ```
+        1. Copiez le code CSS et placez-le dans un sélecteur qui se trouve déjà dans votre code ou créez un nouveau sélecteur.
+
+        ```
+        h1 {
+          font-family: 'Open Sans', sans-serif;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe n°4 : couleurs et typographie
+
+        Maintenant que vous avez choisi des couleurs qui répondent aux exigences en matière de contraste, le temps est venu de les ajouter à votre site!
+
+        1. Avec la propriété CSS `background`, changez la couleur des balises `body`, `section` ou `footer`. <a href="#slide85">Consultez la diapositive 85 pour voir la syntaxe!</a>
+        2. Avec la propriété `color`, changez la couleur du texte. Vous pouvez sélectionner toutes les balises d’un certain type, comme `p`, `a` ou `li`. Demandez de l'aide à une mentore si vous souhaitez sélectionner un élément plus précis, comme les paragraphes du bas de page!
+        3. Changez d’autres styles de police comme `font-size`, `font-weight`, `text-transform` ou `text-align`.
+
+        ---
+        ###Ressource
+        * [Référence CSS - Typographie](https://cssreference.io/typography/)
+        * [W3C Schools - Polices CSS](https://www.w3schools.com/css/css_font.asp)
+
+        <!-- .element: class="delayed" -->
+        Votre page devrait ressembler au fichier [exercice-4.html](projet-fr/référence/exercice-4.html) dans le dossier **référence**.
+      </script>
+    </section>
+
+
+
+    <section class="slide title" data-markdown>
+      <script type="text/template">
+        #Deuxième partie
+        ##CSS, CSS et... CSS!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributs de classe
+
+        Regardons les attributs de classe (`class`) dans chacune des balises `section` de notre projet.
+        Ces attributs de classe servent à appliquer *différents* styles uniques à chaque section.
+
+        ```xml
+        <section class="mission">
+          ...
+        </section>
+
+        <section class="contact">
+          ...
+        </section>
+        ```
+
+        ---
+        ###Ressource
+
+        [L'attribut `id` peut aussi être utilisé avec le CSS](https://css-tricks.com/the-difference-between-id-and-class/), mais seulement une fois sur chaque page. En raison de cette règle, [certaines personnes préfèrent n’utiliser que des classes pour définir le style des pages](http://oli.jp/2011/ids/).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Attributs de classe
+
+        Plutôt que d’utiliser `section` comme sélecteur, utilisez le nom de la classe.
+
+        Les sélecteurs de classe commencent par un point.
+
+        ```
+        /* S'applique à tous les éléments ayant la classe « mission » */
+        .mission {
+          background: red;
+        }
+        ```
+        ```
+        /* Cible TOUS les éléments « section » */
+        section {
+          background: blue;
+        }
+        ```
+      </script>
+    </section>
+
+      <section class="slide" data-markdown>
+        <script type="text/template">
+        #Exercice de groupe n°5 : classes
+
+        Mettez à jour votre projet en appliquant une couleur d'arrière-plan seulement à la section « mission ».
+        <span class="note">(Nous modifierons la section « Contact » plus tard dans un autre exercice.)</span>
+
+        ```
+        /* Mission
+        -----------------------------------------*/
+        .mission{
+          background: #d3e6dd;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe n°5 : suite
+
+        Vos liens sont-ils encore bleus? Sélectionnez la balise d'ancrage et remplacez la couleur bleue par défaut.
+
+        ```
+        a {
+          color: #0e6c5c;
+        }
+        ```
+
+        Ajoutez une classe à un de nos liens pour le faire ressembler à un bouton.
+
+        **HTML :**
+        ```
+        <a href="#" class="bouton">Contactez-moi</a>
+        ```
+        **CSS :**
+        ```
+        .bouton{
+          background: grey;
+          color: purple;
+          font-size: 1.4rem;
+          text-decoration: none;
+        }
+        ```
+
+        <!-- .element: class="delayed" -->
+        Nous nous rapprochons de la perfection! Votre page devrait ressembler au fichier [exercice-5.html](projet-fr/référence/exercice-5.html) dans le dossier **référence**.
+      </script>
+    </section>
+
+    <section class="slide title" data-markdown data-toc>
+      <script type="text/template">
+        #Modèle de boîte
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Modèle de boîte
+
+        Le **modèle de boîte CSS** décrit la façon dont le CSS détermine la taille et l'espacement des éléments HTML. Pour le navigateur, tous les éléments HTML sont une boîte carrée ou rectangulaire.
+
+        Les lignes rouges dans l'exemple ci-dessous représentent les bords de tous les éléments du document HTML.
+
+        <img src="framework/img/workshop/box-borders-example.jpg" alt="éléments, boîtes avec des bords" style="width: 650px">
+
+        Remarquez l'espacement entre les éléments comme les en-têtes et les paragraphes sur votre page. Il s'agit de la marge (`margin`) et du remplissage (`padding`) de ces éléments appliqués dans votre navigateur.
+      </script>
+    </section>
+
+    <section class="slide nested-list" data-markdown>
+      <script type="text/template">
+        # Modèle de boîte
+
+        Il y a 5 propriétés CSS qui déterminent la taille et l'espacement.
+
+        ![Exemple de modèle de boîte](framework/img/workshop/box-model-layout.jpg)<!-- .element: class="left" -->
+
+        * **width** : définit la *largeur*
+        * **height** : définit la *hauteur*
+        * **margin** : la *marge*, ajoute ou enlève de l'espace autour de l’élément
+        * **padding** : le *remplissage*, ajoute ou enlève de l'espace à l’intérieur de l’élément
+        * **border** : ajoute une *bordure* à l'extérieur de l’élément
+
+        Source de l’image : <!-- .element: class="note" --> [W3C](http://www.w3.org/wiki/The_CSS_layout_model_-_boxes_borders_margins_padding)
+      </script>
+    </section>
+
+    <section id="margin-padding" class="slide" data-markdown>
+      <script type="text/template">
+        #Marge et remplissage
+
+        Les valeurs de `margin` (marge) et de `padding` (remplissage) peuvent être déclarées avec des chiffres de 1 à 4 pour cibler des côtés précis de l'élément. Vous pouvez utiliser différentes unités de mesure (px, %, em, rem, etc.) avec ces propriétés.
+
+        Si vous mettez une valeur à 0, vous *enlèverez* l'espace par défaut, tandis que toute valeur positive (1 et plus) *ajoutera* de l'espace. Les marges peuvent avoir des valeurs négatives, mais pas le remplissage.
+
+        Vous pouvez aussi utiliser les propriétés de forme longue pour `margin` et `padding` afin de cibler un côté précis :
+        ```css
+        margin-top: 2px;
+        margin-right: 2px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+        ```
+
+        ```css
+        padding-top: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+        padding-left: 2px;
+        ```
+
+        ---
+        ##Ressources
+        * [Trucs CSS : em et rem](https://css-tricks.com/confused-rem-em/)
+      </script>
+      </section>
+
+      <section class="slide" data-markdown>
+      <script type="text/template">
+        #Marge et remplissage
+
+        Vous pouvez aussi utiliser les différentes formes courtes :
+
+        ```css
+        padding: 2px 10px 2px 10px; /* haut, droit, bas, gauche */
+        padding: 2px 10px 2px; /* haut, droit et gauche, bas */
+        padding: 2px 10px; /* haut et bas, droit et gauche */
+        padding: 2px /* tous les côtés ont la même valeur */
+        ```
+        ```css
+        margin: 2px 10px 2px 10px; /* haut, droit, bas, gauche */
+        margin: 2px 10px 2px; /* haut, droit et gauche, bas */
+        margin: 2px 10px; /* haut et bas, droit et gauche */
+        margin: 2px /* tous les côtés ont la même valeur */
+        ```
+      </script>
+    </section>
+
+    <section class="slide">
+      <h1>Exercice!</h1>
+
+      <p>Exercez-vous avec margin et padding dans le code ci-dessous en indiquant des valeurs de 1 à 4. Vous pouvez vous mettre en équipe de deux pour faire cet exercice. Que remarquez-vous en modifiant les valeurs? Essayez de décrire les changements en utilisant seulement des mots.</p>
+      <textarea class="snippet" data-subject="#example">background: lightblue;
+padding: 0px; /* haut, droit, bas, gauche */
+margin: 0px; /* haut, droit, bas, gauche */</textarea>
+      <div id="example" class="example">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nesciunt sint beatae dolor dolorum aliquid quis explicabo vitae numquam, quas illo dolore molestiae ratione, perferendis, deleniti nemo ea voluptatibus! Quibusdam.</p>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h1>Boîte de bordure : width, padding et border</h1>
+
+      <p>La relation entre <code>width</code>, <code>padding</code> et <code>border</code> est un peu complexe.  </p>
+
+      <p>Pour mieux comprendre, ajoutez une propriété à la fois et regardez le changement dans la taille de la boîte : (1) mettez la largeur (width) à 450px; (2) ajoutez 35px de remplissage (padding); (3) augmentez la bordure (border) à 15px.</p>
+      <textarea class="snippet" data-subject="#example">background: lightblue;
+width: ;
+padding: ;
+border: 1px solid green;</textarea>
+      <div id="example" class="example" style="box-sizing: content-box;">
+        <p style="box-sizing: content-box;">Exemple de boîte de bordure</p>
+      </div>
+
+      <p>Avez-vous remarqué que la taille de la boîte grandit? Hum... Regardons les chiffres.<p>
+      <p style="font-size: 28px;">largeur + bordure gauche + remplissage gauche + remplissage droite + bordure droite = taille totale<br>
+      450 + 35 + 35 + 15 + 15 = 550px</p>
+
+      <pre class="delayed"><code style="background:transparent;border:none;font-weight:bold;font-size:40px;">¯\_(ツ)_/¯</code></pre>
+    </section>
+
+    <section class="slide">
+      <h1>Correctif de la boîte de bordure (border box)</h1>
+        <p>Heureusement, il y a une solution.  Tout d'abord, comparons la boîte avant et après l’application du correctif. Vous remarquerez que les valeurs sont identiques dans les deux exemples, mais qu’un des deux semble plus gros que l'autre.</p>
+
+        <div class="col-2">
+          <textarea class="snippet" data-subject="#example">background: lightblue;
+width: 450px;
+padding: 35px;
+border: 15px solid green;</textarea>
+          <div id="example" class="example" style="box-sizing: content-box;">
+            <p style="box-sizing: content-box;">Cet exemple ne comprend PAS le correctif de la boîte de bordure.</p>
+          </div>
+        </div>
+
+        <div class="col-2">
+          <textarea class="snippet" data-subject="#example2">background: lightblue;
+width: 450px;
+padding: 35px;
+border: 15px solid green;</textarea>
+          <div id="example2" class="example">
+            <p>Cet exemple comprend le correctif de la boîte de bordure (border-box).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # * { Box-sizing: Border-box }
+
+        Ajoutez cet extrait de code à votre projet actuel (et à vos prochains projets) pour régler le problème de l'affichage de la largeur, du remplissage et de la bordure.
+
+        ```
+        /* Appliquez un modèle de boîte naturel à tous les éléments tout en permettant aux composantes de se transformer */
+        html {
+          box-sizing: border-box;
+        }
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        ```
+
+        Ajoutez-le tout en haut de votre fichier **styles.css**.
+
+        ---
+        ##Ressources
+        * [En savoir plus sur le correctif de la boîte de bordure](http://www.paulirish.com/2012/box-sizing-border-box-ftw/).
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : espacement
+
+        (Avant de continuer, assurez-vous que le correctif du modèle de boîte de la diapositive précédente a bien été ajouté à<!-- .element: class="note" --> **styles.css**. N'hésitez pas à régler la quantité d’espace selon vos préférences et à vous servir des exemples ci-dessous pour vous guider.)
+
+        Ajoutez du remplissage à toutes les parties de la page afin que le contenu ne doit pas collé au bord et qu’il ait un style constant.
+
+        Combinez les sélecteurs pour sélectionner tous les éléments en même temps.
+
+        ```
+        header,
+        section {
+          padding: 100px 150px;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe n°6 : espacement et taille
+
+        1. Modifiez une valeur, `padding`, `margin` ou `border` dans les différents éléments de votre feuille de style. À chaque changement, rafraîchissez la page dans votre navigateur pour en voir le résultat.
+        1. Ajoutez un peu de remplissage au sélecteur `.bouton` pour créer de l'espace autour du texte et de la couleur d'arrière-plan.
+        1. Pour le bouton, choisissez une couleur de bordure différente pour le distinguer de l'arrière-plan.
+
+        >Bonus : Utilisez le pseudo-sélecteur `:hover` pour changer le style du bouton lorsqu’il y a survol avec le pointeur de souris. Si vous avez besoin d'aide, demandez à une mentore!
+
+        À la fin de l'exercice, votre page devrait ressembler au fichier [exercice-6.html](projet-fr/référence/exercice-6.html).
+      </script>
+    </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        #Prolongement
+
+        Wow! Si vous êtes ici, vous avez fini plus tôt ou cherchez un défi supplémentaire.
+
+        (Vous pouvez aussi <a href="#slide123">passer cette section</a> et aller directement à la conclusion.)
+
+        ![Les Incroyable en position de combat](framework/img/workshop/stretch.gif)
+
+        Relevons le défi ensemble!
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+        #Images d'arrière-plan
+
+        Jusqu’à maintenant, nous avons utilisé `background` pour ajouter des couleurs. Toutefois, cette propriété sert aussi à ajouter des *images* d'arrière-plan.
+
+        Il y a deux manières de déclarer la propriété `background` :
+
+        ```css
+        /* Forme courte */
+        background: url(nom-du-dossier/fichier-image.jpg);
+        ```
+        ```css
+        /* Forme longue */
+        background-image: url(nom-du-dossier/fichier-image.jpg);
+        ```
+        `background` est la forme courte de différentes propriétés d'arrière-plan. En utilisant la forme courte d’une propriété, vous aurez des feuilles de style plus courtes et économiserez du temps.
+
+        ---
+        ###Ressources
+        * W3C : [Propriétés CSS : background](https://www.w3schools.com/css/css_background.asp)
+        * Moz : [Propriétés CSS : forme courte](https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Images d'arrière-plan
+
+        **Important :** Remarquez bien l'emplacement du fichier CSS.
+
+        ```html
+        projet-fr/
+          |-- css/
+              |--styles.css
+          |-- images/
+          |-- référence/
+          |-- index.html
+        ```
+
+        Comme la feuille de style sur laquelle nous travaillons est à l’intérieur du dossier **css*, le chemin de notre image d'arrière-plan doit refléter cela.
+        Utilisez `../` pour indiquer que nous *montons* d’un niveau et *sortons* du dossier dans lequel est contenu  le fichier actuel.
+
+        ```css
+        background: url(../images/fichier-image.jpg);
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        # Propriété background
+
+        Si l’image est plus petite que la largeur de la fenêtre de votre navigateur, elle se répètera par défaut. Pour changer cela, nous pouvons utiliser la valeur `no-repeat` :
+
+        ```
+        body { /* Forme longue */
+          background-image: url(../images/chaton.jpg);
+          background-repeat: no-repeat;
+        }
+        ```
+        ```
+        body { /* Forme courte */
+          background: url(../images/chaton.jpg) no-repeat;
+        }
+        ```
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe n°7 : arrière-plan
+
+        Copiez et collez le code ci-dessous dans votre fichier CSS, une valeur à la fois, pour voir le fonctionnement de chaque propriété.
+
+        ```
+        body { /* Forme longue */
+          background-image: url('../images/profil.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        ```
+        ```
+        body { /* Forme courte */
+          background: url(../images/profil.jpg) no-repeat fixed;
+          background-size: cover;
+        }
+        ```
+
+        ---
+        ###Truc de pro :
+
+        Vous remarquerez que `background-size` est la forme longue de la propriété. Pour l’écrire en forme courte, vous **devez** l’inclure après `background-position` et la séparer par le caractère `/`. Dans tous les cas, vous avez moins de chances de vous tromper en utilisant la propriété de forme longue.
+
+        ###Ressources
+        * [Trucs CSS : background](https://css-tricks.com/almanac/properties/b/background/)
+        * [background-size et positionnement](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Styles d’arrière-plan opaque
+
+        Bien que les images d'arrière-plan soient très jolies, le texte est plutôt difficile à lire.
+
+        Chaque fois qu’un élément HTML est imbriqué, les éléments s’empilent les uns sur les autres, comme les garnitures d’un sandwich!
+
+        ![](framework/img/workshop/css-z-index.png)
+
+        Regardons le code HTML de notre en-tête (`header`) :
+
+        ```
+        <header>
+          <h1>Studio de Yoga</h1>
+          <h2>Cours à l’unité, ateliers et retraites pour tous les niveaux</h2>
+        </header>
+        ```
+
+        Notre image d'arrière-plan est à l'arrière, tandis que les en-têtes sont à l'avant.
+
+        Nous devons ajouter une nouvelle « couche » entre le texte et l'arrière-plan et appliquer une couleur légèrement transparente pour améliorer le contraste. Voyons voir le processus étape par étape.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Exercice de groupe : styles d’arrière-plan et axe Z
+
+        Utilisez `rgba()` pour créer un arrière-plan transparent. Les valeurs doivent être déclarées en suivant cette syntaxe :
+
+        ```css
+        rgba(valeur de rouge, valeur de vert, valeur de bleu, pourcentage de transparence alpha)
+        ```
+        ```css
+        background: rgba(97, 41, 64, 0.95);
+        ```
+        Plus la valeur de transparence alpha s'approche de 1, plus la couleur est opaque (c'est-à-dire non transparente).
+        Utilisez [cet outil](https://www.rapidtables.com/convert/color/hex-to-rgb.html) pour convertir un code hexadécimal en valeur RVB équivalente.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Exercice de groupe : styles d’arrière-plan et axe Z
+
+       1. Dans votre fichier **index.html**, entourez le texte dans un `<div>` ayant une classe nommée `texte`.
+       2. Ajoutez un nouveau `<div>` qui servira de couche entre le texte et l'arrière-plan et donnez-lui la classe « couche ». Votre code ressemblera à ça :
+
+      ```
+      <header>
+        <div class="texte">
+          <h1>Studio de Yoga</h1>
+          <h2>Cours à l’unité et retraites de yoga pour tous les niveaux</h2>
+        </div>
+        <div class="couche"></div>
+      </header>
+      ```
+
+      Dans votre fichier CSS, ajoutez les lignes suivantes :
+
+      ```
+      header {
+        position: relative;
+      }
+      .couche{
+        background: rgba(255, 255, 255, 0.6); /* 60 % blanc */
+        /* Jouez avec la couleur ou le pourcentage ci-dessus */
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .texte{
+        position: relative;
+        z-index: 2;
+      }
+      ```
+
+      ---
+      <small>Pour appliquer un `z-index`, nous devons aussi utiliser la propriété CSS `position`. Ces notions vont au-delà du contenu du cours d’aujourd’hui, mais vous pouvez en savoir plus dans les ressources ci-dessous.<br></small><br>
+
+      ###Ressources :
+      * [W3C : disposition CSS - la propriété « position »](https://www.w3schools.com/css/css_positioning.asp)
+      * [Trucs CSS : « position »](https://css-tricks.com/almanac/properties/p/position/)
+      * [Démo CSS : « position »](https://developer.mozilla.org/fr/docs/Web/CSS/position)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Exercice de groupe : styles d’arrière-plan et axe Z
+
+      Pouvez-vous répéter les étapes de la dernière diapositive pour faire la même chose avec la section `.contact`? Si avez de la difficulté, travaillez avec votre voisine ou demandez à une mentore de vous aider!
+
+      ---
+      <!-- .element: class="delayed" -->
+      Vous pouvez consulter le corrigé dans le fichier [final.html](projet-fr/référence/final.html), qui fait référence au fichier [final.css](projet-fr/référence/css/final.css).
+    </script>
+  </section>
+
+  <section class="slide" data-markdown>
+      <script type="text/template">
+      #Exercice bonus : test avec le lecteur d’écran
+
+      Vous avez réussi à créer un site Web fonctionnel et de toute beauté! Maintenant, utilisons le lecteur d’écran sur **notre** site et vérifions s’il est facile à naviguer. <a href="#slide28">Consultez la diapositive 28 pour revoir les commandes du lecteur d’écran.</a>.
+
+      S’il vous reste du temps, vous pouvez télécharger [l'extension WAVE webaim pour Chrome](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh). Cette extension a des fonctions semblables à celles de l’outil que nous avons utilisé plus tôt, mais nous pouvons nous en servir pour essayer des fichiers locaux, sur notre ordinateur.
+      Pour vérifier des fichiers locaux, vous devez activer ce paramètre :
+
+      ![Gestion des extensions](framework/img/workshop/wave-ext_fr.png) <!-- .element: width="25%" -->
+
+      ![Gestion des extensions](framework/img/workshop/wave-enable_fr.png) <!-- .element: width="60%" -->
+    </script>
+  </section>
+
+  <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Avez-vous envie de présenter votre projet?
+
+        <p style="text-align:center;">![Femme excitée d'entendre quelque chose](framework/img/workshop/show-us.gif) <!-- .element: width="45%" --></p>
+
+        Présentez votre création à votre voisine ou à toute la classe! En créant votre site, avez-vous pensé à l'accessibilité? Quelles sont les techniques que vous avez employées?
+
+
+      </script>
+    </section>
+
+  <section class="slide" data-markdown>
+    <script type="text/template">
+      # Aujourd’hui...
+
+      Nous avons appris plusieurs choses :
+
+      * Rudiments du HTML
+      * Stratégies pour créer du contenu accessible pour le Web
+      * Sous-titres et transcription vidéo
+      * Rudiments du CSS
+      * Typographie et utilisation des couleurs
+      * Images d'arrière-plan CSS
+
+    </script>
+  </section>
+
+    <section class="slide centered" data-markdown>
+      <script type="text/template">
+        # Félicitations!
+
+        ![Femme recevant un prix avec des confettis](framework/img/workshop/victory.gif)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Militez pour l'accessibilité
+
+        **Raisons juridiques : ** Convention des Nations Unies sur les droits des personnes atteintes de déficiences. L'accès aux communications et à technologie est un droit humain fondamental.
+
+        **Raisons techniques :** En créant des sites Web accessibles, vous concevez une plateforme réactive, adaptable et polyvalente.
+
+        **Raisons commerciales :** Le marché des personnes atteintes de déficiences est très grand et continue de croître en raison du vieillissement de la population. Les personnes atteintes de déficiences ont un revenu combiné de plus d’un million de billions de dollars, y compris 200 milliards en revenus discrétionnaires.
+
+        **Raisons humanitaires :** Vous rejoindrez et soutiendrez des utilisateurs à la fois brillants et novateurs et les aiderez à découvrir leur potentiel.
+
+        ---
+        ##Source :
+        * [AddThis Academy](https://www.addthis.com/academy/making-websites-accessible-to-people-with-disabilities/)
+        </script>
+    </section>
+
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        #Ressources : accessibilité
+
+
+        Voici quelques ressources pour en savoir plus sur l'accessibilité Web (en anglais) :
+
+        * [The A11Y Project : un projet communautaire visant à rendre le Web plus accessible](https://a11yproject.com/)
+        * [Création de PDFs et vérification de l'accessibilité](https://helpx.adobe.com/ca/acrobat/using/create-verify-pdf-accessibility.html)
+        * [Formulaires accessibles](https://www.w3.org/WAI/tutorials/forms/)
+
+        ##Outils d’évaluation (en anglais) :
+        * [WAVE - Outil d’évaluation de l'accessibilité Web](https://wave.webaim.org/)
+          * Aussi disponible comme extension Chrome!
+        * [AChecker](https://achecker.ca/checker/index.php)
+        * [SortSite : vérificateur d'erreurs sur des sites Web, versions gratuites et payantes](https://www.powermapper.com/products/sortsite/)
+
+
+        ##Livres électroniques (en français) :
+        * [Guide pratique sur la conception graphique accessible](https://www.rgd.ca/database/files/library/RGD_AccessAbility_Handbook_FR.pdf)
+        * [Guide pratique sur la conception Web accessible](https://www.rgd.ca/database/files/library/RGD_AccessAbility_Handbook_2015_FR_FINAL_s_.pdf)
+          <!--* La [deuxième version du guide](https://www.rgd.ca/resources/accessibility/access) a été publiée le 6 juin 2019.-->
+
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Ressources : HTML et CSS
+
+      Voici quelques ressources pratiques pour continuer à apprendre le HTML et le CSS.
+
+      ##Livres (en anglais) :
+        * [HTML5 for Web Designers](https://abookapart.com/products/html5-for-web-designers) de la série A Book Apart
+        * [C33S for Web Designers](https://abookapart.com/products/css3-for-web-designers) de la série A Book Apart
+        * [HTML et CSS, conception et création de sites Web](http://www.htmlandcssbook.com)
+
+      ##Tutoriels (en anglais) :
+        * [Shay Howe : apprenez à programmer en HTML et en CSS](http://learn.shayhowe.com/html-css/)
+        * [PluralSight : rudiments du HTML](https://www.codeschool.com/courses/front-end-foundations)
+
+      [Découvrez les ateliers de Femmes en programmation](https://www.canadalearningcode.ca/fr/apprendre-avec-nous/)!
+
+        </script>
+    </section>
+
+    <!-- Dernière diapositive -->
+    <section class="slide last">
+      <h1>Merci!</h1>
+      <h2 class="heading-bg">
+        <span>Accessibilité Web<br>avec le HTML et le CSS</span>
+      </h2>
+
+      <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="nom de la formatrice">
+      <h2><span>avec</span> Nom de la formatrice</h2>
+      <ul>
+        <li><a href="mailto:">allo@courriel.com</a></li>
+        <li><a href="#">monsite.com</a></li>
+        <li><a href="http://twitter.com/">@twitter</a></li>
+      </ul>
+
+      <p class="attribution">Diapositives créées par Stacie DaPonte à partir de <a href="https://github.com/LeaVerou/csss">« SlideShow » par Lea Verou</a> et avec <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+    </section>
+
+  </main><!-- Section principale cls -->
+
+  <script src="framework/scripts/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="framework/scripts/llc.js"></script>
+  <script>
+    var slideshow = new SlideShow();
+
+    // Regroupe tous les éléments .snippet
+    var snippets = document.querySelectorAll('.snippet');
+    for(var i=0; i<snippets.length; i++) {
+      new CSSSnippet(snippets[i]);
+    }
+  </script>
+</body>
+</html>
