@@ -26,26 +26,32 @@
       <div class="instructions">
         <!-- AJOUTER LES INFOS SUR LE WI-FI ICI -->
         <!-- <h2>Connectez- <br>vous</h2>
-        <p><strong>Wi-Fi :</strong> réseau Wi-Fi</p>
-        <p><strong>Mot de passe :</strong> mot de passe du Wi-Fi</p>
+        <ul>
+          <li><strong>Wi-Fi :</strong> réseau Wi-Fi</li>
+          <li><strong>Mot de passe :</strong> mot de passe du Wi-Fi</li>
+        </ul>
         <hr> -->
 
         <h2>Téléchargez<br> et installez</h2>
         <ol class="downloads">
-          <li>Fichiers d’apprentissage (dossier zip) : <a href="https://github.com/ladieslearningcode/llc-web-a11y/archive/master.zip">http://bit.ly/llc-a11y</a> (a11y = a + 11 (onze) + y)
+          <li>Fichiers d’apprentissage (dossier zip) : <a href="https://github.com/ladieslearningcode/llc-web-a11y/archive/master.zip">bit.ly/llc-a11y</a> <span aria-hidden="true">(a11y = a + 11 (onze) + y)</span>
             <ul>
               <li>Dézippez le dossier (<em>Extraire tout</em> sur Windows).</li>
-              <li>Ouvrez <em>slides-fr.html</em> dans le navigateur pour afficher les diapositives.</li>
+              <li>Ouvrez <code>slides-fr.html</code> dans le navigateur pour afficher les diapositives.</li>
             </ul>
           </li>
-          <li>Éditeur Atom : <a href="http://atom.io">http://atom.io</a>
+          <li>Éditeur Atom : <a href="http://atom.io">atom.io</a>
             <ul>
               <li>Si vous avez un ordinateur Chromebook, utilisez <a href="https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=en" target="_blank">Caret</a>.</li>
             </ul>
           </li>
-          <li>Navigateur Chrome : <a href="https://www.google.ca/chrome/browser/desktop/">https://www.google.ca/chrome</a></li>
+          <li>Navigateur Chrome : <a href="https://www.google.ca/chrome/browser/desktop/">google.ca/chrome</a></li>
           </li>
-          <li>Lecteur d’écran <a href="https://www.nvaccess.org/download/">NVDA</a> - Si vous utilisez Windows.</li>
+          <li>Lecteur d’écran :
+            <ul>
+              <li>Windows : <a href="https://www.nvaccess.org/download/">NVDA</a></li>
+              <li>macOS : <a href="https://www.apple.com/fr/accessibility/mac/vision/">VoiceOver</a> (inclus avec chaque Mac)</li>
+            </ul>
           <br><br>
           </li>
         </ol>
@@ -108,9 +114,9 @@
       <script type="text/template">
         # Le projet du jour
 
-        Consultez le projet complet [ici](projet-fr/référence/final.html).
+        [Consultez le projet complet(projet-fr/référence/final.html).
 
-        ![Projet final](framework/img/workshop/projetfinal.png)
+        ![Capture d'écran du projet final dans son état final; section titre, notre section mission, et entrer en contact section.](framework/img/workshop/projetfinal.png)
       </script>
     </section>
 
@@ -216,9 +222,12 @@
         Malgré cela, il est toujours possible de rendre un site plus accessible. Les outils d'évaluation de l’accessibilité sont pratiques, car ils identifient les problèmes sur un site et proposent une solution.
 
         ---
-        ###Outils d’évaluation de l'accessibilité
-        * [Siteimprove (extension Chrome)](https://siteimprove.com/en-ca/core-platform/integrations/browser-extensions/)
-        * [AChecker](https://achecker.ca/checker/index.php)
+        ## Outils d’évaluation de l'accessibilité
+
+        * [Lighthouse](https://developers.google.com/web/tools/lighthouse) de Google
+        * [aXe](https://www.deque.com/axe/) de Deque
+        * [WAVE](https://wave.webaim.org/) de WebAIM
+        * [Accessibility Insights](https://accessibilityinsights.io/) de Microsoft
       </script>
     </section>
 
@@ -241,10 +250,10 @@
         * Son but est de déterminer, d’éliminer et d'empêcher les barrières à l'accessibilité dans le secteur privé régi par le gouvernement fédéral (transport, radiodiffusion, télécommunications et finances).
 
         ---
-        ###Ressources
+        ## Ressources
         * [Accessibility Ontario](https://accessontario.com/)
-        * [<i>Loi sur l'accessibilité pour les Manitobains</i>](http://www.accessibilitymb.ca/)
-        * [<i>Loi sur l'accessibilité de la Nouvelle-Écosse</i>](https://novascotia.ca/accessibility/)
+        * [Loi sur l'accessibilité pour les Manitobains](http://www.accessibilitymb.ca/)
+        * [Loi sur l'accessibilité de la Nouvelle-Écosse](https://novascotia.ca/accessibility/)
         * [Barrier-Free BC](http://barrierfreebc.org/)
         * [Bâtir un Canada accessible pour les personnes en situation de handicap](https://www.canada.ca/fr/emploi-developpement-social/programmes/accessible-personnes-handicapees.html)
 
@@ -267,7 +276,7 @@
         Les règles s'appuient sur 4 principes d'accessibilité : **perceptibilité, utilisabilité, compréhensibilité et robustesse**.
 
         ---
-        ###Ressources
+        ## Ressources
         * [WCAG - Niveaux A, AA et AAA](https://www.linkedin.com/pulse/why-wcag-made-3-level-aa-aaa-different-levels-grade-website-arun-al/)
       </script>
     </section>
@@ -290,16 +299,15 @@
 
         >Les composantes de l’interface utilisateur et de la navigation doivent être utilisables.
 
-        Composantes = [onglets](https://jqueryui.com/tabs/), [accordéons](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion), fenêtres surgissantes et fenêtres de clavardage
+        Composantes = onglets, accordéons, fenêtres surgissantes et fenêtres de clavardage
 
         * La conception doit être accessible avec un clavier.
         * Le contenu doit être lisible en entier avant de changer.
         * La conception doit intégrer des fonctions de pause, d’arrêt et de fermeture faciles d'accès.
 
         ---
-        ##Ressources
-        * [Normes W3C pour les onglets](https://www.w3.org/TR/wai-aria-practices-1.1/#tabpanel)
-        * [Normes W3C pour les accordéons](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion)
+        ## Ressources
+        * [W3C WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.1/)
       </script>
     </section>
 
@@ -381,15 +389,16 @@
         #Logiciel : éditeur de texte
 
         * L’éditeur de texte sert à écrire et à modifier du code.
-        * Voici quelques bonnes options : [Notepad++](http://notepad-plus-plus.org/), [Sublime Text](http://www.sublimetext.com/) (essai gratuit sans limite de temps), [Brackets](http://brackets.io) et [TextWrangler](http://www.barebones.com/products/textwrangler/).
+        * Voici quelques bonnes options : [VS Code](https://code.visualstudio.com/), [Notepad++](http://notepad-plus-plus.org/), et [Sublime Text](http://www.sublimetext.com/) (essai gratuit sans limite de temps).
 
         **[Atom](https://atom.io/)** est un éditeur libre gratuit que nous utiliserons aujourd'hui.
         <span class="note">(Si vous avez un autre éditeur installé, il fonctionnera aussi, mais quelques fonctions seront différentes.)</span>
+
         *Les utilisateurs de Chromebook peuvent utiliser [Caret](https://chrome.google.com/webstore/detail/caret/fljalecfjciodhpcledpamjachpmelml?hl=fr). L'extension a les mêmes fonctions qu'Atom, mais l'apparence est différente. Vous pourriez avoir besoin de l'aide des mentores pour installer ces logiciels.
 
         ---
-        ###Truc de pro :
-        Améliorez votre efficacité en utilisant des [raccourcis de clavier](https://www.canadalearningcode.ca/wp-content/uploads/keyboard-shortcuts.pdf).
+        ## Truc de pro :
+        Améliorez votre efficacité en utilisant des [raccourcis de clavier (PDF)](https://www.canadalearningcode.ca/wp-content/uploads/keyboard-shortcuts.pdf).
       </script>
     </section>
 
@@ -404,8 +413,8 @@
         Dans [Google Chrome](https://www.google.com/intl/fr-CA/chrome/browser/) (et dans d’autres navigateurs), vous pouvez afficher le code source de *toutes les pages Web*. Faites un clic droit / tapez à deux doigts dans le navigateur et sélectionnez « Afficher le code source de la page ». Ce que vous voyez, c'est du HTML!
 
         ---
-        ###Ressource
-        http://browsehappy.com
+        ## Ressource
+        - [browsehappy.com](http://browsehappy.com)
       </script>
     </section>
 
@@ -420,7 +429,7 @@
         * Ils disent à l’utilisateur où se trouve le curseur de l’ordinateur ou l’élément sélectionné.
 
         ---
-        ###Lecteurs d’écran gratuits
+        ## Lecteurs d’écran gratuits
         * Intégré aux ordinateurs Mac : [VoiceOver](https://www.apple.com/ca/fr/accessibility/mac/vision/)
         * Intégré aux ordinateurs Chromebook : [ChromeVox](https://support.google.com/chromebook/answer/177893?hl=fr)
         * [NVDA - Lecteur d’écran pour Windows](https://www.nvaccess.org/download/)
@@ -447,7 +456,7 @@
       <script type="text/template">
         #Matériel : contacteur au souffle
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TSIABD6dU1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe title="How I control my computer with my head (HeadMouse)" width="560" height="315" src="https://www.youtube.com/embed/TSIABD6dU1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <small>Cette vidéo a été créée par Giesbert Nijhuis avec son appareil de commande HeadMouse ([Origin Instruments](http://www.orin.com/access/headmouse/)) et KeyStrokes ([AssistiveWare](https://www.assistiveware.com/fr/)). Le logiciel 3D qu’il utilise s'appelle Cheetah3D. La musique a été créée dans GarageBand.</small>
 
@@ -464,7 +473,7 @@
         >N’oubliez pas qu’il nous est impossible de reproduire exactement l'expérience d’une personne malvoyante sur le Web. Vous pourriez trouver le lecteur d’écran difficile à utiliser, intimidant ou frustrant, particulièrement si le site que vous consultez n'est pas pensé pour l’accessibilité.
 
         ---
-        ###Ressources
+        ## Ressources
         <small>Autant que possible, il est conseillé de faire des tests avec des utilisateurs atteints de déficiences afin de savoir comment répondre à leurs besoins en concevant votre site.</small>
 
         * <small>[Fable : test d'accessibilité avec des utilisateurs réels](https://www.makeitfable.com/)</small>
@@ -497,29 +506,29 @@
           <tr>
             <td>VoiceOver (Mac)</td>
 
-            <td>`Cmd` + `F5`</td>
+            <td><kbd>Cmd</kbd> + <kbd>F5</kbd></td>
 
-            <td>`Cmd` + `F5`</td>
-            <td>Ctrl + Opt et la flèche gauche ou droite</td>
+            <td><kbd>Cmd</kbd> + <kbd>F5</kbd></td>
+            <td><kbd>Ctrl</kbd> + <kbd>Opt</kbd> et la <kbd>&leftarrow;</kbd> ou <kbd>&rightarrow;</kbd></td>
           </tr>
 
           <tr>
             <td>NVDA (Windows)</td>
 
-            <td>`Ctrl` + `Alt` + `n`<br>
+            <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>n</kbd><br>
             ou le raccourci clavier pour accéder au bureau</td>
 
-            <td>`Inser` + `q`<br>
+            <td><kbd>Inser</kbd> + <kbd>q</kbd><br>
             ou le menu de la barre de tâches<br>
             clic droit, quitter</td>
-            <td>Flèche vers le haut ou le bas</td>
+            <td><kbd>&uparrow;</kbd> ou <kbd>&downarrow;</kbd></td>
           </tr>
         </table>
 
-        * Utilisez `Ctrl` pour interrompre la voix.
-        * Utilisez les flèches vers le haut ou le bas pour lire la ligne précédente ou suivante.
-        * Utilisez `Tab` pour sauter au prochain lien et `Maj` + `Tab` pour sauter au dernier lien.
-        * Tapez `Entrée` pour cliquer sur le lien sélectionné.
+        * Utilisez <kbd>Ctrl</kbd> pour interrompre la voix.
+        * Utilisez <kbd>Tab</kbd> pour sauter au prochain lien
+        * <kbd>Maj</kbd> + <kbd>Tab</kbd> pour sauter au dernier lien.
+        * Tapez <kbd>Entrée</kbd> pour cliquer sur le lien sélectionné.
       </script>
     </section>
 
@@ -551,9 +560,9 @@
       <script type="text/template">
         #Syntaxe du HTML
 
-        Les balises s’écrivent avec des chevrons `< >` et une barre oblique vers l'avant `/` pour la balise de fermeture. Familiarisez-vous avec ces touches!
+        Les balises s’écrivent avec des chevrons <kbd>&lt;</kbd> <kbd>&gt;</kbd> et une barre oblique vers l'avant <kbd>/</kbd> pour la balise de fermeture. Familiarisez-vous avec ces touches!
 
-        ![Touches du clavier](framework/img/workshop/keyboard-html_fr.png)<!-- .element: width="70%" -->
+        ![Clavier avec les touches fléchées gauche et droite et barre oblique en surbrillance](framework/img/workshop/keyboard-html_fr.png)<!-- .element: width="70%" -->
       </script>
     </section>
 
@@ -657,12 +666,12 @@
 
       Allez dans **File** > ** Add Project Folder**. Une fenêtre s'affichera.
 
-      ![](framework/img/workshop/editor-add-project-pc.jpg)<!-- .element: width="25%" --> ![](framework/img/workshop/editor-add-project-1.jpg)
+      ![Éditeur Atom avec menu Fichier ouvert sur PC. L'option Ajouter un dossier de projet est en surbrillance.](framework/img/workshop/editor-add-project-pc.jpg)<!-- .element: width="25%" --> ![Éditeur Atom avec menu Fichier ouvert sur Mac. L'option Ajouter un dossier de projet est en surbrillance.](framework/img/workshop/editor-add-project-1.jpg)
 
       Ensuite :
 
-      * Allez dans le dossier **llc-web-a11y-master**.
-      * Sélectionnez le dossier **projet-fr**.
+      * Allez dans le dossier `llc-web-a11y-master`.
+      * Sélectionnez le dossier `projet-fr`.
       * Cliquez sur **Ouvrir**.
 
       Les fichiers du dossier s'afficheront maintenant dans la barre latérale.
@@ -682,11 +691,11 @@
           |-- référence
         ```
 
-        Le dossier **images** contient une sélection d’images que vous pouvez utiliser dans votre projet. Vous pouvez aussi y ajouter des images de votre choix pendant les exercices.
+        Le dossier `images` contient une sélection d’images que vous pouvez utiliser dans votre projet. Vous pouvez aussi y ajouter des images de votre choix pendant les exercices.
 
         Le fichier `index.html` est notre page HTML.
 
-        Le dossier **référence** contient le corrigé de chaque exercice. Ne le consultez pas, sauf si vous avez vraiment de la difficulté.
+        Le dossier `référence` contient le corrigé de chaque exercice. Ne le consultez pas, sauf si vous avez vraiment de la difficulté.
       </script>
     </section>
 
@@ -699,18 +708,18 @@
         Allez dans **Preferences** pour afficher les options de personnalisation.<br />
         Si vous utilisez Windows, allez dans le menu **File** et choisissez **Settings**.
 
-        ![](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="40%" --> ![](framework/img/workshop/atom-settings-pc.jpg)<!-- .element: width="25%" -->
+        ![Éditeur Atom avec menu Atom ouvert sur Mac](framework/img/workshop/atom-preferences.jpg)<!-- .element: width="40%" --> ![Éditeur Atom avec menu Atom ouvert sur PC](framework/img/workshop/atom-settings-pc.jpg)<!-- .element: width="25%" -->
 
         Sélectionnez l’onglet **Editor** dans le menu à gauche.
 
-         ![](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
+         ![Écran des paramètres de l'éditeur Atom](framework/img/workshop/atom-settings.jpg)<!-- .element: width="70%" -->
 
         Assurez-vous que les cases des options **Soft Wrap** (Habillage du texte) et **Show Indent Guide** (Afficher l’indentation) sont bien cochées.
 
-        ![](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
+        ![Les cases à cocher de l'éditeur Atom Editor, les cases à cocher Afficher le retrait et Guide de retour à la ligne sont cochées](framework/img/workshop/atom-soft-wrap.jpg)<!-- .element: width="70%" -->
 
         ---
-        ###Ressources
+        ## Ressources
         * [Documentation d’Atom](https://atom.io/docs)
         * [Raccourcis d’Atom](https://bugsnag.com/blog/atom-editor-cheat-sheet)
         * [Personnalisation d’Atom](https://atom.io/docs/v0.61.0/customizing-atom)
@@ -854,13 +863,13 @@
           ```
         1. Ouvrez `index.html` dans le navigateur.
           * Allez dans l’Explorateur Windows ou Finder.
-          * Allez dans le dossier **llc-web-a11y-master > projet-fr**.
-          * Faites un double clic sur **index.html** pour l’ouvrir dans votre navigateur par défaut.
-          <br><span class="note">(Si Chrome n'est pas votre navigateur par défaut, faites un clic droit/tapez à deux doigts sur **index.html** et choisissez **Ouvrir avec > Chrome**.)</span>
+          * Allez dans le dossier `llc-web-a11y-master` > `projet-fr`.
+          * Faites un double clic sur `index.html` pour l’ouvrir dans votre navigateur par défaut.
+          <br><span class="note">(Si Chrome n'est pas votre navigateur par défaut, faites un clic droit/tapez à deux doigts sur `index.html` et choisissez **Ouvrir avec > Chrome**.)</span>
         1. Modifiez le contenu entre les autres balises HTML pour personnaliser le contenu de la page. N’oubliez pas de sauvegarder les modifications dans l’éditeur de texte et de rafraîchir le navigateur Web.
 
         <!-- .element: class="delayed" -->
-        Votre page devrait ressembler au fichier [exercice-1.html](projet-fr/référence/exercice-1.html) dans le dossier **référence**.
+        Votre page devrait ressembler au fichier [`exercice-1.html`](projet-fr/référence/exercice-1.html) dans le dossier `référence`.
       </script>
     </section>
 
@@ -870,17 +879,15 @@
 
         Prenons le temps de regarder la mise en page du projet final pour voir comment regrouper des éléments du même type et créer la structure d’une page.
 
-        <img src="framework/img/workshop/projetfinal.png" alt="capture d’écran du projet final" style="width:960px; float: left; margin-right: 15px;">
+        <img src="framework/img/workshop/projetfinal.png" alt="Capture d'écran du projet final dans son état final; section titre, notre section mission, et entrer en contact section." style="width:960px; float: left; margin-right: 15px;">
 
         <div class="labels">
 
-        en-tête <!-- .element: class="en-tête" -->
+        - en-tête <!-- .element: class="header" -->
+        - mission <!-- .element: class="about" -->
+        - contact <!-- .element: class="loves" -->
+        - bas de page <!-- .element: class="footer" -->
 
-        mission <!-- .element: class="à-propos" -->
-
-        contact <!-- .element: class="jaime" -->
-
-        bas de page <!-- .element: class="bas de page" -->
         </div>
         </header>
       </script>
@@ -897,7 +904,7 @@
         Elles sont aussi adaptées aux **lecteurs d’écran**, qui lisent les balises au fur et à mesure que l’utilisateur consulte le contenu. Les lecteurs d’écran avertissent l’utilisateur si un élément est un en-tête, un bas de page, etc.
 
         ---
-        ###Ressources
+        ## Ressources
         * [HTML : une bonne base pour l'accessibilité](https://developer.mozilla.org/fr/docs/Apprendre/a11y/HTML)
 
       </script>
@@ -1071,7 +1078,7 @@
         </ul>
         ```
         ---
-        ###Ressources
+        ## Ressources
         * [Styles CSS de liste](https://developer.mozilla.org/fr/docs/Web/CSS/list-style-type)
       </script>
     </section>
@@ -1153,7 +1160,7 @@
         `formulaire-inscription-frais-carburant-ARC.pdf`
 
         ---
-        ###Ressources
+        ## Ressources
         * [Guide complet pour adapter des URLs et favoriser le référencement naturel](https://www.webalive.com.au/seo-friendly-urls/)
         * [Moz : noms de fichiers images](https://moz.com/community/q/how-important-are-image-file-names)
       </script>
@@ -1168,7 +1175,7 @@
         1. Ajoutez des listes dans votre contenu, au besoin. (<a href="#slide58">Consultez la diapositive 58 pour connaître la syntaxe.</a>)
         1. Ajoutez 2 ou 3 hyperliens avec les balises `<a>`. Vous pouvez faire des liens vers les icônes des réseaux sociaux et les adresses courriels.  (<a href="#slide59">Consultez la diapositive 59 pour connaître la syntaxe.</a>)
 
-        Votre page devrait ressembler au fichier [exercice-1.html](projet-fr/référence/exercice-1.html) dans le dossier **référence**.
+        Votre page devrait ressembler au fichier [`exercice-1.html`](projet-fr/référence/exercice-1.html) dans le dossier `référence`.
 
         ---
         Utilisez [cette liste de balises HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Element) comme référence.
@@ -1286,7 +1293,7 @@
 
         ```
         ---
-        ###Ressources
+        ## Ressources
         * [Texte alternatif : le guide complet](https://axesslab.com/alt-texts/)
       </script>
     </section>
@@ -1300,7 +1307,7 @@
         Utilisez un service gratuit comme [tinyjpg](https://tinyjpg.com/) pour compresser vos images avant de les téléverser sur votre site Web afin d'en réduire la taille.
 
         ---
-        ###Ressources
+        ## Ressources
         * [Rendre des images plus accessibles - U of Washington](https://www.washington.edu/accessibility/checklist/images/)
         * [Texte alternatif pour des images : De quoi s'agit-il? Comment le définir? Pourquoi est-ce important?](https://blog.hubspot.com/marketing/image-alt-text)
         * [Écrire du texte alternatif efficace](https://www2.le.ac.uk/webcentre/plone/build/basics/add-images/alt-text)
@@ -1315,10 +1322,10 @@
         1. Ajoutez au moins deux images n’importe où sur votre page `index.html`. N’oubliez pas l'attribut `alt`!
 
         <!-- .element: class="delayed" -->
-        Votre page devrait ressembler au fichier [exercice-2.html](projet-fr/référence/exercice-2.html) dans le dossier **référence**.
+        Votre page devrait ressembler au fichier [`exercice-2.html`](projet-fr/référence/exercice-2.html) dans le dossier `référence`.
 
         ---
-        ###Ressources
+        ## Ressources
         * Vous pouvez découper et changer la taille de vos images avec cet outil gratuit : [Pixlr](http://apps.pixlr.com/editor/)<br>
         * Compression d’image : [tinyjpg](https://tinyjpg.com/)
       </script>
@@ -1331,10 +1338,10 @@
         Les vidéos sont excellentes pour transmettre des informations sur une page Web. Toutefois, il y a des aspects à considérer en ce qui concerne leur accessibilité. <br><br>Vous avez sûrement remarqué que nous avons déjà une vidéo sur notre page. Remplaçons-la par une vidéo en lien avec le contenu de notre site Web.
 
         1. Allez sur [youtube.com](https://www.youtube.com/) et choisissez une vidéo que vous voulez mettre sur votre page. <small>Veuillez noter que l’intégration de certaines vidéos sur des pages Web pourrait être interdite pour les utilisateurs au Canada. Dans ce cas, vous verrez un message d'erreur.</small>
-        1. Cliquez sur le bouton de partage sous la vidéo.
-        <img alt="icône de partage de la vidéo" src="framework/img/workshop/video-share_fr.png" width="600"/>
+        1. Cliquez sur le bouton de partage sous la vidéo.<br>
+        <img alt="" src="framework/img/workshop/video-share_fr.png" width="600"/>
         1. Choisissez l’option d’intégration de la vidéo.<br>
-        <img alt="icône d'intégration de la vidéo" src="framework/img/workshop/video-embed_fr.png" width="400"/>
+        <img alt="" src="framework/img/workshop/video-embed_fr.png" width="400"/>
         1. Copiez le code HTML indiqué.
         1. Dans Atom, collez le code dans le fichier `index.html` et remplacez le code `iframe` qui s'y trouve déjà.
         1. Enregistrez vos changements et rafraîchissez votre navigateur pour visionner votre vidéo intégrée.
@@ -1387,10 +1394,10 @@
         1. Ajoutez un hyperlien (balise `a`) vers votre fichier texte dans `index.html` directement sous le code `iframe` de YouTube. (Consultez la diapositive 59 pour en savoir plus sur les chemins relatifs.)
         1. S’il vous reste du temps, ajoutez plus de contenu aux sous-titres.
 
-        Votre page devrait ressembler au fichier [exercice-3.html](projet-fr/référence/exercice-3.html) dans le dossier **référence**.
+        Votre page devrait ressembler au fichier [`exercice-3.html`](projet-fr/référence/exercice-3.html) dans le dossier `référence`.
 
         ---
-        ###Ressources
+        ## Ressources
         * [Utiliser l'attribut HTML « titre »](https://developer.paciellogroup.com/blog/2013/01/using-the-html-title-attribute-updated/)
       </script>
     </section>
@@ -1411,9 +1418,9 @@
         * Ce système à deux langages permet de séparer le contenu (HTML) de la présentation (CSS).
         * La feuille de style du CSS contient une liste de règles qui déterminent l'apparence du site.
 
-        Le CSS nécessite ces symboles : accolades `{ }`, deux-points `:`, point-virgule `;`.
+        Le CSS nécessite ces symboles : accolades <kbd>{</kbd> <kbd>}</kbd>, deux-points <kbd>:</kbd>, point-virgule <kbd>;</kbd>.
 
-        ![clavier](framework/img/workshop/keyboard-css_fr.jpg)
+        ![Clavier avec accolade gauche et droite et touches point-virgule en surbrillance](framework/img/workshop/keyboard-css_fr.jpg)
       </script>
     </section>
 
@@ -1421,21 +1428,21 @@
       <script type="text/template">
         #CSS : syntaxe et terminologie
 
-        **Sélecteur :** l’élément HTML auquel nous appliquerons des styles.<br>
-        **Déclaration :** règles de style écrites en paire selon le format `propriété:valeur`. Elles se terminent par un point-virgule `;` et sont entourées d'accolades `{ }`.
+        - **Sélecteur :** l’élément HTML auquel nous appliquerons des styles.<br>
+        - **Déclaration :** règles de style écrites en paire selon le format `propriété:valeur`. Elles se terminent par un point-virgule `;` et sont entourées d'accolades `{ }`.
+          ```
+          sélecteur {
+            propriété: valeur;
+          }
+          ```
+        - Les **propriétés** déterminent le *type* de style qui sera appliqué (p. ex. : `color` pour de la couleur).<br>
+        - Les **valeurs** sont propres à la propriété (p. ex., : `red` pour définir la valeur de la propriété de couleur en « rouge »).
+          ```
+          p {
+            color: red;
+          }
+          ```
 
-        ```
-        sélecteur {
-          propriété: valeur;
-        }
-        ```
-        Les **propriétés** déterminent le *type* de style qui sera appliqué (p. ex. : `color` pour de la couleur).<br>
-        Les **valeurs** sont propres à la propriété (p. ex., : `red` pour définir la valeur de la propriété de couleur en « rouge »).
-        ```
-        p {
-          color: red;
-        }
-        ```
         > Dans l’exemple ci-dessus, quel est le sélecteur? Quelle est la propriété? Quelle est la valeur?
       </script>
     </section>
@@ -1455,10 +1462,9 @@
         Il existe un nombre infini de propriétés CSS. En effet, de nouvelles propriétés sont ajoutées constamment, tandis que certaines sont retirées du lot (elles sont « dépréciées »). Ne vous inquiétez pas : vous n'avez pas besoin de les retenir! Il vous suffit de consulter des ressources, comme celles indiquées ci-dessous.
 
         ---
-        ###Ressources
-        * http://caniuse.com
-        * https://developer.mozilla.org/fr/docs/Web/CSS/Reference
-        * http://htmldog.com/reference/cssproperties/
+        ## Ressources
+        * [caniuse.com](http://caniuse.com)
+        * [MDN: CSS Reference](https://developer.mozilla.org/fr/docs/Web/CSS/Reference)
       </script>
     </section>
 
@@ -1499,7 +1505,7 @@ sélecteur { /* Sélectionnez le lien */
         Bien que ce ne soit pas obligatoire, les fichiers CSS sont souvent enregistrés dans un dossier séparé, tout comme les images. <!-- .element: class="note" -->
 
         ---
-        ###Ressource
+        ## Ressource
         Il y a différentes manières de faire référence au code CSS dans une page. [Consultez cette ressource pour en savoir plus sur la référence au CSS.](https://www.hostpapa.ca/knowledgebase/understanding-external-internal-inline-css-styles/)
       </script>
     </section>
@@ -1565,13 +1571,13 @@ sélecteur { /* Sélectionnez le lien */
       </script>
     </section>
 
-    <section class="slide" data-markdown>
+    <!-- <section class="slide" data-markdown>
       <script type="text/template">
         #Exercice de groupe : contraste et daltonisme
 
         <img src="framework/img/workshop/colorblind-checker_fr.png">
       </script>
-    </section>
+    </section> -->
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -1584,7 +1590,7 @@ sélecteur { /* Sélectionnez le lien */
         Ici, le code de couleur de l'avant-plan (le texte) est `#ff483c`.<br>
         Le code de couleur de l'arrière-plan est `#fed1cf`.
 
-        <img src="framework/img/workshop/colour-example.png">
+        <img src="framework/img/workshop/colour-example.png" alt="Capture d'écran du titre de l'article.">
 
         Essayez d'autres combinaisons de couleurs pour voir le résultat.
       </script>
@@ -1604,7 +1610,7 @@ sélecteur { /* Sélectionnez le lien */
         Prenez en note les codes hexadécimaux des couleurs que vous sélectionnez pour votre site. Nous nous en servirons dans le prochain exercice.
 
         ---
-        ###Ressources
+        ## Ressources
         * [Générateur de palette de couleurs accessible](https://cloudflare.design/color/)
         * [Outil de contraste Contrast Finder](http://contrast-finder.tanaguru.com/)
         * [Guide des couleurs accessibles pour la conception de produits](https://medium.com/inside-design/a-guide-to-color-accessibility-in-product-design-516e734c160c)
@@ -1630,7 +1636,7 @@ text-transform: lowercase;</textarea>
         </div>
 
         ---
-        ###Ressource
+        ## Ressource
         [Référence CSS - Typographie](https://cssreference.io/typography/)
       </script>
     </section>
@@ -1666,7 +1672,7 @@ text-transform: lowercase;</textarea>
         Les unités de mesure relatives sont très pratiques. Elles nous permettent de définir la taille de nos éléments HTML relativement à la taille de la police ou de la fenêtre. Ainsi, la mise en page du site sera fonctionnelle même si, par exemple, un utilisateur malvoyant a doublé la taille du texte sur le site en entier.
 
         ---
-        ###Ressource
+        ## Ressource
         * [Introduction aux valeurs et aux unités CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
         * [Définir la taille de la police avec rem](https://snook.ca/archives/html_and_css/font-size-with-rem)
         * [Typographie fluide](https://www.smashingmagazine.com/2016/05/fluid-typography/)
@@ -1765,12 +1771,12 @@ text-transform: lowercase;</textarea>
         3. Changez d’autres styles de police comme `font-size`, `font-weight`, `text-transform` ou `text-align`.
 
         ---
-        ###Ressource
+        ## Ressource
         * [Référence CSS - Typographie](https://cssreference.io/typography/)
-        * [W3C Schools - Polices CSS](https://www.w3schools.com/css/css_font.asp)
+        * [MDN: Font](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
 
         <!-- .element: class="delayed" -->
-        Votre page devrait ressembler au fichier [exercice-4.html](projet-fr/référence/exercice-4.html) dans le dossier **référence**.
+        Votre page devrait ressembler au fichier [`exercice-4.html`](projet-fr/référence/exercice-4.html) dans le dossier `référence`.
       </script>
     </section>
 
@@ -1801,7 +1807,7 @@ text-transform: lowercase;</textarea>
         ```
 
         ---
-        ###Ressource
+        ## Ressource
 
         [L'attribut `id` peut aussi être utilisé avec le CSS](https://css-tricks.com/the-difference-between-id-and-class/), mais seulement une fois sur chaque page. En raison de cette règle, [certaines personnes préfèrent n’utiliser que des classes pour définir le style des pages](http://oli.jp/2011/ids/).
       </script>
@@ -1876,7 +1882,7 @@ text-transform: lowercase;</textarea>
         ```
 
         <!-- .element: class="delayed" -->
-        Nous nous rapprochons de la perfection! Votre page devrait ressembler au fichier [exercice-5.html](projet-fr/référence/exercice-5.html) dans le dossier **référence**.
+        Nous nous rapprochons de la perfection! Votre page devrait ressembler au fichier [`exercice-5.html`](projet-fr/référence/exercice-5.html) dans le dossier `référence`.
       </script>
     </section>
 
@@ -1894,7 +1900,7 @@ text-transform: lowercase;</textarea>
 
         Les lignes rouges dans l'exemple ci-dessous représentent les bords de tous les éléments du document HTML.
 
-        <img src="framework/img/workshop/box-borders-example.jpg" alt="éléments, boîtes avec des bords" style="width: 650px">
+        <img src="framework/img/workshop/box-borders-example.jpg" alt="Page d'accueil du projet avec des boîtes rectangulaires autour de chaque élément de contenu." style="width: 650px">
 
         Remarquez l'espacement entre les éléments comme les en-têtes et les paragraphes sur votre page. Il s'agit de la marge (`margin`) et du remplissage (`padding`) de ces éléments appliqués dans votre navigateur.
       </script>
@@ -1906,7 +1912,7 @@ text-transform: lowercase;</textarea>
 
         Il y a 5 propriétés CSS qui déterminent la taille et l'espacement.
 
-        ![Exemple de modèle de boîte](framework/img/workshop/box-model-layout.jpg)<!-- .element: class="left" -->
+        ![](framework/img/workshop/box-model-layout.jpg)<!-- .element: class="left" -->
 
         * **width** : définit la *largeur*
         * **height** : définit la *hauteur*
@@ -1914,7 +1920,6 @@ text-transform: lowercase;</textarea>
         * **padding** : le *remplissage*, ajoute ou enlève de l'espace à l’intérieur de l’élément
         * **border** : ajoute une *bordure* à l'extérieur de l’élément
 
-        Source de l’image : <!-- .element: class="note" --> [W3C](http://www.w3.org/wiki/The_CSS_layout_model_-_boxes_borders_margins_padding)
       </script>
     </section>
 
@@ -1922,7 +1927,7 @@ text-transform: lowercase;</textarea>
       <script type="text/template">
         #Marge et remplissage
 
-        Les valeurs de `margin` (marge) et de `padding` (remplissage) peuvent être déclarées avec des chiffres de 1 à 4 pour cibler des côtés précis de l'élément. Vous pouvez utiliser différentes unités de mesure (px, %, em, rem, etc.) avec ces propriétés.
+        Les valeurs de `margin` (marge) et de `padding` (remplissage) peuvent être déclarées avec des chiffres de 1 à 4 pour cibler des côtés précis de l'élément. Vous pouvez utiliser différentes unités de mesure (`px`, `%`, `em`, `rem`, etc.) avec ces propriétés.
 
         Si vous mettez une valeur à 0, vous *enlèverez* l'espace par défaut, tandis que toute valeur positive (1 et plus) *ajoutera* de l'espace. Les marges peuvent avoir des valeurs négatives, mais pas le remplissage.
 
@@ -2043,7 +2048,7 @@ border: 15px solid green;</textarea>
         }
         ```
 
-        Ajoutez-le tout en haut de votre fichier **styles.css**.
+        Ajoutez-le tout en haut de votre fichier `styles.css`.
 
         ---
         ##Ressources
@@ -2080,7 +2085,7 @@ border: 15px solid green;</textarea>
 
         >Bonus : Utilisez le pseudo-sélecteur `:hover` pour changer le style du bouton lorsqu’il y a survol avec le pointeur de souris. Si vous avez besoin d'aide, demandez à une mentore!
 
-        À la fin de l'exercice, votre page devrait ressembler au fichier [exercice-6.html](projet-fr/référence/exercice-6.html).
+        À la fin de l'exercice, votre page devrait ressembler au fichier [`exercice-6.html`](projet-fr/référence/exercice-6.html).
       </script>
     </section>
 
@@ -2117,9 +2122,8 @@ border: 15px solid green;</textarea>
         `background` est la forme courte de différentes propriétés d'arrière-plan. En utilisant la forme courte d’une propriété, vous aurez des feuilles de style plus courtes et économiserez du temps.
 
         ---
-        ###Ressources
-        * W3C : [Propriétés CSS : background](https://www.w3schools.com/css/css_background.asp)
-        * Moz : [Propriétés CSS : forme courte](https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies)
+        ## Ressources
+        * MDN : [Propriétés CSS : forme courte](https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies)
       </script>
     </section>
 
@@ -2138,7 +2142,7 @@ border: 15px solid green;</textarea>
           |-- index.html
         ```
 
-        Comme la feuille de style sur laquelle nous travaillons est à l’intérieur du dossier **css*, le chemin de notre image d'arrière-plan doit refléter cela.
+        Comme la feuille de style sur laquelle nous travaillons est à l’intérieur du dossier `css`, le chemin de notre image d'arrière-plan doit refléter cela.
         Utilisez `../` pour indiquer que nous *montons* d’un niveau et *sortons* du dossier dans lequel est contenu  le fichier actuel.
 
         ```css
@@ -2189,11 +2193,11 @@ border: 15px solid green;</textarea>
         ```
 
         ---
-        ###Truc de pro :
+        ## Truc de pro :
 
         Vous remarquerez que `background-size` est la forme longue de la propriété. Pour l’écrire en forme courte, vous **devez** l’inclure après `background-position` et la séparer par le caractère `/`. Dans tous les cas, vous avez moins de chances de vous tromper en utilisant la propriété de forme longue.
 
-        ###Ressources
+        ## Ressources
         * [Trucs CSS : background](https://css-tricks.com/almanac/properties/b/background/)
         * [background-size et positionnement](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/)
       </script>
@@ -2207,7 +2211,7 @@ border: 15px solid green;</textarea>
 
         Chaque fois qu’un élément HTML est imbriqué, les éléments s’empilent les uns sur les autres, comme les garnitures d’un sandwich!
 
-        ![](framework/img/workshop/css-z-index.png)
+        ![Diagramme illustrant des éléments empilés sur un axe z.](framework/img/workshop/css-z-index.png)
 
         Regardons le code HTML de notre en-tête (`header`) :
 
@@ -2245,7 +2249,7 @@ border: 15px solid green;</textarea>
       <script type="text/template">
       #Exercice de groupe : styles d’arrière-plan et axe Z
 
-       1. Dans votre fichier **index.html**, entourez le texte dans un `<div>` ayant une classe nommée `texte`.
+       1. Dans votre fichier `index.html`, entourez le texte dans un `<div>` ayant une classe nommée `texte`.
        2. Ajoutez un nouveau `<div>` qui servira de couche entre le texte et l'arrière-plan et donnez-lui la classe « couche ». Votre code ressemblera à ça :
 
       ```
@@ -2283,8 +2287,8 @@ border: 15px solid green;</textarea>
       ---
       <small>Pour appliquer un `z-index`, nous devons aussi utiliser la propriété CSS `position`. Ces notions vont au-delà du contenu du cours d’aujourd’hui, mais vous pouvez en savoir plus dans les ressources ci-dessous.<br></small><br>
 
-      ###Ressources :
-      * [W3C : disposition CSS - la propriété « position »](https://www.w3schools.com/css/css_positioning.asp)
+
+      ## Ressources :
       * [Trucs CSS : « position »](https://css-tricks.com/almanac/properties/p/position/)
       * [Démo CSS : « position »](https://developer.mozilla.org/fr/docs/Web/CSS/position)
       </script>
@@ -2298,7 +2302,7 @@ border: 15px solid green;</textarea>
 
       ---
       <!-- .element: class="delayed" -->
-      Vous pouvez consulter le corrigé dans le fichier [final.html](projet-fr/référence/final.html), qui fait référence au fichier [final.css](projet-fr/référence/css/final.css).
+      Vous pouvez consulter le corrigé dans le fichier [`final.html`](projet-fr/référence/final.html), qui fait référence au fichier [`final.css`](projet-fr/référence/css/final.css).
     </script>
   </section>
 
@@ -2311,9 +2315,9 @@ border: 15px solid green;</textarea>
       S’il vous reste du temps, vous pouvez télécharger [l'extension WAVE webaim pour Chrome](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh). Cette extension a des fonctions semblables à celles de l’outil que nous avons utilisé plus tôt, mais nous pouvons nous en servir pour essayer des fichiers locaux, sur notre ordinateur.
       Pour vérifier des fichiers locaux, vous devez activer ce paramètre :
 
-      ![Gestion des extensions](framework/img/workshop/wave-ext_fr.png) <!-- .element: width="25%" -->
+      ![Cliquez avec le bouton droit sur l'icône de l'extension WAVE, sélectionnez Gérer les extensions.](framework/img/workshop/wave-ext_fr.png) <!-- .element: width="25%" -->
 
-      ![Gestion des extensions](framework/img/workshop/wave-enable_fr.png) <!-- .element: width="60%" -->
+      ![Sélectionnez, Autoriser l'accès aux URL de fichiers.](framework/img/workshop/wave-enable_fr.png) <!-- .element: width="60%" -->
     </script>
   </section>
 
@@ -2382,12 +2386,13 @@ border: 15px solid green;</textarea>
         * [The A11Y Project : un projet communautaire visant à rendre le Web plus accessible](https://a11yproject.com/)
         * [Création de PDFs et vérification de l'accessibilité](https://helpx.adobe.com/ca/acrobat/using/create-verify-pdf-accessibility.html)
         * [Formulaires accessibles](https://www.w3.org/WAI/tutorials/forms/)
+        * [#a11y sur Twitter](https://twitter.com/search?q=%23a11y)
 
         ##Outils d’évaluation (en anglais) :
-        * [WAVE - Outil d’évaluation de l'accessibilité Web](https://wave.webaim.org/)
-          * Aussi disponible comme extension Chrome!
-        * [AChecker](https://achecker.ca/checker/index.php)
-        * [SortSite : vérificateur d'erreurs sur des sites Web, versions gratuites et payantes](https://www.powermapper.com/products/sortsite/)
+        * [Lighthouse](https://developers.google.com/web/tools/lighthouse) de Google
+        * [aXe](https://www.deque.com/axe/) de Deque
+        * [WAVE](https://wave.webaim.org/) de WebAIM
+        * [Accessibility Insights](https://accessibilityinsights.io/) de Microsoft
 
 
         ##Livres électroniques (en français) :
