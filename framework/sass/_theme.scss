@@ -46,7 +46,7 @@ h1 {
     font-size: $font-size-heading-lg;
     font-weight: 400;
   }
-  code {
+  code, kbd {
     font-size: inherit;
     color: inherit;
     font-family: inherit;
@@ -198,7 +198,7 @@ table {
   pre {
     margin: 0;
   }
-  code {
+  code, kbd {
     background: transparent;
   }
   .hljs {
@@ -231,7 +231,7 @@ td {
   line-height: 1.3;
   font-size: $font-size-xsm!important;
 
-  code {
+  code, kbd {
     font-size: inherit;
   }
 }
@@ -671,7 +671,7 @@ pre {
   margin: 18px 0 12px;
   white-space: pre-wrap;
 
-  code {
+  code, kbd {
     overflow-y: auto;
     font-size: $font-size-xsm;
     // font-family: Andale Mono, Monaco, monospace;
@@ -686,7 +686,7 @@ pre {
     margin-top: 35px;
   }
 }
-code {
+code, kbd {
   color: #555;
   padding: 0 8px;
   display: inline-block;
@@ -698,9 +698,15 @@ code {
 }
 /* Targets only firefox */
 @-moz-document url-prefix() {
-  code {
+  code, kbd {
     font-size: $font-size-base - 0.2;
   }
+}
+
+kbd, table kbd {
+  background: #fff;
+  border: 1px solid #d1d5da;
+  box-shadow: inset 0 -1px 0 #d1d5da;
 }
 
 //code samples

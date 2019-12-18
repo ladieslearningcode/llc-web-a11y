@@ -90,3 +90,13 @@
     font-size: 80px;
   }
 }
+
+.page-layout .labels ul {
+  margin: 0;
+  padding: 0;
+}
+
+.page-layout .labels ul>li:before {
+  content: "";
+  margin-left: 10px;
+}
