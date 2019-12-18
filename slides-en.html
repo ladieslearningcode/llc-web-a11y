@@ -558,12 +558,12 @@
 
         Tags usually come in pairs &mdash; an opening tag and a closing tag &mdash; to *wrap* the content.  Note the closing tag has a forward slash (`/`).
 
-        ```
+        ```html
         <tag> opening tag --- closing tag </tag>
         ```
 
         HTML *tags* describe the content inside of them to the web browser or assistive technologies.
-        ```
+        ```html
         <h1>This tag describes a heading</h1>
         <p>This tag is for paragraphs.</p>
         ```
@@ -576,7 +576,7 @@
 
         Tags can be *nested* within other tags like this:
 
-        ```
+        ```html
         <outertag>outer content <innertag>inner content</innertag> outer content</outertag>
         ````
 
@@ -584,7 +584,7 @@
 
         The inner tag is the child of the outer tag.
 
-        ```
+        ```html
         <parent>
           <child></child>
         </parent>
@@ -598,13 +598,13 @@
 
         HTML was created for web browsers to read (not humans), so this makes perfect sense to a web browser:
 
-        ```
+        ```html
         <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title></title></head><body></body></html>
         ```
 
         But for us, using whitespace through indentation (tabs) will makes HTML easier to read. When nesting a tag, add one tab space.
 
-        ```
+        ```html
         <outertag>
           <innertag>
           </innertag>
@@ -619,7 +619,7 @@
 
         The tags below must be included in ** *every* ** HTML document.
 
-        ```
+        ```html
         <!DOCTYPE html>
         <html lang="en">
           <head>
@@ -643,7 +643,7 @@
 
       Inside of the folder you downloaded today, open the **project** folder in your text editor to edit your project.
 
-      ```html
+      ```xml
       llc-web-a11y-master
         |-- framework // Contains files needed for slide presentation. Do not edit!
         |-- project-en // Contains the exercise files for this workshop. (images, CSS & HTML files)
@@ -670,7 +670,7 @@
 
         Your project folder structure will look like this:
 
-        ```html
+        ```xml
         project
           |-- css
           |-- images
@@ -811,7 +811,7 @@
         * follows the syntax of `attribute="value"` (note the quotes)
         * many different attributes, including some that are specifically used for accessibility.
 
-        ```
+        ```html
         <tag attribute="value">content</tag>
         ```
       </script>
@@ -825,12 +825,12 @@
 
         The `lang` attribute is used to classify the language.
 
-        ```
+        ```html
         <html lang="en">
         ```
 
         The `charset` attribute sets the character encoding.
-        ```
+        ```html
         <meta charset="UTF-8">
         ```
 
@@ -844,7 +844,7 @@
 
         1. In the text editor, open `index.html` (**File** > **Save**)
         1. In *between* the `<title></title>` tags, add a *page title* that reflects the content of your webpage. Example:
-          ```
+          ```html
           <title>Laura Ipsum | Digital Designer & Developer</title>
           ```
         1. Open `index.html` in the browser.
@@ -912,7 +912,7 @@
 
         Heading tags range from `<h1>` to `<h6>` used to describe the *hierarchy* of the page structure. To decide which heading to use, think about how you would arrange an essay outline.
 
-        ```xml
+        ```html
         <h1>Types of Apples</h1>
         <h2>Red varieties</h2>
         <h3>Fuji apple</h3>
@@ -957,7 +957,7 @@
 
         **Paragraphs**: whether it&#39;s one sentence or more, each paragraph needs its own pair of `<p></p>` tags:
 
-        ```xml
+        ```html
         <p>This is a paragraph.</p>
 
         <p>This is a longer paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non vero dolor expedita quasi reiciendis minus unde sapiente id eveniet saepe officia quibusdam aspernatur, sint voluptate ipsam ex magni. Aliquam, ex!</p>
@@ -971,7 +971,7 @@
 
         If you need to start text on a new line, you can use the self-closing `<br>` tag. That means no closing `</br>` tag is necessary:
 
-        ```xml
+        ```html
         <p>129 Spadina ave<br>
         Toronto, ON<br>
         M5V 2L3</p>
@@ -980,7 +980,7 @@
         However, we could use a different tag in this example! There is an HTML tag for `address`:
 
 
-        ```xml
+        ```html
         <address>129 Spadina ave<br>
         Toronto, ON<br>
         M5V 2L3</address>
@@ -1040,7 +1040,7 @@
 
         **Ordered lists** are used to list items in a specific order. Two elements are required, an ordered list tag, `<ol>` and a list item tag, `<li>`:
 
-        ```xml
+        ```html
         <p>Getting self-serve yogurt</p>
         <ol>
           <li>Take a cup</li>
@@ -1058,7 +1058,7 @@
 
         Use **unordered lists** for lists that do not need to be ordered sequentially. The syntax is almost the same as the ordered list, but wrap the `<li>` tags with a `<ul>` instead:
 
-        ```xml
+        ```html
         <ul>
           <li>bread</li>
           <li>olive oil</li>
@@ -1081,11 +1081,11 @@
 
         The example below includes an *absolute* path to the Ladies Learning Code homepage.
 
-        ```xml
+        ```html
         <a href="http://ladieslearningcode.com">Ladies Learning Code</a>
         ```
         Here's the syntax for an email link:
-        ```xml
+        ```html
         <a href="mailto:hello@myemail.com">hello@myemail.com</a>
         ```
       </script>
@@ -1099,13 +1099,13 @@
 
         Rather than this:
 
-        ```xml
+        ```html
         <a href="files/annual-report.pdf">Click here</a> to read our annual report.
         ```
 
         do this:
 
-        ```xml
+        ```html
         <a href="files/annual-report.pdf">Read our annual report</a>.
         ```
         ---
@@ -1238,14 +1238,14 @@
 
         Images use a self-closing tag. It also requires the `src` *attribute* to tell the browser the location of the image file.
 
-        ```
+        ```html
         <img src="images/image-file.jpg">
 
         ```
 
         `alt` is another attribute that is added to images to provide *alternative text* which is ready by screen readers.
 
-        ```
+        ```html
         <img src="images/image-file.jpg" alt="kitten">
 
         ```
@@ -1268,13 +1268,13 @@
 
         If the image is simply decorative but serves no practical value, you can leave the `alt` attribute empty. To comply with WCAG standards, the `alt` attribute **must** be present, but if it is left empty, the screen reader will ignore it.
 
-        ```
+        ```html
         <img src="images/decorative.jpg" alt="">
 
         ```
 
         Want to link an image? Describe the link in the image's alt text.
-        ```
+        ```html
         <a href="#">
           <img src="images/twitter-icon.jpg" alt="Follow me on Twitter">
         </a>
@@ -1374,7 +1374,7 @@
         #Class Exercise #3: Accessible Video (10mins)
 
         1. Let's add one attribute to the `iframe` code first. We'll use the attribute `title`, and use the video title in YouTube as the value. This'll let the user know what the video is about before they watch it. It'll look like this:
-        ```
+        ```html
         <iframe title="Styles of yoga" width="560" height="315".../>
         ```
         1. Create a plain text file and name it `transcript.txt` in the root folder of your project (a sibling to the `index.html` file). Type out at least the first few sentences of audio in the video that you've selected.
@@ -1418,14 +1418,14 @@
         **Selector:** HTML element to apply styles to<br>
         **Declaration:** style rules written in `property:value` pairs, ending with a semi-colon `;`, are wrapped by curly brackets `{ }`
 
-        ```
+        ```css
         selector {
           property: value;
         }
         ```
         **Properties** determine the *type* of style to be applied (`color`).<br>
         **Values** are specific to the property (`red`).
-        ```
+        ```css
         p {
           color: red;
         }
@@ -1440,7 +1440,7 @@
 
         Multiple declarations can be added to one selector. Just be sure to end each declaration with a semi-colon `;` and write them on a separate line for readability.
 
-        ```
+        ```css
         h2 {
           background-color: green;
           font-size: 3rem;
@@ -1483,7 +1483,7 @@ selector { /* select the link */
 
         Use `<link>` tag and two *attributes*, `rel` and `href`.
 
-        ```
+        ```html
         <head>
           <title>Page Title</title>
           <link rel="stylesheet" href="css/styles.css">
@@ -1513,7 +1513,7 @@ selector { /* select the link */
         * **RGB** - uses 3 numerical values between `0` (black) and `255` (white)
         * **hex code** - number sign (`#`) followed by six characters (0-9, A-F)
 
-        ```
+        ```css
         /* These are all the same colour - this is also a CSS comment by the way! */
         p {
           background: firebrick;
@@ -1532,15 +1532,15 @@ selector { /* select the link */
 
         It must start with `/*` and end with `*/` but can contain any characters in between. Use whichever comment style works for you but here's a few common conventions:
 
-        ```
+        ```css
         /* CSS Comments */
         ```
-        ```
+        ```css
         /*
         CSS Comments
         */
         ```
-        ```
+        ```css
         /* CSS Comments
         ----------------*/
         ```
@@ -1652,7 +1652,7 @@ text-transform: lowercase;</textarea>
         </div>
 
         The default `font-size` applied to the document is usually around 16 pixels, which means the two lines below will have the same result in most browsers:
-        ```
+        ```css
         font-size: 1rem;
         font-size: 16px;
         ```
@@ -1690,7 +1690,7 @@ text-transform: lowercase;</textarea>
 
         When using the `font-family` property, it's best practice to list at least two or three fonts. If the user doesn't have the first font installed on their device, the next option is used instead.
 
-        ```
+        ```css
         body {
           font-family: Helvetica, Arial, sans-serif;
         }
@@ -1731,16 +1731,16 @@ text-transform: lowercase;</textarea>
         1. Choose **Embed** to get the code:
           * copy the `<link>` code snippet
           * add it to the `<head>` of **all** your HTML pages. <span class="note">(Make sure to add the link *before* your the *styles.css* file)</span>
-          ```
+          ```html
           <head>
-              ...
+              <!-- ... -->
               <link href='http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans|Pacifico' rel='stylesheet' type='text/css'>
               <link rel="stylesheet" href="css/styles.css">
           </head>
           ```
         1. Copy the CSS provided to you and place it within an existing selector, or create a new one.
 
-        ```
+        ```css
         h1 {
           font-family: 'Open Sans', sans-serif;
         }
@@ -1784,7 +1784,7 @@ text-transform: lowercase;</textarea>
         Let's have a look at the class attributes on each of the the `section` tags in our project.
         They can be used to apply *different* styles to each unique section.
 
-        ```xml
+        ```html
         <section class="mission">
           ...
         </section>
@@ -1809,13 +1809,13 @@ text-transform: lowercase;</textarea>
 
         Class selectors are defined by leading period.
 
-        ```
+        ```css
         /* applies to any element with the class of mission */
         .mission {
           background: red;
         }
         ```
-        ```
+        ```css
         /* targets ALL section elements */
         section {
           background: blue;
@@ -1833,7 +1833,7 @@ text-transform: lowercase;</textarea>
         Apply a background colour to just the "Mission" section.
         <span class="note">(The "Contact" section is getting a different treatment in a later exercise.)</span>
 
-        ```
+        ```css
         /* Mission
         -----------------------------------------*/
         .mission{
@@ -1849,7 +1849,7 @@ text-transform: lowercase;</textarea>
 
         Do you still have blue links? Select the anchor tag and override the default blue.
 
-        ```
+        ```css
         a {
           color: #0e6c5c;
         }
@@ -1858,11 +1858,11 @@ text-transform: lowercase;</textarea>
         Let's add a class to one of our links to make it look like a button.
 
         **HTML:**
-        ```
+        ```html
         <a href="#" class="button">email me</a>
         ```
         **CSS:**
-        ```
+        ```css
         .button{
           background: grey;
           color: purple;
@@ -2029,7 +2029,7 @@ border: 15px solid green;</textarea>
 
         Add this snippet to your project (and to all future projects) to fix how the width/padding/border size is rendered.
 
-        ```
+        ```css
         /* apply a natural box layout model to all elements, but allowing components to change */
         html {
           box-sizing: border-box;
@@ -2057,7 +2057,7 @@ border: 15px solid green;</textarea>
 
         Combine the selectors to target them all at the same time.
 
-        ```
+        ```css
         header,
         section {
           padding: 100px 150px;
@@ -2125,7 +2125,7 @@ border: 15px solid green;</textarea>
 
         **Important:** Note the location of the CSS file.
 
-        ```html
+        ```xml
         project-en/
           |-- css/
               |--styles.css
@@ -2149,13 +2149,13 @@ border: 15px solid green;</textarea>
 
         If the image is smaller than the width of your browser window, it will repeat by default. We can change that with the `no-repeat` value like this:
 
-        ```
+        ```css
         body { /* longhand */
           background-image: url(../images/kitten.jpg);
           background-repeat: no-repeat;
         }
         ```
-        ```
+        ```css
         body { /* shorthand */
           background: url(../images/kitten.jpg) no-repeat;
         }
@@ -2169,7 +2169,7 @@ border: 15px solid green;</textarea>
 
         Copy and paste the code below into your CSS file, one value at a time, to see how each property works.
 
-        ```
+        ```css
         body { /* longhand */
           background-image: url('../images/profile.jpg');
           background-repeat: no-repeat;
@@ -2177,7 +2177,7 @@ border: 15px solid green;</textarea>
           background-size: cover;
         }
         ```
-        ```
+        ```css
         body { /* shorthand */
           background: url(../images/profile.jpg) no-repeat fixed;
           background-size: cover;
@@ -2207,7 +2207,7 @@ border: 15px solid green;</textarea>
 
         Let's look at the HTML of our header:
 
-        ```
+        ```html
         <header>
           <h1>Yoga Studio</h1>
           <h2>Drop-in classes, workshops and retreats for all levels</h2>
@@ -2244,7 +2244,7 @@ border: 15px solid green;</textarea>
        1. In your **index.html**, wrap the text in a `<div>` with a class of `text`.
        2. Add a new `<div>` to act as the in-between layer with a class of `overlay`. It will look something like this:
 
-      ```
+      ```html
       <header>
         <div class="text">
           <h1>Yoga Studio</h1>
@@ -2256,7 +2256,7 @@ border: 15px solid green;</textarea>
 
       In your CSS, add the following lines:
 
-      ```
+      ```css
       header {
         position: relative;
       }
