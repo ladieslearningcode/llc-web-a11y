@@ -1,14 +1,6 @@
 # English
-# This content is featured in a monthly theme!
-
-In 2019, we want to challenge Canadians to pause and think, learn about, share, and work towards solving issues that affect us all on a global scale – while leveraging the power of technology!  More information on monthly themes [here](https://www.canadalearningcode.ca/code-can-change-the-world/).
-
-DECEMBER'S THEME IS: Take Action!
-
-See slide 4 for suggestions on how learners can incorporate this month’s theme into their projects - if they choose to participate.
 
 # Ladies Learning Code
-
 ## Web Accessibility with HTML & CSS
 
 A full day introductory HTML & CSS workshop on Web Accessibility.
@@ -89,16 +81,8 @@ This repository ships with a collection of image assets (located in `project/ima
 
 
 # Français
-# Ce contenu fait partie d’une thématique mensuelle!
-
-En 2019, nous invitons la population du Canada à réfléchir, à apprendre et à discuter à propos d'enjeux mondiaux et à trouver des solutions à ces problèmes à l'aide de la technologie.  [Cliquez ici pour obtenir plus d’informations sur nos thèmes mensuels.](https://www.canadalearningcode.ca/code-can-change-the-world/)
-
-LE THÈME DU MOIS DE DÉCEMBRE EST... L'ACTION!
-
-Consultez la diapositive 4 pour obtenir des suggestions sur les façons d’intégrer le thème du mois aux projets des apprenants (s’ils le souhaitent).
 
 # Femmes en programmation :
-
 ## Accessibilité Web avec le HTML et le CSS
 
 Atelier d’une journée sur le HTML et le CSS axé sur l'accessibilité Web.
